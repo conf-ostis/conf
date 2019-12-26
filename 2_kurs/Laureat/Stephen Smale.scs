@@ -1,0 +1,52 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+Stephen_Smale<-sc_node_not_relation;
+<=nrel_reward: ...
+(* 
+<-concept_Wolf_Prize;;
+<-concept_US_National_Science_Medal;;
+<-concept_Fields_Medal;;
+*);;
+
+Stephen_Smale => nrel_main_idtf:[Stephen Smale] (* <- lang_en;;*);;
+
+Stephen_Smale => nrel_main_idtf:[Стивен Смейл] (* <- lang_ru;;*);;
+
+Stephen_Smale <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Стивен Смейл)](*<-lang_ru;;*); [Pic. (Stephen Smale)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Stephen_Smale.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Stephen_Smale => nrel_date_of_birth:
+            concept_date_15_07_1930
+            (*
+                => nrel_main_idtf:
+                [15 июля 1930](* <- lang_ru;;*);;
+            *);;
+
+
+definition ->...
+(*
+->rrel_key_sc_element:  Stephen_Smale;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Стивен Смейл - американский математик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Стивен Смейл)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Stephen_Smale;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Стивен Смейл получил Медаль Филдса в 1966 году, Национальную научную медаль США в 1996 году и Премию Вольфа в 2007 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Стивен Смейл)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Wolf_Prize;
+	concept_US_National_Science_Medal;
+	concept_Fields_Medal
+};;
+*);;
+
+Stephen_Smale<=nrel_inclusion:concept_laureate;;
+Stephen_Smale-> rrel_example:[В 1998 году Стивен Смейл составил список из 18 задач математики, которые, по его мнению, должны быть решены в XXI веке.] (*<-lang_ru;;*);;
+
+Stephen_Smale<=nrel_inclusion:concept_person;;

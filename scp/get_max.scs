@@ -1,0 +1,248 @@
+
+//Программа удаления цепей, длина которых != заданной длине
+scp_program -> get_max (*	
+	-> rrel_params: ... (*
+		//Узел графа
+		-> rrel_1: rrel_in: _graph;;
+	*);;
+
+	-> rrel_operators: ... (*
+
+		//Создание множества всех цепей, принадлежащих графу
+		//Если множество непустое, то находим первую цепь
+		//Если множество пустое, то выходим из программы
+		-> rrel_init: ..create_all_chains (*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _graph;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _vertex_1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed:  rrel_scp_const: rrel_min_chain;;
+			->rrel_set_3: rrel_assign: rrel_scp_var: _all_chains;;
+			=> nrel_then: ..init_max_length;;	
+			=> nrel_else: ..return;;	
+		*);;
+
+
+		-> ..init_max_length (*
+			<- genEl;;
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_link: rrel_scp_var: _max_length;;
+			=> nrel_goto: ..init_count_chains;;
+		*);;
+
+		-> ..init_count_chains (*
+			<- genEl;;
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_link: rrel_scp_var: _count_chains;;
+			=> nrel_goto: ..max_length;;
+		*);;
+		
+		//Инициализация переменной _max_length
+		-> ..max_length (*
+			<- contAdd;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _max_length;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+			=> nrel_goto: ..count_chains;;
+		*);;
+		//Инициализация переменной _count_chains
+		//Переход к получению цепи
+		-> ..count_chains (*
+			<- contAdd;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _count_chains;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+			=> nrel_goto: ..generate_max_chain;;
+		*);;
+
+		
+		//Создание переменной, где будет храниться максимальная цепь
+		-> ..generate_max_chain (*
+			<- genEl;;
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _max_chain;;
+			=> nrel_goto: ..get_chain;;
+		*);;
+
+		//---------------Перебор всех цепей-------------
+
+		//Поиск цепи во множестве всех цепей
+		//Если цепь найдена, то удаляем дугу между этой цепью и множеством всех цепей
+		//Если цепь не найдена, то добавляем найденную максимальную цепь, удаляем множесто _all_chains и выходим из программы
+		-> ..get_chain (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _all_chains;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _deleted_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _chain;;
+			=> nrel_then: ..count_num_chain;;
+			=> nrel_else: ..generate_result;;
+		*);;
+		//Подсчёт пар всех пар вершин
+		-> ..count_num_chain (*
+			<- contAdd;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _count_chains;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _count_chains;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+			=> nrel_goto: ..delete_arc;;
+
+		*);;
+
+		//Удаление дуги между цепью и множеством всех цепей
+		//Переход к вызову функции proc_length, которая вычисляет длину цепи _chain (перед этим создадим переменную _length, в которой будем хранить длину цепи _chain)
+		-> ..delete_arc (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _deleted_arc;;
+			=> nrel_goto: ..generate_length;;	
+		*);;
+
+		//Оператор создания переменной, хранящей длину цепи
+		-> ..generate_length (*
+			<- genEl;;
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _length;;
+			=> nrel_goto: ..get_length;;
+		*);;
+
+		//Вызов программы proc_length, которая вычисляет длину цепи
+		-> ..get_length (*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_length;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				//Цепь, длину которой нужно найти
+				-> rrel_1: rrel_fixed: rrel_scp_var: _chain;;
+				//Длина цепи
+				-> rrel_2: rrel_assign: rrel_scp_var: _length;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+			=> nrel_goto: ..wait;;
+		*);;	
+	
+		//Ожидание завершения вычисления длины цепи
+		//Переход к сравнению
+		-> ..wait (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+			=> nrel_goto: ..add_length;;
+		*);;
+
+		//Суммирование мин путей
+		-> ..add_length (*
+			<- contAdd;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _max_length;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _max_length;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _length;;
+			=> nrel_goto: ..get_chain;;
+
+		*);;
+
+		//Удаление цепи _chain и переход к следующей цепи
+		-> ..delete_max_chain (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _max_chain;;
+			=> nrel_goto: ..generate_min_chain_for_copy;;	
+		*);;
+
+		//Создание переменной, где будет храниться максимальная цепь
+		-> ..generate_min_chain_for_copy (*
+			<- genEl;;
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _max_chain;;
+			=> nrel_goto: ..change_value;;
+		*);;
+
+		//Присвоение переменной _max_chain значения переменной _chain
+		//Переход к запоминанию максимальной цепи
+		//Вызов программы копирования всех вершин из одной цепи в другую
+		-> ..change_value (*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_copy_chain;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				//Цепь, из которой копируют
+				-> rrel_1: rrel_fixed: rrel_scp_var: _chain;;
+				//Цепь, в которую копируют
+				-> rrel_2: rrel_fixed: rrel_scp_var: _max_chain;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr0;;
+			=> nrel_goto: ..wait_change_value;;
+		*);;
+
+		//Ожидание завершения программы копирования цепи
+		-> ..wait_change_value (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr0;;
+			=> nrel_goto: ..change_value_of_max_chain;;
+		*);;
+
+		//Запоминание максимальной цепи
+		//Переход к получению новой цепи
+		-> ..change_value_of_max_chain (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _max_length;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _length;;
+			=> nrel_goto: ..get_chain;;
+		*);;
+
+		//Создание переменной, где будет храниться результат поиска
+		-> ..generate_result (*
+			<- genEl;;
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: _result;;
+			=> nrel_goto: ..cont_average_diam;;
+		*);;
+		//Деление суммы мин путей на количество всех пар вершин графа
+		-> ..cont_average_diam (*
+			<- contDiv;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _max_length;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _max_length;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _count_chains;;
+			=> nrel_goto: ..add_chain_to_graph;;
+
+		*);;
+		
+
+		//Добавление цепи к графу отношением rrel_max_chain
+		//После этого выходим очищаем память и выходим из программы
+		-> ..add_chain_to_graph (*
+			<- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _graph;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _max_length;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_average_diam;;
+			=> nrel_goto: ..clear;;
+		*);;
+
+		//Поиск всех цепей, кроме максимальной
+		//Переход к получению одной из цепей
+		->  ..clear (*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _graph;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _vertex_1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed:  rrel_scp_const: rrel_min_chain;;
+			->rrel_set_3: rrel_assign: rrel_scp_var: _all_chains;;
+			=> nrel_then: ..get_deleted_chain;;		
+			=> nrel_else: ..return;;	
+		*);;
+
+		//Получение одной из цепей
+		//Переход к ее удалению
+		-> ..get_deleted_chain (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _all_chains;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _deleted_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _chain;;
+			=> nrel_then: ..delete_chain;;
+			=> nrel_else: ..return;;
+		*);;
+
+		//Удаление цепи _chain и переход к следующей цепи
+		-> ..delete_chain (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _chain;;
+			=> nrel_goto: ..get_deleted_chain;;	
+		*);;
+
+		//Оператор return
+		-> ..return (*
+			<- return;;
+		*);;
+
+	*);;
+*);;

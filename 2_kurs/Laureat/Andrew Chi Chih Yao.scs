@@ -1,0 +1,58 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Andrew_Chi_Chih_Yao<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Turing_Award;;
+<-concept_Knuth_Prize;;
+*);;
+
+Andrew_Chi_Chih_Yao => nrel_main_idtf:[Andrew Chi Chih Yao] (* <- lang_en;;*);;
+
+Andrew_Chi_Chih_Yao => nrel_main_idtf:[Эндрю Яо Цичжи] (* <- lang_ru;;*);;
+
+Andrew_Chi_Chih_Yao => nrel_date_of_birth:
+            concept_date_24_12_1946
+            (*
+                => nrel_main_idtf:
+                [24 декабря 1946](* <- lang_ru;;*);;
+            *);;
+
+Andrew_Chi_Chih_Yao=> nrel_place_of_birth:
+            concept_Shanghai;;
+
+concept_Shanghai<-concept_city;;
+
+
+Andrew_Chi_Chih_Yao <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Эндрю Яо Цичжи)](*<-lang_ru;;*); [Pic. (Andrew Chi Chih Yao)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Andrew_Chi_Chih_Yao.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+definition ->...
+(*
+->rrel_key_sc_element: Andrew_Chi_Chih_Yao;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Эндрю Яо Цичжи  - китайский и американский учёный.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Эндрю Яо Цичжи)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_scientist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Andrew_Chi_Chih_Yao;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Эндрю Яо Цичжи получил Премию Кнута в 1996 году, Премию Тьюринга в 2000 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Эндрю Яо Цичжи)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Turing_Award;
+	concept_Knuth_Prize
+	
+};;
+*);;
+
+Andrew_Chi_Chih_Yao<=nrel_inclusion:concept_laureate;;
+Andrew_Chi_Chih_Yao-> rrel_example:[В качестве приглашённого учёного Эндрю Яо Цичжи работал в исследовательских центрах корпораций IBM и DEC, в Bell Labs, Xerox и Microsoft.] (*<-lang_ru;;*);;
+Andrew_Chi_Chih_Yao<=nrel_inclusion:concept_person;;
+

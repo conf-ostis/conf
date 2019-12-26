@@ -1,0 +1,9 @@
+///sc_node_not_relation-> Doklad_3_OSTISX2019;;
+Doklad_3_OSTISX2019=>nrel_main_idtf:[Доклад 3 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_3_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_3_OSTISX2019 => nrel_name_of_doclad: [АНАЛИЗ МЕТОДА УПРАВЛЕНИЯ НА ОСНОВЕ СЕМАНТИЧЕСКОГО ВЕРОЯТНОСТНОГО ВЫВОДА В МНОГОАГЕНТНОЙ ЗАДАЧЕ ФУРАЖИРОВКИ](* <- lang_ru;;*);;
+
+Doklad_3_OSTISX2019 => nrel_authors: Vorobjov_V_V;;
+Doklad_3_OSTISX2019 => nrel_authors: Rovbo_M_A;;

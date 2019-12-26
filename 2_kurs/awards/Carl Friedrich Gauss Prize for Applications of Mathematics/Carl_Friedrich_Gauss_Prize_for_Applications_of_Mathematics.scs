@@ -1,0 +1,44 @@
+
+concept_Carl_Friedrich_Gauss_Prize_for_Applications_of_Mathematics<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Гаусса]
+      (*<-lang_ru;;*);
+       [Carl Friedrich Gauss Prize for Applications of Mathematics]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Пре́мия Га́усса)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_achievement;
+       concept_Applied_Mathematics;
+concept_international_mathematical_union;
+concept_German_mathematical_society;
+concept_international_mathematical_congress
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Пре́мия Га́усса — награда за выдающиеся достижения в прикладной математике, присуждаемая совместно Международным математическим союзом и Немецким математическим обществом раз в 4 года на Международном конгрессе математиков.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Гаусса, математик, технология, бизнес, повседневная жизнь)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_mathematician;
+	concept_technology;
+concept_business;
+concept_everyday_life
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Заявленная цель Премии Гаусса — поощрение математиков, содействующих прогрессу в нематематических областях, включая технологии, бизнес и повседневную жизнь.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+concept_Carl_Friedrich_Gauss_Prize_for_Applications_of_Mathematics -> rrel_example: [Премия Гаусса названа в честь немецкого математика Карла Фридриха Гаусса.](* <- lang_ru;; *);;
+
+concept_Carl_Friedrich_Gauss_Prize_for_Applications_of_Mathematics<=nrel_inclusion:concept_award;;
+

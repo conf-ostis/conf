@@ -1,0 +1,15 @@
+
+Panarin_K_A=> nrel_main_idtf:
+[Панарин К.А.]
+(*
+<- lang_ru;;
+*);
+[Panarin_K_A]
+(*
+<- lang_en;;
+*);;
+
+Panarin_K_A => nrel_email: [pan.k.a70@gmail.com](*<-lang_en;;*);;
+Panarin_K_A <- concept_docent;;
+Panarin_K_A <- nrel_participant_of_conference_OSTIS2019;;
+Panarin_K_A <- person;;

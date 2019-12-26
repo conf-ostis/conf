@@ -1,0 +1,3 @@
+concept_Berkeley<-sc_node_not_relation;;
+concept_Berkeley => nrel_main_idtf:[Беркли] (* <- lang_ru;;*);;
+

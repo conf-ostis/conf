@@ -1,0 +1,19 @@
+concept_marriage  => nrel_main_idtf:
+ [свадьба](* <- lang_ru;; *);
+ [marriage] (* <- lang_en;; *);;
+ 
+ 
+ concept_marriage <- rrel_key_sc_element: 
+         ...
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(свадьба)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Свадьба — это брачный обряд.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

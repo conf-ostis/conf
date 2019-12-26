@@ -1,0 +1,7 @@
+nrel_speaking_time <- sc_node_norole_relation ;;
+nrel_speaking_time => nrel_main_idtf: [время выступления*] (* <- lang_ru;; *);;
+
+30minutes => nrel_main_idtf: [30 минут] (* <- lang_ru;; *);;
+25minutes => nrel_main_idtf: [25 минут] (* <- lang_ru;; *);;
+20minutes => nrel_main_idtf: [20 минут] (* <- lang_ru;; *);;
+15minutes => nrel_main_idtf: [15 минут] (* <- lang_ru;; *);;

@@ -1,0 +1,17 @@
+
+
+Polyachok_E=> nrel_main_idtf:
+[Полячок Е.]
+(*
+<- lang_ru;;
+*);
+[Polyachok_E]
+(*
+<- lang_en;;
+*);;
+
+Polyachok_E <- person;;
+Polyachok_E => nrel_email: [pol.pan.e@gmail.com](*<-lang_en;;*);;
+Polyachok_E <- concept_candidate_sciences;;
+
+Polyachok_E <- nrel_participant_of_conference_OSTIS2019;;

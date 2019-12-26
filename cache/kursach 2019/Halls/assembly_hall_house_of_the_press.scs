@@ -1,0 +1,45 @@
+concept_assembly_hall_house_of_the_press => nrel_main_idtf:
+ [Assembly hall House of the press](* <- lang_ru;; *);
+ [Актовый зал Дома прессы] (* <- lang_en;; *);;
+
+
+concept_assembly_hall_house_of_the_press => nrel_count_people : [150];;
+
+concept_assembly_hall_house_of_the_press => nrel_square : [250];;
+
+concept_assembly_hall_house_of_the_press => nrel_address : [Минск, ул. Б. Хмельницкого, 10а, второй этаж];;
+
+concept_assembly_hall_house_of_the_press => nrel_phone : [+375-29-287-18-34];;
+
+concept_assembly_hall_house_of_the_press => nrel_site : [dompressy.by];;
+
+concept_assembly_hall_house_of_the_press => nrel_pay_per_hour : [68];;
+
+concept_assembly_hall_house_of_the_press <=> concept_conference_room_house_of_the_press;;
+
+concept_assembly_hall_house_of_the_press => nrel_equipment : concept_lighting_equipment;;
+concept_assembly_hall_house_of_the_press => nrel_equipment : concept_multimedia_projector;;
+concept_assembly_hall_house_of_the_press => nrel_equipment : concept_sound_system;;
+concept_assembly_hall_house_of_the_press => nrel_equipment : concept_projection_screen;;
+concept_assembly_hall_house_of_the_press => nrel_equipment : concept_table;;
+concept_assembly_hall_house_of_the_press => nrel_equipment : concept_chair;;
+concept_assembly_hall_house_of_the_press => nrel_equipment : concept_wifi;;
+concept_assembly_hall_house_of_the_press => nrel_equipment : concept_head_radiosystem;;
+concept_assembly_hall_house_of_the_press => nrel_equipment : concept_laptop;;
+concept_assembly_hall_house_of_the_press => nrel_equipment : concept_wireless_microphone;;
+concept_assembly_hall_house_of_the_press => nrel_equipment : concept_stationary_microphone;;
+concept_assembly_hall_house_of_the_press => nrel_equipment : concept_lcd_panel;;
+
+
+concept_assembly_hall_house_of_the_press => nrel_type_event : concept_business_meeting;;
+concept_assembly_hall_house_of_the_press => nrel_type_event : concept_presentation;;
+concept_assembly_hall_house_of_the_press => nrel_type_event : concept_press_conference;;
+concept_assembly_hall_house_of_the_press => nrel_type_event : concept_seminar;;
+
+
+concept_assembly_hall_house_of_the_press => nrel_service : concept_catering;;
+concept_assembly_hall_house_of_the_press => nrel_service : concept_furniture_arrangement;;
+concept_assembly_hall_house_of_the_press => nrel_service : concept_hall_decoration;;
+
+
+concept_assembly_hall_house_of_the_press => nrel_description_area : [К Вашим услугам – большой актовый зал, рассчитанный на прием до 150 человек. Зал «Дома прессы» выполнен в классическом строгом стиле, дизайн лаконичен, мебель комфортна. Помещение идеально подойдёт для организации и проведения семинаров, деловых встреч, конференций, пресс-конференций, тренингов. Чтобы Ваше мероприятие прошло максимально успешно, предусмотрено соответствующее оборудование: мультимедийный проектор, проекционный экран, ноутбук, система звукоусиления (5 проводных и 4 беспроводных микрофона, ЖКИ-панель, компьютерное оборудование). Гости могут воспользоваться Wi-Fi (беспроводным интернетом), а для большего комфорта зал оснащен системой кондиционирования. Дополнительно в холле могут быть организованы кофе-паузы.];;

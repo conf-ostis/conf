@@ -1,0 +1,37 @@
+concept_Computational_Mathematics<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Вычислительная математика]
+	(*<-lang_ru;;*);
+	[Computational Mathematics]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Вычислительная математика)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_calculation;
+	concept_Mathematics
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Вычислительная математика — раздел математики, включающий круг вопросов, связанных с производством разнообразных вычислений.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Вычислительная математика, естественная наука, вычислительная физика, вычислительная химия)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+	concept_natural_science;
+	concept_Computational_Physics;
+	concept_Computational_Chemistry
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[На основе вычислительной математики образовались такие новые области естественных наук, как вычислительная физика, вычислительная химия.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_Computational_Mathematics -> rrel_example: [ Вычислительная математика обладает широким кругом прикладных применений для проведения научных и инженерных расчётов.] (*<-lang_ru;;*);;
+concept_Computational_Mathematics <=nrel_inclusion:concept_Mathematics;;

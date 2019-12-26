@@ -1,0 +1,19 @@
+concept_banquet  => nrel_main_idtf:
+ [банкет](* <- lang_ru;; *);
+ [banquet] (* <- lang_en;; *);;
+ 
+ 
+ concept_banquet <- rrel_key_sc_element: 
+         ...
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(банкет)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Банкет — торжественный званый обед или ужин.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

@@ -1,0 +1,22 @@
+ concept_bntu_technopark => nrel_main_idtf:
+ [Научно-технологический парк БНТУ "Политехник"](* <- lang_ru;; *);
+ [Science and Technology Park BNTU "Polytechnic"] (* <- lang_en;; *);;
+ 
+ 
+ concept_bntu_technopark => nrel_address : [ул. Сурагнова 37/1];;
+ 
+ concept_bntu_technopark => nrel_phone : [ 375 (44) 712-08-38];;
+ 
+ concept_bntu_technopark => nrel_site : [http://park.bntu.by/event-2/];;
+ 
+ concept_bntu_technopark => nrel_mail_area : [volkova@icm.by];;
+ 
+ concept_bntu_technopark => nrel_pay_per_hour : [50];;
+ 
+ concept_bntu_technopark => nrel_equipment : concept_sound_system;;
+ concept_bntu_technopark => nrel_equipment : concept_lcd_panel;;
+ concept_bntu_technopark => nrel_equipment : concept_wifi;;
+ 
+ concept_bntu_technopark => nrel_territory : concept_parking;;
+
+ concept_bntu_technopark => nrel_description_area : [Уникальная возможность презентации и демонстрации Вашего продукта. Широкий спектр мультимедиа- оборудования, в том числе с функцией touch-screen.К Вашим услугам:• Wi-Fi• Ethernet• 3 проектора, 3 экрана, 2 touch-screen монитора, 4 пирамиды для 3d-голограмм• Парковка на 20 машинТакже предлагаем дополнительные услуги: создание сценария мероприятий, дизайн, вёрстка и печать, фото- и видео-отчёты, синхронный/последовательный перевод, модератор, кейтеринг, СМИ и кворум, сопровождение делегаций, специалист тех. поддержки, фотозона, транспорт, обеспечение целевой аудитории (первые лица производственных и общественных организаций, студенты и преподаватели и др.) ***Наше специальное предложение- разработка 3D голограмм. Голограммы наглядны и реалистичны. Они визуализируют самую смелую идею, вовлекут пользователей и обеспечат WOW-эффект на Вашем мероприятии.];;

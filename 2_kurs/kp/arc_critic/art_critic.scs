@@ -1,0 +1,51 @@
+concept_art_critic<-sc_node_not_relation;;
+
+sc_node_norole_relation->nrel_directions;;
+sc_node_not_relation->concept_musicology;;
+sc_node_not_relation->concept_literary_criticism;;
+sc_node_not_relation->concept_theatrical_studies;;
+sc_node_not_relation->concept_film_studies;;
+concept_art_critic<=nrel_directions:concept_musicology;;
+concept_art_critic<=nrel_directions:concept_literary_criticism;;
+concept_art_critic<=nrel_directions:concept_theatrical_studies;;
+concept_art_critic<=nrel_directions:concept_film_studies;;
+
+concept_art_critic => nrel_main_idtf:[Аrt critic] (* <- lang_en;;*);;
+
+concept_art_critic => nrel_main_idtf:[Искусствовед] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_art_critic;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Искусствовед – учёный, специализирующийся на истории и исследовании художественных произведений (в первую очередь  – изобразительного искусства).](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Искусствовед)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_story;
+	concept_study;
+	concept_works_of_art;
+	concept_art
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_art_critic;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Искусствоведы, специализирующиеся на определённой эпохе, художнике или художественном направлении, могут выступать в качестве экспертов по оценке картин, скульптур, предметов декоративно-прикладного искусства.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Искусствовед)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_certain_era;
+	concept_certain_artist;
+	concept_certain_art_direction;
+	concept_expert;
+	concept_rating;
+	concept_paintings;
+	concept_sculptures;
+	concept_objects_of_arts;
+	concept_objects_of_crafts
+};;
+*);;
+
+concept_art_critic<=nrel_inclusion:concept_person;;
+concept_art_critic -> rrel_example:[Искусствоведы оценивают ценность произведения (определяют возможный возраст, эпоху, авторство), учитывая художественную манеру, исторический контекст создания произведения и т.п.] (*<-lang_ru;;*);;

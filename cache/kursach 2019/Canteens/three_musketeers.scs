@@ -1,0 +1,32 @@
+concept_three_musketeers => nrel_main_idtf:
+ [Кафе - бар «Три мушкетера»](* <- lang_ru;; *);
+ [Cafe - bar "Three Musketeers"] (* <- lang_en;; *);;
+ 
+ 
+ concept_three_musketeers => nrel_count_people : [200];;
+ 
+ concept_three_musketeers => nrel_address : [ул. Октябрьская, 5];;
+ 
+ concept_three_musketeers => nrel_phone : [ 375 17 327 29 60];;
+ concept_three_musketeers => nrel_phone : [ 375 17 327 85 61];;
+ concept_three_musketeers => nrel_phone : [ 375 29 863 40 65];;
+ 
+ concept_three_musketeers => nrel_site : [https://3-mushketera.relax.by/];;
+ 
+ concept_three_musketeers => nrel_medium_payment : [30];;
+ 
+ concept_three_musketeers => nrel_equipment : concept_wifi;;
+ 
+ concept_three_musketeers => nrel_type_event : concept_banquet;;
+ concept_three_musketeers => nrel_type_event : concept_press_conference;;
+ concept_three_musketeers => nrel_type_event : concept_seminar;;
+ concept_three_musketeers => nrel_type_event : concept_reception;;
+ concept_three_musketeers => nrel_type_event : concept_marriage;;
+ concept_three_musketeers => nrel_type_event : concept_birthday;;
+ 
+ concept_three_musketeers => nrel_service : concept_musician;;
+ 
+ concept_three_musketeers => nrel_territory : concept_dance_floor;;
+ 
+ concept_three_musketeers => nrel_description_area : [Кафе-бар «Три мушкетера» — это отличное местечко для проведения любого торжества, банкета и просто хорошего отдыха в кругу близких людей. Уютная атмосфера, приветливый персонал, богатая и сочная кухня, а также индивидуальный подход и демократичные цены — заведение располагает к непринужденному и приятному отдыху.];;
+

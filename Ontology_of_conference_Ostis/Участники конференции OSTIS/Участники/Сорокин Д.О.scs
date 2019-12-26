@@ -1,0 +1,15 @@
+Sorokin_D_O=> nrel_main_idtf:
+[Сорокин Д.О.]
+(*
+<- lang_ru;;
+*);
+[Sorokin_D_O]
+(*
+<- lang_en;;
+*);;
+
+Sorokin_D_O => nrel_email: [sorokin_title@tut.by](*<-lang_en;;*);;
+Sorokin_D_O <- person;;
+Sorokin_D_O <- concept_docent;;
+Sorokin_D_O <- nrel_participant_of_conference_OSTIS2019;;
+

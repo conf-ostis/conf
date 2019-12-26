@@ -1,0 +1,16 @@
+Zorina_T_G=> nrel_main_idtf:
+[Зорина Т.Г.]
+(*
+<- lang_ru;;
+*);
+[Zorina_T_G]
+(*
+<- lang_en;;
+*);;
+
+Zorina_T_G => nrel_email: [t.zorina@gmail.com](*<-lang_en;;*);;
+
+concept_professor <- concept_academic_title;;
+Zorina_T_G <- concept_professor;;
+Zorina_T_G <- nrel_participant_of_conference_OSTIS2019;;
+Zorina_T_G <- person;;

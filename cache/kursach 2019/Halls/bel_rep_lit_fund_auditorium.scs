@@ -1,0 +1,33 @@
+concept_bel_rep_lit_fund_auditorium => nrel_main_idtf:
+[Белорусский республиканский литературный фонд. Зрительный зал.](* <- lang_ru;; *);
+[Belarusian Republican Literary Fund. Auditorium.] (* <- lang_en;; *);;
+
+
+concept_bel_rep_lit_fund_auditorium=> nrel_count_people : [320];;
+
+concept_bel_rep_lit_fund_auditorium=> nrel_square : [341];;
+
+concept_bel_rep_lit_fund_auditorium=> nrel_address : [ Минск, ул. Фрунзе, 5];;
+
+concept_bel_rep_lit_fund_auditorium=> nrel_phone : [80(17) 335-24-19];;
+
+concept_bel_rep_lit_fund_auditorium=> nrel_site : [belvezha@tut.by];;
+
+
+concept_bel_rep_lit_fund_auditorium=> nrel_equipment : concept_lighting_equipment;;
+concept_bel_rep_lit_fund_auditorium=> nrel_equipment : concept_multimedia_projector;;
+concept_bel_rep_lit_fund_auditorium=> nrel_equipment : concept_sound_system;;
+concept_bel_rep_lit_fund_auditorium=> nrel_equipment : concept_projection_screen;;
+concept_bel_rep_lit_fund_auditorium=> nrel_equipment : concept_chair;;
+
+
+concept_bel_rep_lit_fund_auditorium => nrel_type_event : concept_business_meeting;;
+concept_bel_rep_lit_fund_auditorium => nrel_type_event : concept_presentation;;
+concept_bel_rep_lit_fund_auditorium => nrel_type_event : concept_seminar;;
+
+
+concept_bel_rep_lit_fund_auditorium=> nrel_service : concept_musician;;
+concept_bel_rep_lit_fund_auditorium=> nrel_service : concept_artist;;
+
+
+concept_bel_rep_lit_fund_auditorium=> nrel_description_area : [Зрительный зал расположен рядом с парком им.Горького.];;

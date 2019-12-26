@@ -1,0 +1,43 @@
+concept_Computational_Physics<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Вычислительная физика]
+	(*<-lang_ru;;*);
+	[Computational Physics]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Вычислительная физика)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_science;
+	concept_numerical_algorithm;
+	concept_decision;
+	concept_Physics;
+	concept_quantity_theory
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Вычислительная физика - это наука, изучающая численные алгоритмы решения задач физики, для которых количественная теория уже разработана.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Вычислительная физика, численный метод, компонент, исследование, физика ускорителя, астрофизика, гидродинамика)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+	concept_numerical_method;
+	concept_component;
+	concept_research;
+	concept_accelerator_physics;
+	concept_astrophysics;
+	concept_hydrodynamics
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Численные методы вычислительной физики являются важнейшим компонентом исследований в области физики ускорителей, астрофизики, гидродинамики.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_Computational_Physics-> rrel_example: [Вычислительная физика твёрдого тела, например, использует теорию функционала плотности для расчета свойств твёрдых тел, метод.] (*<-lang_ru;;*);;
+concept_Computational_Physics <=nrel_inclusion:concept_Physics;;

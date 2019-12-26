@@ -1,0 +1,46 @@
+concept_renaissance_conference_hall_2 => nrel_main_idtf:
+["Ренессанс Минск" Конференц-зал 2](* <- lang_ru;; *);
+["Renaissance Minsk" Conference Hall 2] (* <- lang_en;; *);;
+
+
+concept_renaissance_conference_hall_2 => nrel_count_people : [50];;
+
+concept_renaissance_conference_hall_2 => nrel_square : [68];;
+
+concept_renaissance_conference_hall_2 => nrel_address : [Минск, пр-т Дзержинского, 1е.];;
+
+concept_renaissance_conference_hall_2 => nrel_phone : [+375 (17) 309 90 98];;
+
+concept_renaissance_conference_hall_2 => nrel_site : [www.renaissance-minsk.com];;
+
+concept_renaissance_conference_hall_2 => concept_renaissance_conference_hall_1;;
+
+
+concept_renaissance_conference_hall_2 => nrel_equipment : concept_lighting_equipment;;
+concept_renaissance_conference_hall_2 => nrel_equipment : concept_tv;;
+concept_renaissance_conference_hall_2 => nrel_equipment : concept_multimedia_projector;;
+concept_renaissance_conference_hall_2 => nrel_equipment : concept_sound_system;;
+concept_renaissance_conference_hall_2 => nrel_equipment : concept_projection_screen;;
+concept_renaissance_conference_hall_2 => nrel_equipment : concept_table;;
+concept_renaissance_conference_hall_2 => nrel_equipment : concept_marker_board;;
+concept_renaissance_conference_hall_2 => nrel_equipment : concept_flipchart;;
+concept_renaissance_conference_hall_2 => nrel_equipment : concept_chair;;
+concept_renaissance_conference_hall_2 => nrel_equipment : concept_wifi;;
+concept_renaissance_conference_hall_2 => nrel_equipment : concept_wireless_microphone;;
+
+concept_renaissance_conference_hall_2 => nrel_type_event : concept_business_meeting;;
+concept_renaissance_conference_hall_2 => nrel_type_event : concept_presentation;;
+concept_renaissance_conference_hall_2 => nrel_type_event : concept_press_conference;;
+concept_renaissance_conference_hall_2 => nrel_type_event : concept_seminar;;
+concept_renaissance_conference_hall_2 => nrel_type_event : concept_reception;;
+
+
+concept_renaissance_conference_hall_2 => nrel_service : concept_catering;;
+concept_renaissance_conference_hall_2 => nrel_service : concept_furniture_arrangement;;
+concept_renaissance_conference_hall_2 => nrel_service : concept_accommodation_organization;;
+concept_renaissance_conference_hall_2 => nrel_service : concept_photography;;
+
+concept_renaissance_conference_hall_2 => nrel_territory : concept_parking;;
+
+
+concept_renaissance_conference_hall_2 => nrel_description_area : [Отель представляет уникальный бренд Renaissance, мотивирующий своих гостей «создавать открытия каждый день».На сегодняшний день отель является одним из главных конгресс-центров столицы, предлагая 6 многофункциональных конференц-залов общей площадью более 940 м2 и вместимостью до 850 персон. Все конференц-площадки отеля имеют первоклассное техническое оснащение и обеспечены естественным дневным светом.];;

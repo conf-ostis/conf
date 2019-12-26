@@ -1,0 +1,44 @@
+
+concept_IEEE_Koji_Kobayashi_Computers_and_Communications_Award<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия в области компьютеров и коммуникаций имени Кодзи Кобаяси]
+      (*<-lang_ru;;*);
+       [IEEE Koji Kobayashi Computers and Communications Award]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия в области компьютеров и коммуникаций имени Кодзи Кобаяси)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_board_of_directors;
+       concept_contribution;
+		concept_IEEE;
+	concept_computert;
+	concept_communication
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия в области компьютеров и коммуникаций имени Кодзи Кобаяси — премия, которая была учреждена советом директоров организации Института инженеров электротехники и электроники в 1986 году, данной наградой отмечается выдающийся вклад в объединение компьютеров и коммуникаций .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Нобелевская премия, медицина, завещание)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_award;
+	concept_using;
+	concept_computert;
+	concept_communication
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Награда была названа в честь Кодзи Кобаяси, который являлся движущей силой в продвижении использования совместно компьютеров и коммуникаций.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_IEEE_Koji_Kobayashi_Computers_and_Communications_Award -> rrel_example: [Премия в области компьютеров и коммуникаций имени Кодзи Кобаяси может быть вручена персонально, нескольким номинантам или группе, состоящей не более чем из трех человек.](* <- lang_ru;; *);;
+
+concept_IEEE_Koji_Kobayashi_Computers_and_Communications_Award<=nrel_inclusion:concept_award;;
+

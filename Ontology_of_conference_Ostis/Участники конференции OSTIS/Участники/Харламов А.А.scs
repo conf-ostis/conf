@@ -1,0 +1,31 @@
+
+Harlamov_A.A.=> nrel_main_idtf:
+	[Харламов А.А.]
+	(*
+	<- lang_ru;;
+	*);
+	[Harlamov_A.A.]
+	(*
+	<- lang_en;;
+	*);;
+
+Harlamov_A.A. => nrel_email: [kharlamov@analyst.ru](*<-lang_en;;*);;
+
+//Harlamov_A.A. <= nrel_authors:  ...(* -> Doklad_17_OSTISX2014;Doklad_4.11_OSTISX2012;Doklad_1.06_OSTISX2011;; *);;
+
+
+
+Harlamov_A.A. <- concept_participant_of_conference_OSTIS2014;;
+Harlamov_A.A. <- concept_participant_of_conference_OSTIS2011;;
+Harlamov_A.A. <- concept_participant_of_conference_OSTIS2012;;
+Harlamov_A.A. <- concept_participant_of_conference_OSTIS2015;;
+
+
+
+
+/*Harlamov_A.A. -> d.t.n.;;
+d.t.n. <- ucenaa_stepenX;;
+
+Harlamov_A.A. -> s.n.s.;;
+
+Harlamov_A.A. <= nrel_photo : ...(* -> Foto_OSTISX2011.02.10.09.16;Foto_OSTISX2011.02.10.10.16;Foto_OSTISX2011.02.10.10.47;Foto_OSTISX2011.02.10.10.48;Foto_OSTISX2011.02.10.10.54;Foto_OSTISX2011.02.10.10.58;Foto_OSTISX2011.02.10.11.30;Foto_OSTISX2011.02.10.11.46;Foto_OSTISX2011.02.10.11.50;Foto_OSTISX2011.02.10.11.55;Foto_OSTISX2011.02.10.12.40;Foto_OSTISX2011.02.10.12.41;Foto_OSTISX2011.02.10.13.57;Foto_OSTISX2011.02.10.14.15;; *);;*/

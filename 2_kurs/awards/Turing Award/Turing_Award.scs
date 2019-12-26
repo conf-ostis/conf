@@ -1,0 +1,41 @@
+
+concept_Turing_Award<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Тьюринга]
+      (*<-lang_ru;;*);
+       [Turing Award]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Пре́мия Тьюринга)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_Informatics;
+concept_Association_for_Computing_Machinery;
+concept_contribution
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Пре́мия Тьюринга — самая престижная премия в информатике, вручаемая Ассоциацией вычислительной техники за выдающийся научно-технический вклад в этой области.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Тьюринга, специалист, информатика, вычислительная техника)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_specialist;
+	concept_Informatics;
+concept_computer_engineering
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Премия ежегодно вручается одному или нескольким специалистам в области информатики и вычислительной техники.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+concept_Turing_Award -> rrel_example: [Премия учреждена Ассоциацией вычислительной техники в честь выдающегося английского учёного Алана Тьюринга, получившего первые глубокие результаты относительно вычислимости задолго до появления первых электронных вычислительных машин.](* <- lang_ru;; *);;
+
+concept_Turing_Award<=nrel_inclusion:concept_award;;
+

@@ -1,0 +1,17 @@
+Fedorishchev_L_A=> nrel_main_idtf:
+[Федорищев Л.А.]
+(*
+<- lang_ru;;
+*);
+[Fedorishchev_L_A]
+(*
+<- lang_en;;
+*);;
+
+Fedorishchev_L_A => nrel_email: [l.fedorishchev@mail.ru](*<-lang_en;;*);;
+
+Fedorishchev_L_A <- concept_professor;;
+Fedorishchev_L_A <- nrel_participant_of_conference_OSTIS2019;;
+
+
+Fedorishchev_L_A <- person;;

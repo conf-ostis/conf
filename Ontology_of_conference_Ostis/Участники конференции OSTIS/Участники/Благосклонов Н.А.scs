@@ -1,0 +1,16 @@
+Blagosklonov_N_A=> nrel_main_idtf:
+[Благосклонов Н.А.]
+(*
+<- lang_ru;;
+*);
+[Blagosklonov_N_A]
+(*
+<- lang_en;;
+*);;
+
+Blagosklonov_N_A => nrel_email: [n.blagosklonov@rambler.com](*<-lang_en;;*);;
+
+Blagosklonov_N_A <- concept_professor;;
+Blagosklonov_N_A <- nrel_participant_of_conference_OSTIS2019;;
+Barya_A_D <- person ;;
+

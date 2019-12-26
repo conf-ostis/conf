@@ -1,0 +1,2 @@
+concept_Wolf_Prize<-sc_node_not_relation;;
+concept_Wolf_Prize => nrel_main_idtf:[Премия Вольфа] (* <- lang_ru;;*);;

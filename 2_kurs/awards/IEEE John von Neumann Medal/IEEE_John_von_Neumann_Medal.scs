@@ -1,0 +1,45 @@
+
+concept_IEEE_John_von_Neumann_Medal<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Медаль Джона фон Неймана]
+      (*<-lang_ru;;*);
+       [IEEE John von Neumann Medal]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Медаль Джона фон Неймана)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_Information_Technologyl;
+       concept_board_of_directors;
+concept_IEEE;
+concept_development;
+concept_theoretical_achievement;
+concept_technological_achievement;
+concept_business_achievement
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Медаль Джона фон Неймана — награда в области информационных технологий, учреждённая советом директоров IEEE, вручаемая за выдающиеся теоретические, технологические и деловые достижения.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Медаль Джона фон Неймана, медицина, завещание)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_nomination;
+	concept_scientific_group;
+	concept_laureate
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В одной номинации может быть указано от 1 до 3 человек, медаль трижды вручалась коллективам из двух учёных, в остальных случаях производилось вручение одному человеку.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_IEEE_John_von_Neumann_Medal -> rrel_example: [Спонсором медали Джона фон Неймана выступает корпорация IBM.](* <- lang_ru;; *);;
+
+concept_IEEE_John_von_Neumann_Medal<=nrel_inclusion:concept_award;;
+

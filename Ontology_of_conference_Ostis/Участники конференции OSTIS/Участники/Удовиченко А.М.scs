@@ -1,0 +1,17 @@
+Udovichenko_A_M=> nrel_main_idtf:
+[Удовиченко А.М.]
+(*
+<- lang_ru;;
+*);
+[Udovichenko_A_M]
+(*
+<- lang_en;;
+*);;
+
+Udovichenko_A_M => nrel_email: [udovichenko_work@rambler.ru](*<-lang_en;;*);;
+
+Udovichenko_A_M <- concept_docent;;
+Udovichenko_A_M <- nrel_participant_of_conference_OSTIS2019;;
+Udovichenko_A_M <- person;;
+
+

@@ -1,0 +1,16 @@
+
+Rovbo_M_A=> nrel_main_idtf:
+[Ровбо М.А.]
+(*
+<- lang_ru;;
+*);
+[Rovbo_M_A]
+(*
+<- lang_en;;
+*);;
+
+Rovbo_M_A => nrel_email: [rovbma87@rambler.ru](*<-lang_en;;*);;
+Rovbo_M_A <- concept_graduate;;
+Rovbo_M_A <- person;;
+
+Rovbo_M_A <- nrel_participant_of_conference_OSTIS2019;;

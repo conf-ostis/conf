@@ -1,0 +1,38 @@
+concept_evente_meeting_room => nrel_main_idtf:
+["Evente" зал переговоров](* <- lang_ru;; *);
+["Evente" meeting room] (* <- lang_en;; *);;
+
+
+concept_evente_meeting_room => nrel_count_people : [12];;
+
+concept_evente_meeting_room => nrel_square : [25];;
+
+concept_evente_meeting_room => nrel_address : [Минск, пр-т Победителей, 7А (Бизнес-центр «Royal Plaza»), 19 этаж, помещение 59];;
+
+concept_evente_meeting_room => nrel_phone : [+375 (17) 306-06-49];;
+concept_evente_meeting_room => nrel_phone : [+375 (29) 195-19-19];;
+
+concept_evente_meeting_room => nrel_site : [http://evente.by/];;
+
+concept_evente_meeting_room => nrel_pay_per_hour : [20];;
+
+  concept_evente => concept_evente_presentation_room;;
+  concept_evente => concept_evente_meeting_room;;
+
+concept_evente_meeting_room => nrel_equipment : concept_sound_system;;
+concept_evente_meeting_room => nrel_equipment : concept_tv;;
+concept_evente_meeting_room => nrel_equipment : concept_multimedia_projector;;
+concept_evente_meeting_room => nrel_equipment : concept_table;;
+concept_evente_meeting_room => nrel_equipment : concept_chair;;
+concept_evente_meeting_room => nrel_equipment : concept_wifi;;
+concept_evente_meeting_room => nrel_equipment : concept_stationary_microphone;;
+
+
+
+concept_evente_meeting_room => nrel_type_event : concept_business_meeting;;
+concept_evente_meeting_room => nrel_type_event : concept_presentation;;
+concept_evente_meeting_room => nrel_type_event : concept_press_conference;;
+concept_evente_meeting_room => nrel_type_event : concept_seminar;;
+
+
+concept_evente_meeting_room => nrel_description_area : [Комфортабельный конференц-зал в Минске на 19 этаже самого высокого бизнес-центра Минска – отличное место для проведения деловых встреч, переговоров. Возможность показа видеоматериалов, подключение собственного оборудования. WI-FI, чай, кофе, печенье могут быть включены в стоимость аренды.];;

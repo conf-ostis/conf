@@ -1,0 +1,41 @@
+
+concept_Fulkerson_Prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Фалкерсона]
+      (*<-lang_ru;;*);
+       [Fulkerson Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия Фалкерсона)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_treatise;
+       concept_Discrete_Math
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия Фалкерсона — награда, вручаемая за выдающиеся научные статьи в области дискретной математики.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Фалкерсона, симпозиум, Общество математической оптимизации, получатель, премия)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_symposium;
+	concept_Society_for_Mathematical_Optimization;
+	concept_recipient;
+	concept_award
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Каждые три года проходит международный симпозиум MOS, на котором объявляются получателей премии Фалкерсона (не более трёх пунктов, каждый из которых может включать нескольких учёных).](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Fulkerson_Prize -> rrel_example: [Премия включает денежную награду в полторы тысячи долларов, изначально шедшую из фонда, организованного друзьями Делберта Рея Фалкерсона после его смерти для стимуляции математических работ в его области.](* <- lang_ru;; *);;
+
+concept_Fulkerson_Prize<=nrel_inclusion:concept_award;;
+

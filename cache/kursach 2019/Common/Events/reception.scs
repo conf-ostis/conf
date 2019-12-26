@@ -1,0 +1,19 @@
+concept_reception => nrel_main_idtf:
+ [фуршет](* <- lang_ru;; *);
+ [reception] (* <- lang_en;; *);;
+ 
+ concept_reception <- rrel_key_sc_element: 
+         ...
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(фуршет)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Фуршет — совместный приём пищи, когда приглашённые на конференцию едят стоя, свободно выбирая блюда и напитки, обслуживая себя самостоятельно.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+//Add a comment to this line
+ 	*);;
+

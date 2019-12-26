@@ -1,0 +1,15 @@
+Ischenko_I_A=> nrel_main_idtf:
+[Ищенко И.А.]
+(*
+<- lang_ru;;
+*);
+[Ischenko_I_A]
+(*
+<- lang_en;;
+*);;
+
+Ischenko_I_A => nrel_email: [ischenko@mail.ru](*<-lang_en;;*);;
+concept_graduate <- concept_rank;;
+Ischenko_I_A <- concept_graduate;;
+Ischenko_I_A <- nrel_participant_of_conference_OSTIS2019;;
+Ischenko_I_A <- person;;

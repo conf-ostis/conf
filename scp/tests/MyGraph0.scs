@@ -1,0 +1,11 @@
+directed_graph->graph1(*
+	->rrel_vertex: A1s;;
+	->rrel_vertex: B1s;;
+	->rrel_vertex: C1s;;
+	->rrel_edge: (A1s => B1s)(*
+		<=6;;
+	*);;
+	->rrel_edge: (B1s => C1s)(*
+		<=6;;
+	*);;
+*);;

@@ -1,0 +1,2 @@
+concept_Corinth<-sc_node_not_relation;;
+concept_Corinth => nrel_main_idtf:[Коринф] (* <- lang_ru;;*);;

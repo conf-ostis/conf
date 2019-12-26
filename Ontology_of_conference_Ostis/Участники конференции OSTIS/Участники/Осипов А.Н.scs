@@ -1,0 +1,17 @@
+
+
+Osipov_A_N=> nrel_main_idtf:
+[Осипов А.Н.]
+(*
+<- lang_ru;;
+*);
+[Osipov_A_N]
+(*
+<- lang_en;;
+*);;
+Osipov_A_N <- person;;
+
+Osipov_A_N => nrel_email: [anosip22@face.com](*<-lang_en;;*);;
+Osipov_A_N <- concept_PhD;;
+
+Osipov_A_N <- nrel_participant_of_conference_OSTIS2019;;

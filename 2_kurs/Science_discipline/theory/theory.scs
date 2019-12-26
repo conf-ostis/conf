@@ -1,0 +1,53 @@
+concept_theory<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Теория]
+	(*<-lang_ru;;*);
+	[theory]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Теория)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+concept_learning;
+concept_scientific_knowledge;
+concept_phenomenon;
+concept_natural_connections;
+concept_beginning
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Теория -  учение, система научного знания, описывающая и объясняющая некоторую совокупность явлений и сводящая открытые в данной области закономерные связи к единому объединяющему началу.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Теория,информационная модель, синтетическое знание, гипотеза, закон, автономность, система )] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_information_model;
+concept_synthetic_knowledge;
+concept_hypothesis;
+concept_law;
+concept_autonomy;
+concept_system
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Теория выступает как информационная модель синтетического знания, в границах которой отдельные понятия, гипотезы и законы теряют прежнюю автономность и становятся элементами целостной системы.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_theory->concept_information_theory;;
+
+concept_theory <= nrel_subdividing: ...
+(*
+	<-concept_theory_of_computer_systems;;
+	<-concept_information_theory;;
+	<-concept_mathematical_theory;;
+	<-concept_computability_theory;;
+	<-concept_quantity_theory;;
+	<-concept_theory_of_computer_systems;;
+	<-concept_theory_of_algorithms;;
+*);;

@@ -1,0 +1,26 @@
+ concept_gubernskaya_hotel => nrel_main_idtf:
+ [Губернская Гостиница](* <- lang_ru;; *);
+ [Gubernskaya Hotel] (* <- lang_en;; *);;
+ 
+ 
+ concept_gubernskaya_hotel => nrel_count_people : [50];;
+ 
+ concept_gubernskaya_hotel => nrel_address : [пр-т Победителей, 7А (Бизнес-центр «Royal Plaza»), 19 этаж, помещение 59];;
+ 
+ concept_gubernskaya_hotel => nrel_phone : [ 375 (29) 614-90-39];;
+ concept_gubernskaya_hotel => nrel_phone : [ 375 (29) 542-22-44];;
+ 
+ concept_gubernskaya_hotel => nrel_site : [gubernsky.by];;
+ 
+ concept_gubernskaya_hotel => nrel_pay_per_hour : [100];;
+ 
+ concept_gubernskaya_hotel => nrel_equipment : concept_table;;
+ concept_gubernskaya_hotel => nrel_equipment : concept_chair;;
+ concept_gubernskaya_hotel => nrel_equipment : concept_wifi;;
+ 
+ concept_gubernskaya_hotel => nrel_service : concept_catering;;
+ 
+ concept_gubernskaya_hotel => nrel_territory : concept_parking;;
+ 
+ concept_gubernskaya_hotel => nrel_description_area : [В Могилеве "Губернская" по праву считается одной из лучших гостиниц. В 2010 году она прошла сертификацию и получила статус трехзвездочной гостиницы. Несмотря на данное изменение, стоимость гостиничных услуг по-прежнему осталась умеренной.];;
+

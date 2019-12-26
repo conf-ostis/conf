@@ -1,0 +1,55 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+Gordon_Bell<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_IEEE_John_von_Neumann_Medal;;
+<-concept_W._Wallace_McDowell_Award;;
+*);;
+
+Gordon_Bell => nrel_main_idtf:[Gordon Bell] (* <- lang_en;;*);;
+
+Gordon_Bell => nrel_main_idtf:[Гордон Белл] (* <- lang_ru;;*);;
+
+
+Gordon_Bell <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Гордон Белл)](*<-lang_ru;;*); [Pic. (Gordon Bell)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Gordon_Bell.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Gordon_Bell => nrel_date_of_birth:
+            concept_date_19_08_1934
+            (*
+                => nrel_main_idtf:
+                [19 августа 1934](* <- lang_ru;;*);;
+            *);;
+
+definition ->...
+(*
+->rrel_key_sc_element: Gordon_Bell;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Гордон Белл  - американский инженер-электрик, компьютерный инженер и менеджер.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Гордон Белл)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_electrical_engineer;
+	concept_computer_engineer;
+	concept_manager
+	
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Gordon_Bell;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Гордон Белл получил медаль Джона фон Неймана в 1992 году и Премию Уоллеса Макдауэлла в 1975.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Гордон Белл)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_IEEE_John_von_Neumann_Medal;
+	concept_W._Wallace_McDowell_Award
+	
+};;
+*);;
+
+Gordon_Bell<=nrel_inclusion:concept_laureate;;
+Gordon_Bell-> rrel_example:[Гордон Белл был сотрудником Digital Equipment Corporation (DEC) в 1960–1966 годах.] (*<-lang_ru;;*);;
+Gordon_Bell<=nrel_inclusion:concept_person;;
+

@@ -1,0 +1,9 @@
+sc_node_not_relation->Solosic_S._N.;;
+Solosic_S._N.=>nrel_main_ru_idtf:[Солошич С.Н.];;
+
+
+Solosic_S._N. <= nrel_authors:  ...(* -> Doklad_78_OSTISX2014;; *);;
+
+Solosic_S._N. -> Ucastnik_konferenzii_OSTIS;;
+Solosic_S._N. <- concept_participant_of_conference_OSTIS2014;
+<- concept_participant_of_conference_OSTIS2013;;

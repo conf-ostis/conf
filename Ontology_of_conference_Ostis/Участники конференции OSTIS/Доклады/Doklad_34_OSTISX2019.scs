@@ -1,0 +1,12 @@
+///sc_node_not_relation-> Doklad_34_OSTISX2019;;
+Doklad_34_OSTISX2019=>nrel_main_idtf:[Доклад 34 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_34_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_34_OSTISX2019 => nrel_name_of_doclad: [ПРИНЦИПЫ ОРГАНИЗАЦИИ И АВТОМАТИЗАЦИИ ПРОЦЕССА РАЗРАБОТКИ СЕМАНТИЧЕСКИХ КОМПЬЮТЕРНЫХ СИСТЕМ](* <- lang_ru;;*);;
+
+Doklad_34_OSTISX2019 => nrel_authors: Shunkevich_D_V;; 
+Doklad_34_OSTISX2019 => nrel_authors: Grakova_N_V;; 
+Doklad_34_OSTISX2019 => nrel_authors: Golenkov_V_V;; 
+Doklad_34_OSTISX2019 => nrel_authors: Davydenko_I_T;; 
+

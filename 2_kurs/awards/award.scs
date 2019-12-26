@@ -1,0 +1,71 @@
+
+concept_award<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Награда]
+      (*<-lang_ru;;*);
+       [award]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Награда)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      concept_symbol;
+	 concept_gratitude;
+	 concept_achievement
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Награда - знак особой благодарности, выдаваемый за достижения или заслуги.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Награда, назначение, социальный статус, лицо)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_appointment;
+	concept_social_status;
+	concept_person
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Одним из назначений награды является предоставление особого социального статуса лицу, получающему награду.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_award -> rrel_example: [К почётным знакам относят ордена, кресты, медали, знаки отличия, которые носятся на одежде и служат не только для украшения, но и в качестве зримого свидетельства о достижениях и личных качествах человека (храбрости, инициативности, настойчивости в труде и других)..](* <- lang_ru;; *);;
+
+concept_award <= nrel_subdividing: ...
+(*  		
+		<-concept_Nobel_Prize;;
+		<-concept_Fields_Medal;;
+		<-concept_Crawford_Prize;;
+		<-concept_Rolf_Nevanlinna_Prize;;
+		<-concept_Carl_Friedrich_Gauss_Prize_for_Applications_of_Mathematics;;
+		<-concept_Abel_Prize;;
+		<-concept_The_Shaw_Prize;;
+		<-concept_Turing_Award;;
+		<-concept_Descartes_Prize;;
+		<-concept_Big_gold_medal_named_after_M.V._Lomonosov;;
+		<-concept_Prize_named_after_A.N._Krylova;;
+		<-concept_Prize_named_after_S.A._Lebedeva;;
+		<-concept_Prize_named_after_A.A._Raspletina;;
+		<-concept_IEEE_John_von_Neumann_Medal;;
+		<-concept_Godel_Prize;;
+		<-concept_Grace_Murray_Hopper_Award;;
+		<-concept_Edsger_W._Dijkstra_Prize_in_Distributed_Computing;;
+		<-concept_Knuth_Prize;;
+		<-concept_IEEE_Koji_Kobayashi_Computers_and_Communications_Award;;
+		<-concept_Loebner_prize;;
+		<-concept_Computer_Pioneer_Award;;
+		<-concept_Alan_T._Waterman_Award;;
+		<-concept_Gordon_Bell_Prize;;
+		<-concept_Paris_Kanellakis_Theory_and_Practice_Award;;
+		<-concept_The_Queen_Elizabeth_Prize_for_Engineering;;
+		<-concept_Lemelson_MIT_Prize;;
+		<-concept_Fulkerson_Prize;;
+		<-concept_Richard_W._Hamming_Medal;;
+		<-concept_Claude_E._Shannon_Award;;
+		<-concept_Salem_Prize;;
+*);;

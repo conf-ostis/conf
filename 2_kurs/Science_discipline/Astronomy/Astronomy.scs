@@ -1,0 +1,41 @@
+concept_Astronomy<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Астрономия]
+	(*<-lang_ru;;*);
+	[Astronomy]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Астрономия)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_science;
+	concept_Universe;
+	concept_celestial_body;
+	concept_system
+
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Астрономия -  наука о Вселенной, изучающая расположение, движение, структуру, происхождение и развитие небесных тел и систем.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Астрономия, раздел, астрометрия,теоретическая астрономия,небесная механика)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_section;
+concept_astrometry;
+concept_theoretical_astronomy;
+concept_celestial_mechanics
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Главнейшими разделами астрономии являются:астрометрия,теоретическая астрономия,небесная механика.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_Astronomy-> rrel_example: [астрономия изучает Солнце и другие звёзды, планеты Солнечной системы и их спутники, экзопланеты, астероиды, кометы, метеороиды и так далее.] (*<-lang_ru;;*);;
+concept_Astronomy <=nrel_inclusion:concept_science_discipline;;

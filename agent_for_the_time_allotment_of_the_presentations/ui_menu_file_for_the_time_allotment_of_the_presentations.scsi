@@ -1,0 +1,20 @@
+ui_menu_file_for_the_time_allotment_of_the_presentations
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Выделить время выступления для докладчиков](* <- lang_ru;; *);
+		[Allocate speaking time for speakers] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_the_time_allotment_of_the_presentations _-> ._question_the_time_allotment_of_the_presentations_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._question_the_time_allotment_of_the_presentations_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос выделения времени для докладчиков в $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[Request of allocate speaking time for speakers in $ui_arg_1] 
+		(* <- lang_en;; *);;
+

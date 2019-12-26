@@ -1,0 +1,18 @@
+concept_dance_floor => nrel_main_idtf:
+ [танцпол](* <- lang_ru;; *);
+ [dance floor] (* <- lang_en;; *);;
+ 
+ concept_dance_floor <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(танцпол)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Танцпол — специально оборудованная площадка для танцев под музыку.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

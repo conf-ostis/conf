@@ -1,0 +1,53 @@
+concept_philosopher<-sc_node_not_relation;;
+
+sc_node_norole_relation->nrel_type_of;;
+sc_node_not_relation->research_philosopher;;
+sc_node_not_relation->practical_philosopher;;
+concept_philosopher<=nrel_type_of:concept_research_philosopher;;
+concept_philosopher<=nrel_type_of:concept_practical_philosopher;;
+
+concept_philosopher => nrel_main_idtf:[Philosopher] (* <- lang_en;;*);;
+
+concept_philosopher => nrel_main_idtf:[Философ] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_philosopher;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Философ — профессиональный мыслитель, занимающийся разработкой вопросов мировоззрения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Философ)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_thinker;
+	concept_development;
+	concept_worldview_issues
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_philosopher;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Философом также может называться человек, принадлежащий к определённой философской школе, разделяющий её идеи или живущий в соответствии с этими идеями, то есть осуществляющий философию как образ жизни.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Философ)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_school_of_philosophy;
+	concept_the_ideas;
+	concept_philosophy;
+	concept_lifestyle
+};;
+*);;
+
+concept_philosopher<=nrel_inclusion:concept_person;;
+concept_philosopher -> rrel_example:[Термин «философ» старше термина «философия», изначально применялся для обозначения образованного человека.] (*<-lang_ru;;*);;
+
+sc_node_norole_relation->nrel_synonym;;
+sc_node_not_relation->concept_thinker;;
+sc_node_not_relation->concept_intellectual;;
+sc_node_not_relation->concept_sage;;
+concept_philosopher<=nrel_synonym:concept_thinker;;
+concept_philosopher<=nrel_synonym:concept_intellectual;;
+concept_philosopher<=nrel_synonym:concept_sage;;
+
+sc_node_norole_relation->nrel_term_creator;;
+concept_person_Pythagoras<-sc_node_not_relation;;
+concept_philosopher<=nrel_term_creator:concept_person_Pythagoras;;

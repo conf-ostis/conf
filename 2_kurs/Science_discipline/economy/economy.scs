@@ -1,0 +1,44 @@
+concept_economy<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Экономика]
+	(*<-lang_ru;;*);
+	[economy]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Экономика)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_set;
+	concept_social_science;
+	concept_production;
+	concept_distribution;
+	concept_consumption;
+	concept_product;
+	concept_service
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Экономика - совокупность общественных наук, изучающих производство, распределение и потребление товаров и услуг.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Экономика, экономическая действительность, объект, экономическая наука, прикладная экономика, теоретическая наука)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_economic_reality;
+concept_object;
+concept_economics;
+concept_theoretical_economics;
+concept_applied_economics
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Экономическая действительность является объектом экономических наук, которые подразделяются на теоретические и прикладные.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_economy-> rrel_example: [По масштабу области исследования экономическая наука делится на микроэкономику, макроэкономику, наноэкономику (изучает деятельность индивидуальных экономических субъектов), мезоэкономику (отрасли, регионы), интерэкономику (международная экономика) и мегаэкономику (мировое хозяйство).] (*<-lang_ru;;*);;
+concept_economy <=nrel_inclusion:concept_science_discipline;;

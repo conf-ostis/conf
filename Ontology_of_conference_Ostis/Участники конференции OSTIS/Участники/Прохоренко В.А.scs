@@ -1,0 +1,15 @@
+
+Prohorenko_V_A=> nrel_main_idtf:
+[Прохоренко В.А.]
+(*
+<- lang_ru;;
+*);
+[Prohorenko_V_A]
+(*
+<- lang_en;;
+*);;
+
+Prohorenko_V_A => nrel_email: [prohor2@gmail.com](*<-lang_en;;*);;
+Prohorenko_V_A <- concept_PhD;;
+Prohorenko_V_A <- person;;
+Prohorenko_V_A <- nrel_participant_of_conference_OSTIS2019;;

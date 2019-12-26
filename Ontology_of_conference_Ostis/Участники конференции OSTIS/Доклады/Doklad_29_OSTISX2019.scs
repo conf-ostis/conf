@@ -1,0 +1,11 @@
+///sc_node_not_relation-> Doklad_29_OSTISX2019;;
+Doklad_29_OSTISX2019=>nrel_main_idtf:[Доклад 29 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_29_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_29_OSTISX2019 => nrel_name_of_doclad: [ПОДХОД К ОПРЕДЕЛЕНИЮ КОЛИЧЕСТВА КЛАСТЕРОВ В НАБОРЕ ДАННЫХ](* <- lang_ru;;*);;
+
+Doklad_29_OSTISX2019 => nrel_authors: Ischenko_I_A;; 
+Doklad_29_OSTISX2019 => nrel_authors: Globa_L_C;; 
+Doklad_29_OSTISX2019 => nrel_authors: Bugajenko_U_M;; 
+Doklad_29_OSTISX2019 => nrel_authors: Lyashenko_A_V;; 

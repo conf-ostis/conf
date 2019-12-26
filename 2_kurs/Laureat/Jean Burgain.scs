@@ -1,0 +1,71 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_date_of_death;;
+sc_node_norole_relation->nrel_place_of_birth;;
+sc_node_norole_relation->nrel_place_of_death;;
+Jean_Burgain<-sc_node_not_relation;
+<=nrel_reward: ...
+(* 
+<-concept_Fields_Medal;;
+<-concept_Salem_Prize;;
+<-concept_Steel_Award;;
+<-concept_The_Shaw_Prize;;
+<-concept_Crawford_Prize;;
+<-concept_Ostrowski_Prize;;
+*);;
+
+Jean_Burgain => nrel_main_idtf:[Jean Burgain] (* <- lang_en;;*);;
+
+Jean_Burgain => nrel_main_idtf:[Жан Бургейн] (* <- lang_ru;;*);;
+
+
+Jean_Burgain <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Жан Бургейн)](*<-lang_ru;;*); [Pic. (Jean Burgain)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Jean_Burgain.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Jean_Burgain => nrel_date_of_birth:
+            concept_date_28_02_1954
+            (*
+                => nrel_main_idtf:
+                [28 февраля 1954](* <- lang_ru;;*);;
+            *);;
+
+Jean_Burgain => nrel_date_of_death:
+            concept_date_22_12_2018
+            (*
+                => nrel_main_idtf:
+                [22 декабря 2018](* <- lang_ru;;*);;
+            *);;
+
+
+
+
+definition ->...
+(*
+->rrel_key_sc_element:  Jean_Burgain;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Жан Бургейн  - бельгийский математик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Жан Бургейн )](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Jean_Burgain;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Жан Бургейн получил Премию Салема в 1983 году, Премию Островского в 1991, Филдсовскую премию в 1991, Премию Шао в 2010, Премию Крафорда в 2012, Премию СТила в 2018.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Жан Бургейн)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Fields_Medal;
+	concept_Salem_Prize;
+	concept_Steel_Award;
+	concept_The_Shaw_Prize;
+	concept_Crawford_Prize;
+	concept_Ostrowski_Prize
+};;
+*);;
+
+Jean_Burgain<=nrel_inclusion:concept_laureate;;
+Jean_Burgain-> rrel_example:[Работы Жана Бургейна посвящены разным разделам математики, таким как геометрия банахова пространства, гармонический анализ, аналитическая теория чисел, комбинаторика, эргодическая теория, дифференциальные уравнения в частных производных, спектральная теория, в последнее время также теория групп.] (*<-lang_ru;;*);;
+Jean_Burgain<=nrel_inclusion:concept_person;;
+

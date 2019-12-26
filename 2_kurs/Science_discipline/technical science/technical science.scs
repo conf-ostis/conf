@@ -1,0 +1,46 @@
+concept_technical_science<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Техническая наука]
+	(*<-lang_ru;;*);
+	[technical science]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Техническая наука)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_science;
+	concept_natural_science;
+	concept_phenomenon;
+	concept_technic
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Технические науки — науки в области естествознания, изучающие явления, важные для создания и развития техники.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Техническая наука, учёный, научно-техническая деятельность, прикладное исследование)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+	concept_scientist;
+	concept_scientific_and_technical_activities;
+	concept_applied_research
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Деятельность учёных технических наук осуществляется в рамках научно-технической деятельности и носит преимущественно прикладное исследование.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_technical_science -> rrel_example: [Основными методами технических наук являются: аналитические исследования, натурный эксперимент, математическое и компьютерное моделирование (а при его невозможности — физическое моделирование) предполагаемых или реализованных конструкций или технологий.] (*<-lang_ru;;*);;
+concept_technical_science <=nrel_inclusion:concept_science_discipline;;
+concept_technical_science <= nrel_subdividing: ...
+(*
+	<-concept_Mechanics;;
+	<-concept_Informatics;;
+	<-concept_System_engineering;;
+	<-concept_Electrical_engineering;;
+*);;

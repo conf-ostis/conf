@@ -1,0 +1,16 @@
+Davydov_M_V=> nrel_main_idtf:
+[Давыдов М.В.]
+(*
+<- lang_ru;;
+*);
+[Davydov_M_V]
+(*
+<- lang_en;;
+*);;
+
+Davydov_M_V => nrel_email: [dav1111@gmail.com](*<-lang_en;;*);;
+
+Davydov_M_V <- concept_candidate_sciences;;
+Davydov_M_V <- nrel_participant_of_conference_OSTIS2019;;
+Davydov_M_V <- person;;
+

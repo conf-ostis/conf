@@ -1,0 +1,29 @@
+
+Jytko_V_A=> nrel_main_idtf:
+	[Житко В.А.]
+	(*
+	<- lang_ru;;
+	*);
+	[Jitko V.A.]
+	(*
+	<- lang_en;;
+	*);;
+
+Jytko_V_A => nrel_email: [jytko112@gmail.com](*<-lang_en;;*);;
+
+Jytko_V_A <- concept_docent;;
+Jytko_V_A <- nrel_participant_of_conference_OSTIS2019;;
+
+Jytko_V_A <- concept_participant_of_conference_OSTIS2014;;
+Jytko_V_A <- concept_participant_of_conference_OSTIS2011;;
+Jytko_V_A <- concept_participant_of_conference_OSTIS2012;;
+
+
+Jytko_V_A <- person;;
+
+
+/*Jitko_V.A. -> aspirant;;
+
+Jitko_V.A. <- rrel_key_sc_element: ..illustration_Jitko_V.A.(* <- sc_illustation;; *);;
+..illustration_Jitko_V.A. <= nrel_translation : ..translation_illustration_Jitko_V.A.;;
+..translation_illustration_Jitko_V.A.-> rrel_example : [<img src="http://127.0.0.1:8181/JitkoVA.png"/>] (* => nrel_format: format_html;; *);;*/

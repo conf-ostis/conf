@@ -1,0 +1,17 @@
+Golovataya_E_A=> nrel_main_idtf:
+[Головатая Е.А.]
+(*
+<- lang_ru;;
+*);
+[Golovataya_E_A]
+(*
+<- lang_en;;
+*);;
+
+Golovataya_E_A => nrel_email: [e.golova@mail.ru](*<-lang_en;;*);;
+
+Golovataya_E_A <- concept_graduate;;
+Golovataya_E_A <- nrel_participant_of_conference_OSTIS2019;;
+Golovataya_E_A <- person ;;
+
+

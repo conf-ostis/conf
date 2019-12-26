@@ -1,0 +1,10 @@
+///sc_node_not_relation-> Doklad_30_OSTISX2019;;
+Doklad_30_OSTISX2019=>nrel_main_idtf:[Доклад 30 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_30_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_30_OSTISX2019 => nrel_name_of_doclad: [ПОСТРОЕНИЕ СИСТЕМЫ БАЛАНСА ПРОИЗВОДСТВЕННЫХ МОЩНОСТЕЙ АВИАЦИОННОГО ЗАВОДА](* <- lang_ru;;*);;
+
+Doklad_30_OSTISX2019 => nrel_authors: Yarushkina_N_G;; 
+Doklad_30_OSTISX2019 => nrel_authors: Romanov_A;; 
+Doklad_30_OSTISX2019 => nrel_authors: Filippov_A_A;; 

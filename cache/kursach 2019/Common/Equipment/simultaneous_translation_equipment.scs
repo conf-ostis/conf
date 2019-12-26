@@ -1,0 +1,19 @@
+concept_simultaneous_translation_equipment => nrel_main_idtf:
+ [оборудование для синхронного перевода](* <- lang_ru;; *);
+ [simultaneous translation equipment] (* <- lang_en;; *);;
+ 
+ concept_simultaneous_translation_equipment <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(оборудование для синхронного перевода)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Оборудование для синхронного перевода — оборудование, которое дает возможность выполнять перевод одновременно с речью выступающего, с задержкой в пару секунд.]
+ 			(* <- lang_ru;; *);;
+//Add a comment to this line
+ 		*);; 
+ 	*);;
+

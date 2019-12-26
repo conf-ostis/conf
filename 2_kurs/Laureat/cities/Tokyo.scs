@@ -1,0 +1,3 @@
+concept_Tokyo<-sc_node_not_relation;;
+concept_Tokyo => nrel_main_idtf:[Токио] (* <- lang_ru;;*);;
+

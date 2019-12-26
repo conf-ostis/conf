@@ -1,0 +1,10 @@
+///sc_node_not_relation-> Doklad_41_OSTISX2019;;
+Doklad_41_OSTISX2019=>nrel_main_idtf:[Доклад 41 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_41_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_41_OSTISX2019 => nrel_name_of_doclad: [СЕМАНТИЧЕСКИЙ АНАЛИЗ РЕЧЕВЫХ СООБЩЕНИЙ НА ОСНОВЕ ФОРМАЛИЗОВАННОГО КОНТЕКСТА](* <- lang_ru;;*);;
+
+Doklad_41_OSTISX2019 => nrel_authors: Azarov_I_S;; 
+
+

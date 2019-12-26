@@ -1,0 +1,32 @@
+concept_erudite => nrel_main_idtf:
+ [Эрудит](* <- lang_ru;; *);
+ [Erudite] (* <- lang_en;; *);;
+ 
+ 
+ concept_erudite => nrel_count_people : [20];;
+ 
+ concept_erudite => nrel_square : [37];;
+ 
+ concept_erudite => nrel_address : [пр-т Имени газеты Правды, 11А];;
+ 
+ concept_erudite => nrel_phone : [ 375 (44) 787-90-00];;
+ concept_erudite => nrel_phone : [ 375 (17) 380-26-03];;
+ 
+ concept_erudite => nrel_mail_area : [Info2015@erudite.by];;
+ 
+ concept_erudite => nrel_pay_per_hour : [25];;
+ 
+ concept_erudite => nrel_equipment : concept_lcd_panel;;
+ concept_erudite => nrel_equipment : concept_laptop;;
+ concept_erudite => nrel_equipment : concept_table;;
+ concept_erudite => nrel_equipment : concept_multimedia_projector;;
+ concept_erudite => nrel_equipment : concept_flipchart;;
+ concept_erudite => nrel_equipment : concept_chair;;
+ concept_erudite => nrel_equipment : concept_wifi;;
+ 
+ concept_erudite => nrel_service : concept_catering;;
+ 
+ concept_erudite => nrel_territory : concept_parking;;
+ 
+concept_erudite => nrel_description_area : [Комфортный, стильный, уютный конференц-зал для Ваших мероприятий: мастер-классы, семинары, тренинги, обучающие курсы. Зал оснащен всем необходимым оборудованием: проектор, большой экран, флип-чарт. Удобная мебель, прекрасный вид из окна. Возможность проведения кофе-пауз. В 5 минутах от ст.м. Петровщина, удобная парковка, в шаговой доступности 2 ресторана и отель.Будем рады создать для Вас необходимую для Вашего мероприятия обстановку.];;
+

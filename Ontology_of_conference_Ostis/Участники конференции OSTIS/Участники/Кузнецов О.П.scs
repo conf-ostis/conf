@@ -1,0 +1,23 @@
+
+Kuznecov_O_P=> nrel_main_idtf:
+	[Кузнецов О.П.]
+	(*
+	<- lang_ru;;
+	*);
+	[Kuznecov O.P.]
+	(*
+	<- lang_en;;
+	*);;
+
+Kuznecov_O_P => nrel_email: [opskuz@yandex.com](*<-lang_en;;*);;
+Kuznecov_O_P -> concept_candidate_sciences;;
+Kuznecov_O_P <- nrel_participant_of_conference_OSTIS2019;;
+
+Kuznecov_O_P <- concept_participant_of_conference_OSTIS;;
+Kuznecov_O_P <- concept_participant_of_conference_OSTIS2011;;
+Kuznecov_O_P <- concept_participant_of_conference_OSTIS2012;
+concept_participant_of_conference_OSTIS2013;;
+
+
+Kuznecov_O_P <- concept_professor;;
+Kuznecov_O_P <- person;;

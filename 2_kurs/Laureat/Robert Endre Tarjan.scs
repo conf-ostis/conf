@@ -1,0 +1,59 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Robert_Endre_Tarjan<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Rolf_Nevanlinna_Prize;;
+<-concept_Turing_Award;;
+*);;
+
+Robert_Endre_Tarjan => nrel_main_idtf:[Robert Endre Tarjan] (* <- lang_en;;*);;
+
+Robert_Endre_Tarjan => nrel_main_idtf:[Роберт Андре Тарьян] (* <- lang_ru;;*);;
+
+
+Robert_Endre_Tarjan <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Роберт Андре Тарьян)](*<-lang_ru;;*); [Pic. (Robert Endre Tarjan)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Robert_Endre_Tarjan.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+Robert_Endre_Tarjan => nrel_date_of_birth:
+           concept_date_30_04_1948
+            (*
+                => nrel_main_idtf:
+                [30 апреля 1948](* <- lang_ru;;*);;
+            *);;
+
+Robert_Endre_Tarjan=> nrel_place_of_birth:
+            concept_Pomona;;
+
+ concept_Pomona<-concept_city;;
+
+
+
+definition ->...
+(*
+->rrel_key_sc_element: Robert_Endre_Tarjan;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Роберт Андре Тарьян  - американский учёный.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Роберт Андре Тарьян)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_scientist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Robert_Endre_Tarjan;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Роберт Андре Тарьян получил Премию Неванлинны в 1982 году, Премию Тьюринга в 1986.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Роберт Андре Тарьян)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Rolf_Nevanlinna_Prize;
+	concept_Turing_Award
+	
+};;
+*);;
+
+Robert_Endre_Tarjan<=nrel_inclusion:concept_laureate;;
+Robert_Endre_Tarjan-> rrel_example:[Тарьян разработал ряд важнейших структур данных, таких как «Фибоначчиева куча», «Система непересекающихся множеств» и «Расширяющееся дерево» .] (*<-lang_ru;;*);;
+Robert_Endre_Tarjan<=nrel_inclusion:concept_person;;
+

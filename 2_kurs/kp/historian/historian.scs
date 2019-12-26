@@ -1,0 +1,55 @@
+concept_historian<-sc_node_not_relation;;
+
+sc_node_not_relation->concept_museums;;
+sc_node_not_relation->concept_historical_reserves;;
+sc_node_not_relation->concept_publishers_schools;;
+sc_node_not_relation->concept_libraries;;
+sc_node_not_relation->concept_documentation_departments;;
+sc_node_not_relation->concept_teacher_education_in_foreign_languages;;
+
+sc_node_norole_relation->nrel_place_of_work;;
+concept_historian<=nrel_place_of_work:concept_museums;;
+concept_historian<=nrel_place_of_work:concept_historical_reserves;;
+concept_historian<=nrel_place_of_work:concept_publishers_schools;;
+concept_historian<=nrel_place_of_work:concept_international_relationships;;
+concept_historian<=nrel_place_of_work:concept_libraries;;
+concept_historian<=nrel_place_of_work:concept_documentation_departments;;
+
+concept_historian => nrel_main_idtf:[Нistorian] (* <- lang_en;;*);;
+
+concept_historian => nrel_main_idtf:[Историк] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_historian;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Историк – это специалист, который занимается изучением прошлого человечества, руководствуясь знаниями об уже известных исторических процессах и фактах.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Историк)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_study_of;
+	concept_past;
+	concept_humanity;
+	concept_knowledge;
+	concept_famous_historical_processes;
+	concept_famous_historical_facts
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_historian;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Профессия историка связана с кропотливым трудом в хранилищах документов, архивах и библиотеках, музеях и выставочных залах.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Историк)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_hard_work;
+	concept_document_repository;
+	concept_archives;
+	concept_libraries;
+	concept_museums;
+	concept_exhibition_halls
+};;
+*);;
+
+concept_historian<=nrel_inclusion:concept_person;;
+concept_historian -> rrel_example:[Часть работы историка – экспедиции этнографического и археологического направления, обязательное участие в симпозиумах и научных конференциях.] (*<-lang_ru;;*);;

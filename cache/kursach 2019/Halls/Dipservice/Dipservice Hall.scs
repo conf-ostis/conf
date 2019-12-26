@@ -1,0 +1,64 @@
+concept_dipservice_hall => nrel_main_idtf:
+[Дипсервис Холл](* <- lang_ru;; *);
+[Dipservice Hall] (* <- lang_en;; *);;
+
+
+concept_dipservice_hall => nrel_count_people : [16-600];;
+
+concept_dipservice_hall => nrel_square : [850];;
+
+concept_dipservice_hall => nrel_address : [г. Минск, пер. Войсковый, 4];;
+
+concept_dipservice_hall => nrel_phone : [+375-33-333-84-03];;
+
+concept_dipservice_hall => nrel_site : [http://www.dipservicehall.by];;
+
+concept_dipservice_hall => concept_fireplace_hall;;
+concept_dipservice_hall => concept_wooden_hall;;
+concept_dipservice_hall => concept_avant_hall;;
+concept_dipservice_hall => concept_blue_hall;;
+
+
+concept_dipservice_hall => nrel_equipment : concept_fireplace;;
+concept_dipservice_hall => nrel_equipment : concept_lighting_equipment;;
+concept_dipservice_hall => nrel_equipment : concept_tv;;
+concept_dipservice_hall => nrel_equipment : concept_sound_system;;
+concept_dipservice_hall => nrel_equipment : concept_projection_screen;;
+concept_dipservice_hall => nrel_equipment : concept_table;;
+concept_dipservice_hall => nrel_equipment : concept_marker_board;;
+concept_dipservice_hall => nrel_equipment : concept_flipchart;;
+concept_dipservice_hall => nrel_equipment : concept_chair;;
+concept_dipservice_hall => nrel_equipment : concept_wifi;;
+concept_dipservice_hall => nrel_equipment : concept_sound_system;;
+concept_dipservice_hall => nrel_equipment : concept_stationary_microphone;;
+concept_dipservice_hall => nrel_equipment : concept_video_camera;;
+concept_dipservice_hall => nrel_equipment : concept_wireless_microphone;;
+concept_dipservice_hall => nrel_equipment : concept_dvd_player;;
+concept_dipservice_hall => nrel_equipment : concept_head_radiosystem;;
+concept_dipservice_hall => nrel_equipment : concept_laptop;;
+concept_dipservice_hall => nrel_equipment : concept_lcd_panel;;
+concept_dipservice_hall => nrel_equipment : concept_mixer;;
+concept_dipservice_hall => nrel_equipment : concept_simultaneous_translation_equipment;;
+
+concept_dipservice_hall => nrel_type_event : concept_banquet;;
+concept_dipservice_hall => nrel_type_event : concept_business_meeting;;
+concept_dipservice_hall => nrel_type_event : concept_presentation;;
+concept_dipservice_hall => nrel_type_event : concept_press_conference;;
+concept_dipservice_hall => nrel_type_event : concept_seminar;;
+concept_dipservice_hall => nrel_type_event : concept_reception;;
+concept_dipservice_hall => nrel_type_event : concept_marriage;;
+concept_dipservice_hall => nrel_type_event : concept_birthday;;
+
+concept_dipservice_hall => nrel_service : concept_catering;;
+concept_dipservice_hall => nrel_service : concept_musician;;
+concept_dipservice_hall => nrel_service : concept_artist;;
+concept_dipservice_hall => nrel_service : concept_furniture_arrangement;;
+concept_dipservice_hall => nrel_service : concept_hall_decoration;;
+concept_dipservice_hall => nrel_service : concept_leading_services;;
+concept_dipservice_hall => nrel_service : concept_photography;;
+
+concept_dipservice_hall => nrel_territory : concept_parking;;
+concept_dipservice_hall => nrel_territory : concept_dance_floor;;
+
+concept_dipservice_hall => nrel_description_area : [Dipservice Hall – это прекрасное место для любого мероприятия… Изысканный интерьер, кухня с профессиональным оборудованием, а также живописный парк с идеальным зеленым газоном, который украшен статуями и зелеными насаждениями.
+Дипсервис предлагает площадки для проведения дипломатических приемов, конференций, тренингов, деловых встреч, гала-ужинов, благотворительных  мероприятий или торжества! Элегантную атмосферу холла подчеркивают гобелен, панорамная крыша, изысканная лепнина и зимний сад.];;

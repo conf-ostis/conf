@@ -1,0 +1,17 @@
+concept_lcd_panel => nrel_main_idtf:
+ [ЖКИ панель](* <- lang_ru;; *);
+ [lcd panel] (* <- lang_en;; *);;
+ 
+ concept_lcd_panel <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(ЖКИ панель)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[ЖКИ панель — это массив мельчайших ячеек, заполненных специальным веществом, именуемым жидкие кристаллы.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;

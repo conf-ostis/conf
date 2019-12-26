@@ -1,0 +1,8 @@
+///sc_node_not_relation-> Doklad_5_OSTISX2019;;
+Doklad_5_OSTISX2019=>nrel_main_idtf:[Доклад 5 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_5_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_5_OSTISX2019 => nrel_name_of_doclad: [ВИЗУАЛЬНЫЙ СОБЫТИЙНО-СИТУАЦИОННЫЙ ПОДХОД ИНФОРМАЦИОННОЙ ПОДГОТОВКИ РЕШЕНИЙ И ОПЕРАТИВНО-ТЕХНОЛОГИЧЕСКОГО УПРАВЛЕНИЯ СЛОЖНЫМИ ДИНАМИЧЕСКИМИ ОБЪЕКТАМИ](* <- lang_ru;;*);;
+
+Doklad_5_OSTISX2019 => nrel_authors: Kolesnikov_A_V;;

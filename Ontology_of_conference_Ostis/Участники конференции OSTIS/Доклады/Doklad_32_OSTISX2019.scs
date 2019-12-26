@@ -1,0 +1,9 @@
+///sc_node_not_relation-> Doklad_32_OSTISX2019;;
+Doklad_32_OSTISX2019=>nrel_main_idtf:[Доклад 32 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_32_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_32_OSTISX2019 => nrel_name_of_doclad: [ПРИЗНАКИ, ШКАЛЫ И МЕРЫ ДЛЯ МОДЕЛЕЙ ПРЕДСТАВЛЕНИЯ И ОБРАБОТКИ ЗНАНИЙ](* <- lang_ru;;*);;
+
+Doklad_32_OSTISX2019 => nrel_authors: Ivanshenko_V_P;; 
+

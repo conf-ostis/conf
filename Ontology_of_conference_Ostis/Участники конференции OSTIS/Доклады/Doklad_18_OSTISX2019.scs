@@ -1,0 +1,11 @@
+///sc_node_not_relation-> Doklad_18_OSTISX2019;;
+Doklad_18_OSTISX2019=>nrel_main_idtf:[Доклад 18 OSTIS-2019](*<- lang_ru;;*);;
+
+
+Doklad_18_OSTISX2019 <- doklad_OSTISX2019;;
+
+
+Doklad_18_OSTISX2019 => nrel_name_of_doclad: [МЕТОДЫ И ТЕХНОЛОГИИ ДЛЯ ПОДДЕРЖКИ ПРИНЯТИЯ СТРАТЕГИЧЕСКИХ РЕШЕНИЙ ПО РАЗВИТИЮ ЦИФРОВОЙ ЭНЕРГЕТИКИ](* <- lang_ru;;*);;
+
+
+Doklad_18_OSTISX2019 => nrel_authors: Massel_A_G;; 

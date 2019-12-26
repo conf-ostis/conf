@@ -1,0 +1,21 @@
+
+Gribova_V_V=> nrel_main_idtf:
+	[Грибова В.В.]
+	(*
+	<- lang_ru;;
+	*);
+	[Gribova V.V.]
+	(*
+	<- lang_en;;
+	*);;
+
+
+Gribova_V_V => nrel_email: [v.gribova@tut.by](*<-lang_en;;*);;
+
+Gribova_V_V <- concept_professor;;
+Gribova_V_V <- nrel_participant_of_conference_OSTIS2019;;
+Gribova_V_V <- concept_participant_of_conference_OSTIS2014;;
+Gribova_V_V <- concept_participant_of_conference_OSTIS2011;;
+Gribova_V_V <- concept_participant_of_conference_OSTIS2012;;
+
+Gribova_V_V <- person ;;

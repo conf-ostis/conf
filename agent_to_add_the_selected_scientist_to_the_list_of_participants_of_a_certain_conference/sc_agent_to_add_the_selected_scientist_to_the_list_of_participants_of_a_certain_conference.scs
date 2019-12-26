@@ -1,0 +1,50 @@
+sc_agent_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference
+=> nrel_main_idtf:
+	[sc-агент добавления выбранного научного деятеля в список участников определенной конференции] (* <- lang_ru;; *);
+	[sc-agent to add the selected scientist to the list of participants of a certain conference] (* <- lang_en;; *);
+	
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+	
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference_condition => ..sc_agent_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference_result);
+	
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	question_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference
+	};
+
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference
+		};;
+		
+	-> sc_agent_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference_scp (* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference_condition
+= [*
+	question_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> rrel_1:: .._param1;;
+	.._question _-> rrel_2:: .._param2;;
+*];;
+..sc_agent_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference_result
+= [*
+	question_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> rrel_1:: .._param1;;
+	.._question _-> rrel_2:: .._param2;;
+*];;

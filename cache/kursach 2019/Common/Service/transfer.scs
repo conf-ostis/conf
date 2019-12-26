@@ -1,0 +1,18 @@
+concept_transfer => nrel_main_idtf:
+ [трансфер](* <- lang_ru;; *);
+ [transfer] (* <- lang_en;; *);;
+ 
+ concept_transfer <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(трансфер)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Трансфер — используется для обозначения перевозок туристов от места прибытия (от вокзала, порта, аэропорта) до отеля, гостиницы, коттеджа.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

@@ -1,0 +1,26 @@
+Zbryshchak_S_G => nrel_main_idtf:
+[Збрищак С.Г.]
+	(*
+	<- lang_ru;;
+	*);
+	[Zbryshchak_S_G] 
+	(*
+	<- lang_en;;
+	*);;
+
+Zbryshchak_S_G <- nrel_participant_of_conference_OSTIS2019;;
+Zbryshchak_S_G<-  nrel_participant_of_conference_OSTIS2018;;
+Zbryshchak_S_G<-  nrel_participant_of_conference_OSTIS2017;;
+Zbryshchak_S_G<- concept_speaker_of_conference_OSTIS;; 
+Zbryshchak_S_G => nrel_email: [s.zbrishchak@mail.ru](*<-lang_en;;*);;
+
+Zbryshchak_S_G <- concept_professor;;
+Zbryshchak_S_G <- person;;
+
+
+
+
+
+
+
+

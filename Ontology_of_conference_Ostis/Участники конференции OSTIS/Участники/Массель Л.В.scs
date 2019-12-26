@@ -1,0 +1,19 @@
+
+Massel_L_V=> nrel_main_idtf:
+[Массель Л. В.]
+(*
+<- lang_ru;;
+*);
+[Massel L.V.]
+(*
+<- lang_en;;
+*);;
+
+Massel_L_V <- concept_participant_of_conference_OSTIS;;
+Massel_L_V <- concept_participant_of_conference_OSTIS2015;;
+Massel_L_V <- person;;
+
+Massel_L_V => nrel_email: [mass.l.v2@gmail.com](*<-lang_en;;*);;
+Massel_L_V -> concept_candidate_sciences;;
+
+Massel_L_V <- nrel_participant_of_conference_OSTIS2019;;

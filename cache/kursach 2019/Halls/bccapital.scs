@@ -1,0 +1,34 @@
+concept_bccapital => nrel_main_idtf:
+ [БЦ "Капитал"](* <- lang_ru;; *);
+ [BC "Capital"] (* <- lang_en;; *);;
+ 
+ 
+ concept_bccapital => nrel_count_people : [40];;
+ 
+ concept_bccapital => nrel_square : [40];;
+ 
+ concept_bccapital => nrel_address : [ул.Зеньковой, д.1, БЦ"Капитал", 3-й этаж];;
+ 
+ concept_bccapital => nrel_phone : [ 375 (33) 313-51-00];;
+ 
+ concept_bccapital => nrel_site : [http://gorodvitebsk.by/firms/Chentr-Razvitiye];;
+ 
+ concept_bccapital => nrel_mail_area : [vip_razvitie@mail.ru];;
+ 
+ concept_bccapital => nrel_pay_per_hour : [15];;
+ 
+ concept_bccapital => nrel_equipment : concept_sound_system;;
+ concept_bccapital => nrel_equipment : concept_projection_screen;;
+ concept_bccapital => nrel_equipment : concept_table;;
+ concept_bccapital => nrel_equipment : concept_marker_board;;
+ concept_bccapital => nrel_equipment : concept_multimedia_projector;;
+ concept_bccapital => nrel_equipment : concept_flipchart;;
+ concept_bccapital => nrel_equipment : concept_chair;;
+ concept_bccapital => nrel_equipment : concept_wifi;;
+ 
+ concept_bccapital => nrel_service : concept_catering;;
+ 
+ concept_bccapital => nrel_territory : concept_parking;;
+ 
+ concept_bccapital => nrel_description_area : [Достоинства помещения: удобное месторасположение в центре города; богатая инфраструктура: вокзал, вещевой рынок, пиццерия, кулинария, продуктовые магазины, кафе и др.;парковка под окнами; евроремонт; помещения изолированные; гардероб для верхней одежды;мини-кухня с эл. чайником и посудой для чаепития; место для проведения кофе-пауз; отдельный санузел с умывальником; помещения оборудованы системой вентиляции; использование мебели входит в стоимость аренды; режим работы с 9.00 до 22.00 в любой день недели; бесплатный Wi-Fi, розетки.];;
+

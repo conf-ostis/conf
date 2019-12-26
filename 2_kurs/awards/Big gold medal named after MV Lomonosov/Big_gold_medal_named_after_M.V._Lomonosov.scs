@@ -1,0 +1,41 @@
+
+concept_Big_gold_medal_named_after_M.V._Lomonosov<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Большая золотая медаль имени М. В. Ломоносова]
+      (*<-lang_ru;;*);
+       [Big gold medal named after M.V. Lomonosov]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Больша́я золота́я меда́ль и́мени М.В. Ломоно́сова)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_Russian_Academy_of_Sciences
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Больша́я золота́я меда́ль и́мени М.В. Ломоно́сова — высшая награда Российской академии наук.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Золотая медаль имени М.В. Ломоносова, постановление, Совет Министров СССР, научная работа, естественная наука, техническая наука)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_decree;
+	concept_Council_of_Ministers_of_the_USSR;
+	concept_treatise;
+	concept_natural_science;
+	concept_technical_science
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Золотая медаль имени М.В. Ломоносова учреждена постановлением Совета Министров СССР с указанием, что медаль присуждается один раз в три года за выдающиеся работы в области естественных и технических наук.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+concept_Big_gold_medal_named_after_M.V._Lomonosov -> rrel_example: [Постановлением Совета Министров СССР разрешено Академии ежегодно присуждать две Большие золотые медали имени М.В.Ломоносова — одну советскому и одну иностранному учёным за выдающиеся работы в области естественных и общественных наук.](* <- lang_ru;; *);;
+
+concept_Big_gold_medal_named_after_M.V._Lomonosov<=nrel_inclusion:concept_award;;
+

@@ -1,0 +1,43 @@
+concept_Electrical_engineering	<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Электротехника]
+	(*<-lang_ru;;*);
+	[Electrical engineering]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Электротехника)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+concept_technical_science;
+nrel_application;
+concept_electrical_phenomenon;
+concept_magnetic_phenomenon;
+concept_practical_use
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Электротехника -  техническая наука, которая изучает применение электрических и магнитных явлений для практического использования.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Электротехника, отличие, слаботочная электроника, передача*, электрическая энергия, информация)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_difference;
+concept_low_current_electronics;
+concept_electric_energy;
+concept_information;
+nrel_transfer
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Основное отличие электротехники от слаботочной электроники заключается в том, что в электротехнике основной задачей является передача электрической энергии, а в слаботочной электронике — информации.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_Electrical_engineering	-> rrel_example: [ В настоящее время электротехника как наука включает в себя следующие научные специальности: электромеханика, ТОЭ, светотехника, силовая электроника.] (*<-lang_ru;;*);;
+concept_Electrical_engineering	<=nrel_inclusion:concept_technical_science;;
+

@@ -1,0 +1,50 @@
+concept_press_center_arguments_and_facts => nrel_main_idtf:
+[Пресс-центр "Аргументы и факты"](* <- lang_ru;; *);
+[Press Center "Arguments and Facts"] (* <- lang_en;; *);;
+
+
+concept_press_center_arguments_and_facts=> nrel_count_people : [40];;
+
+concept_press_center_arguments_and_facts=> nrel_square : [55];;
+
+concept_press_center_arguments_and_facts=> nrel_address : [Минск, ул.Богдана Хмельницкого, 10А, кабинет 67];;
+
+concept_press_center_arguments_and_facts=> nrel_phone : [8 (17) 290-02-67];;
+
+concept_press_center_arguments_and_facts=> nrel_site : [http://www.aif.by/press-center/arenda.html];;
+
+concept_press_center_arguments_and_facts=> nrel_medium_payment : [25];;
+
+
+concept_press_center_arguments_and_facts=> nrel_equipment : concept_lighting_equipment;;
+concept_press_center_arguments_and_facts=> nrel_equipment : concept_tv;;
+concept_press_center_arguments_and_facts=> nrel_equipment : concept_multimedia_projector;;
+concept_press_center_arguments_and_facts=> nrel_equipment : concept_sound_system;;
+concept_press_center_arguments_and_facts=> nrel_equipment : concept_projection_screen;;
+concept_press_center_arguments_and_facts=> nrel_equipment : concept_table;;
+concept_press_center_arguments_and_facts=> nrel_equipment : concept_marker_board;;
+concept_press_center_arguments_and_facts=> nrel_equipment : concept_flipchart;;
+concept_press_center_arguments_and_facts=> nrel_equipment : concept_chair;;
+concept_press_center_arguments_and_facts=> nrel_equipment : concept_wifi;;
+
+concept_press_center_arguments_and_facts=> nrel_type_event : concept_banquet;;
+concept_press_center_arguments_and_facts=> nrel_type_event : concept_business_meeting;;
+concept_press_center_arguments_and_facts=> nrel_type_event : concept_presentation;;
+concept_press_center_arguments_and_facts=> nrel_type_event : concept_press_conference;;
+concept_press_center_arguments_and_facts=> nrel_type_event : concept_seminar;;
+concept_press_center_arguments_and_facts=> nrel_type_event : concept_reception;;
+concept_press_center_arguments_and_facts=> nrel_type_event : concept_marriage;;
+concept_press_center_arguments_and_facts=> nrel_type_event : concept_birthday;;
+
+concept_press_center_arguments_and_facts=> nrel_service : concept_catering;;
+concept_press_center_arguments_and_facts=> nrel_service : concept_musician;;
+concept_press_center_arguments_and_facts=> nrel_service : concept_artist;;
+concept_press_center_arguments_and_facts=> nrel_service : concept_furniture_arrangement;;
+concept_press_center_arguments_and_facts=> nrel_service : concept_hall_decoration;;
+concept_press_center_arguments_and_facts=> nrel_service : concept_leading_services;;
+concept_press_center_arguments_and_facts=> nrel_service : concept_photography;;
+
+concept_press_center_arguments_and_facts=> nrel_territory : concept_parking;;
+concept_press_center_arguments_and_facts=> nrel_territory : concept_dance_floor;;
+
+concept_press_center_arguments_and_facts=> nrel_description_area : [В вашем распоряжении помещение для почасовой аренды, оснащенное необходимым оборудованием и трансформируемое по необходимости, что позволяет использовать его для целого спектра мероприятий как камерного типа — для деловых встреч, индивидуальных занятий, так и достаточно массовых, например, научных конференций, семинаров, тренингов. Наши сотрудники обеспечат техническую поддержку во время проведения вашего мероприятия. Все необходимое оборудование включено в стоимость аренды. Мы учитываем ваши пожелания при подготовке зала к мероприятию.];;

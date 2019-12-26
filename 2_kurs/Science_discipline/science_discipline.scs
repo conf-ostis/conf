@@ -1,0 +1,49 @@
+concept_science_discipline<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Научная дисциплина]
+	(*<-lang_ru;;*);
+	[science discipline]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Научная дисциплина)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_knowledge;
+	concept_object;
+	concept_method
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Научная дисциплина - сложно организованное, многоуровневое знание, характеризующееся наличием собственного объекта и собственных методов.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Научная дисциплина, научная профессия, университет)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+	concept_science_profession;
+	concept_university
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Формирование научной дисциплины происходило вместе со становлением научной профессии еще в средневековых университетах.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_science_discipline -> rrel_example: [К научным дисциплинам можно отнести такие отдельные науки, как экономика, социология и другие] (*<-lang_ru;;*);;
+
+concept_science_discipline <= nrel_subdividing: ...
+(*
+	<-concept_Astronomy;;
+	<-concept_Informatics;;
+	<-concept_history;;
+	<-concept_logics;;
+	<-concept_Mathematics;;
+	<-concept_economy;;
+	<-concept_Physics;;
+	<-concept_Chemistry;;
+	<-concept_technical_science;;
+*);;

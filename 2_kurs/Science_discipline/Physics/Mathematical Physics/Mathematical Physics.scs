@@ -1,0 +1,42 @@
+concept_Mathematical_Physics<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Математическая физика]
+	(*<-lang_ru;;*);
+	[Mathematical Physics]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Математическая физика)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_theory;
+	concept_mathematical_model;
+	concept_physical_phenomenonl
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Математическая физика - теория математических моделей физических явлений.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Математическая физика, физическая задача, математический уровень, результат, теорема, график, таблица, физическая интерпретация)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_physical_problem;
+concept_mathematical_level;
+concept_result;
+concept_theorem;
+concept_chart;
+concept_table;
+concept_physical_interpretation
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[в математической физике исследуются физические задачи на математическом уровне, а результаты представляются в виде теорем, графиков, таблиц и получают физическую интерпретацию.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_Mathematical_Physics-> rrel_example: [К математической физике следует относить и такие разделы механики, как теоретическая механика, гидродинамика и теория упругости.] (*<-lang_ru;;*);;
+concept_Mathematical_Physics <=nrel_inclusion:concept_Physics;;

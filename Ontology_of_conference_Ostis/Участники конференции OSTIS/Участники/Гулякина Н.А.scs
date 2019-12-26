@@ -1,0 +1,19 @@
+Gulyakina_N_A=> nrel_main_idtf:
+[Гулякина Н.А.]
+(*
+<- lang_ru;;
+*);
+[Gulyakina_N_A]
+(*
+<- lang_en;;
+*);;
+
+Gulyakina_N_A => nrel_email: [guliakina@bsuir.by](*<-lang_en;;*);;
+
+Gulyakina_N_A <- concept_docent;;
+Gulyakina_N_A <- concept_candidate_sciences;;
+Gulyakina_N_A <- person;;
+
+Gulyakina_N_A <- nrel_participant_of_conference_OSTIS2019;;
+
+

@@ -1,0 +1,21 @@
+
+Borgest_N_M=> nrel_main_idtf:
+	[Богрест Н.М.]
+	(*
+	<- lang_ru;;
+	*);
+	[Bogrest_N.M.]
+	(*
+	<- lang_en;;
+	*);;
+
+Borgest_N_M => nrel_email: [n.borgest@rambler.com](*<-lang_en;;*);;
+
+Borgest_N_M -> concept_candidate_sciences;;
+Borgest_N_M <- nrel_participant_of_conference_OSTIS2019;;
+
+
+Borgest_N_M <- concept_participant_of_conference_OSTIS2012;;
+Borgest_N_M <- concept_participant_of_conference_OSTIS2015;;
+Borgest_N_M <- concept_participant_of_conference_OSTIS;;
+

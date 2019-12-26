@@ -1,0 +1,44 @@
+
+concept_Gordon_Bell_Prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Гордона Белла]
+      (*<-lang_ru;;*);
+       [Gordon Bell Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия Гордона Белла)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_achievement;
+	concept_computation;
+	concept_electrical_engineer;
+	concept_manager
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия Гордона Белла — это ежегодно вручаемая премия за выдающиеся достижения в области высокопроизводительных вычислений, учрежденная американским инженером-электротехником и менеджером Гордоном Беллом в 1987 году.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Гордона Белла, технология, вычисление, наука, поддержка, продвижение)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_technology;
+	concept_computation;
+	concept_science;
+	concept_support;
+	concept_promotion
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Премия Гордона Белла нацелена на поддержку и продвижение ведущих технологий высокопроизводительных вычислений, преимущественно используемых в науке и технике.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Gordon_Bell_Prize -> rrel_example: [Кроме основной премии, комитет премии Белла может также присудить дополнительный приз за достижения в смежных областях — например, за высокую ценовую эффективность или за использование необычных технологий.](* <- lang_ru;; *);;
+
+concept_Gordon_Bell_Prize<=nrel_inclusion:concept_award;;
+

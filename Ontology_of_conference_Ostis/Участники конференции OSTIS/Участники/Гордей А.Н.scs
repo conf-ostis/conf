@@ -1,0 +1,18 @@
+
+Gordej_A.N.=> nrel_main_idtf:
+	[Гордей А.Н.]
+	(*
+	<- lang_ru;;
+	*);
+	[Gordej_A.N.]
+	(*
+	<- lang_en;;*);;
+
+Gordey_A_N => nrel_email: [a.gordey@haunter.com](*<-lang_en;;*);;
+
+Gordey_A_N <- concept_docent;;
+Gordey_A_N <- nrel_participant_of_conference_OSTIS2019;;
+Gordey_A_N <- person ;;
+
+
+Gordej_A.N. <- concept_participant_of_conference_OSTIS2014;;

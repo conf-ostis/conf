@@ -1,0 +1,44 @@
+concept_geneticist<-sc_node_not_relation;;
+
+concept_geneticist => nrel_main_idtf:[Geneticist] (* <- lang_en;;*);;
+
+concept_geneticist => nrel_main_idtf:[Генетик] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_geneticist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Генетик — врач, в компетенцию которого входит изучение проявления генетических особенностей организма человека, а также профилактика и лечение наследственных заболеваний.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Генетик)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_doctor;
+	concept_competence;
+	concept_study_of;
+	concept_manifestation;
+	concept_genetic_features;
+	concept_organism;
+	concept_man;
+	concept_prevention;
+	concept_treatment;
+	concept_hereditary_diseases
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_geneticist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Генетик – профессия будущего, востребована в современной медицине, а такие направления как клонирование, трансплантация стволовых клеток делают её крайне перспективной.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Генетик)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_profession_of_the_future;
+	concept_modern_medicine;
+	concept_directions;
+	concept_cloning;
+	concept_transplantation;
+	concept_stem_cells
+};;
+*);;
+
+concept_geneticist<=nrel_inclusion:concept_person;;
+concept_geneticist -> rrel_example:[В консультации генетика особенно нуждаются семьи, где уже встречались генетические отклонения.] (*<-lang_ru;;*);;

@@ -1,0 +1,10 @@
+///sc_node_not_relation-> Doklad_27_OSTISX2019;;
+Doklad_27_OSTISX2019=>nrel_main_idtf:[Доклад 27 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_27_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_27_OSTISX2019 => nrel_name_of_doclad: [ОПТИМИЗАЦИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ПРОБЛЕМЫ РАСПОЛОЖЕНИЯ СЕНСОРОВ](* <- lang_ru;;*);;
+
+Doklad_27_OSTISX2019 => nrel_authors: Pilipchuk_A;; 
+Doklad_27_OSTISX2019 => nrel_authors: Pilipchuk_L;; 
+Doklad_27_OSTISX2019 => nrel_authors: Polyachok_E;; 

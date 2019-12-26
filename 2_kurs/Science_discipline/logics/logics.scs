@@ -1,0 +1,46 @@
+concept_logics<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Логика]
+	(*<-lang_ru;;*);
+	[logics]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Логика)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_science;
+	concept_section;
+	concept_philosophy;
+	concept_shape;
+	concept_method;
+	concept_law;
+	concept_activity
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Логика - раздел философии, наука о формах, методах и законах интеллектуальной познавательной деятельности.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Логика, наука, инструмент, подраздел, философия, математика, булева алгебра, информатика)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_science;
+concept_tool;
+concept_subsection;
+concept_philosophy;
+concept_Mathematics;
+concept_Boolean_algebra;
+concept_Informatics
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В любой науке логика служит одним из основных инструментов; логика является подразделом не только философии, но и математики, а булева алгебра — одной из основ информатики.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_logics-> rrel_example: [Под словом логика также могут подразумевать процесс мышления, вид схем(в электронике), состояние, подчинение, отражение, зависимость.] (*<-lang_ru;;*);;
+concept_logics <=nrel_inclusion:concept_science_discipline;;

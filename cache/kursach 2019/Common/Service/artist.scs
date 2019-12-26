@@ -1,0 +1,19 @@
+ concept_artist => nrel_main_idtf:
+ [артист](* <- lang_ru;; *);
+ [artist] (* <- lang_en;; *);;
+ 
+ concept_artist <- rrel_key_sc_element: 
+         ..
+//Add a comment to this line
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(артист)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Артист — тот, кто занимается публичным исполнением произведений искусства.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

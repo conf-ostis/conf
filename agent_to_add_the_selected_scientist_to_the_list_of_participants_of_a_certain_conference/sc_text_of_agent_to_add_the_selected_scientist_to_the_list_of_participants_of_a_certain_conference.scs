@@ -1,0 +1,6 @@
+sc_text_of_agent_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference
+-> rrel_key_sc_element:
+	agent_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference = [*^"file://agent_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference.scsi"*];;

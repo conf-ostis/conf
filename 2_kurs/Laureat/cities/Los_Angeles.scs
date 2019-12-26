@@ -1,0 +1,3 @@
+concept_Los_Angeles<-sc_node_not_relation;;
+concept_Los_Angeles => nrel_main_idtf:[Лос-Анджелес] (* <- lang_ru;;*);;
+

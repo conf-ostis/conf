@@ -1,0 +1,40 @@
+concept_beltpp => nrel_main_idtf:
+ [Брестское отделение Белорусской торгово-промышленной палаты](* <- lang_ru;; *);
+ [Brest branch of the Belarusian Chamber of Commerce and Industry] (* <- lang_en;; *);;
+ 
+ 
+ concept_beltpp => nrel_count_people : [100];;
+ 
+ concept_beltpp => nrel_address : [ул. Гоголя, 13];;
+ 
+ concept_beltpp => nrel_phone : [8 (0162) 218 036];;
+ concept_beltpp => nrel_phone : [8 (0162) 218 102];;
+ concept_beltpp => nrel_phone : [8 (0162) 208 080];;
+ 
+ concept_beltpp => nrel_site : [www.ccibrest.by];;
+ 
+ concept_beltpp => nrel_mail_area : [ved@ccibrest.by];;
+ 
+ concept_beltpp => nrel_equipment : concept_sound_system;;
+ concept_beltpp => nrel_equipment : concept_lcd_panel;;
+ concept_beltpp => nrel_equipment : concept_laptop;;
+ concept_beltpp => nrel_equipment : concept_tv;;
+ concept_beltpp => nrel_equipment : concept_wireless_microphone;;
+ concept_beltpp => nrel_equipment : concept_video_camera;;
+ concept_beltpp => nrel_equipment : concept_table;;
+ concept_beltpp => nrel_equipment : concept_marker_board;;
+ concept_beltpp => nrel_equipment : concept_multimedia_projector;;
+ concept_beltpp => nrel_equipment : concept_projection_screen;;
+ concept_beltpp => nrel_equipment : concept_flipchart;;
+ concept_beltpp => nrel_equipment : concept_stationary_microphone;;
+ concept_beltpp => nrel_equipment : concept_simultaneous_translation_equipment;;
+ concept_beltpp => nrel_equipment : concept_chair;;
+ concept_beltpp => nrel_equipment : concept_wifi;;
+ 
+ concept_beltpp => nrel_service : concept_catering;;
+ 
+ concept_beltpp => nrel_territory : concept_parking;;
+ 
+ concept_beltpp => nrel_description_area : [Новый, современный, просторный конференц-зал на 100 человек и зал для переговоров на 30 человек со стационарным мультимедийным и звуковым оборудованием. Выход на террасу, кондиционер. Административный центр г. Бреста. Кофе-брейки, кейтеринг.];;
+
+

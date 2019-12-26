@@ -1,0 +1,36 @@
+concept_sponsor<-sc_node_not_relation;;
+
+concept_sponsor => nrel_main_idtf:[Sponsor] (* <- lang_en;;*);;
+
+concept_sponsor => nrel_main_idtf:[Спонсор] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_sponsor;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Спонсор — человек, оказывающий финансовую поддержку.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Спонсор)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_financial_support
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_sponsor;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Спонсор осуществляет финансирование без цели получения материальной выгоды, однако спонсорская деятельность является инструментом маркетинга, который используется в целях создания положительного образа и рекламы спонсора.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Спонсор)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_financing;
+	concept_purpose_of_obtaining;
+	concept_material_benefit;
+	concept_the_activity;
+	concept_marketing_tool;
+	concept_positive_image;
+	concept_advertising
+};;
+*);;
+
+concept_sponsor<=nrel_inclusion:concept_person;;
+concept_sponsor -> rrel_example:[Например, спонсор может обеспечивать покупку или наём оборудования для известного спортсмена или спортивной команды в обмен на демонстрацию его товарного знака на обмундировании этого спортсмена или команды.] (*<-lang_ru;;*);;

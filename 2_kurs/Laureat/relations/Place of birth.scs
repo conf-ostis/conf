@@ -1,0 +1,2 @@
+sc_node_norole_relation->nrel_place_of_birth;;
+nrel_place_of_birth => nrel_main_idtf:[Место рождения] (* <- lang_ru;;*);;

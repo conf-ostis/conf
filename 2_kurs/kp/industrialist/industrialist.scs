@@ -1,0 +1,38 @@
+concept_industrialist<-sc_node_not_relation;;
+
+concept_industrialist => nrel_main_idtf:[Industrialist] (* <- lang_en;;*);;
+
+concept_industrialist => nrel_main_idtf:[Промышленник] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_industrialist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Промышленник — человек, руководящий и организовавший за свои средства и ресурсы завод, фабрику, а также ремесленное производство или другое промышленное предприятие.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Промышленник)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_facilities;
+	concept_resources;
+	concept_plant;
+	concept_factory;
+	concept_craft_production;
+	concept_another_industrial_enterprise
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_industrialist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Большинство предприятий дореволюционного времени являлись семейным имуществом и промышленники были и их владельцами. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Промышленник)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_enterprises;
+	concept_prerevolutionary_time;
+	concept_family_property;
+	concept_owners
+};;
+*);;
+
+concept_industrialist<=nrel_inclusion:concept_person;;
+concept_industrialist -> rrel_example:[В XVI веке в России промышленниками называли охотников-звероловов, которые совершали далекие походы для добычи пушного зверя.] (*<-lang_ru;;*);;

@@ -1,0 +1,2 @@
+concept_Kyoto_Award<-sc_node_not_relation;;
+concept_Kyoto_Award => nrel_main_idtf:[Премия Киото] (* <- lang_ru;;*);;

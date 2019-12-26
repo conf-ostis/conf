@@ -1,0 +1,18 @@
+concept_lighting_equipment => nrel_main_idtf:
+ [световое оборудование](* <- lang_ru;; *);
+ [lighting equipment] (* <- lang_en;; *);;
+ 
+ concept_lighting_equipment <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(световое оборудование)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Световое оборудование — это комплекс световых приборов и систем управления для создания надлежащего оформления сцены.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

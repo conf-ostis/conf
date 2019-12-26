@@ -1,0 +1,19 @@
+concept_accommodation_organization => nrel_main_idtf:
+ [организация проживания](* <- lang_ru;; *);
+ [accommodation_organization] (* <- lang_en;; *);;
+ 
+ concept_accommodation_organization <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(организация проживания)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Организация проживания — это размещение, состоящее из определённого количества номеров, имеющее единое руководство, предоставляющее набор услуг.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+
+ 	*);;
+

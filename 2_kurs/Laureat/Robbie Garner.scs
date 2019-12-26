@@ -1,0 +1,39 @@
+
+Robbie_Garner<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Loebner_prize;;
+*);;
+
+Robbie_Garner => nrel_main_idtf:[Robbie Garner] (* <- lang_en;;*);;
+
+Robbie_Garner => nrel_main_idtf:[Робби Гарнер] (* <- lang_ru;;*);;
+
+Robbie_Garner <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Робби Гарнер)](*<-lang_ru;;*); [Pic. (Robbie Garner)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Robbie_Garner.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+definition ->...
+(*
+->rrel_key_sc_element: Robbie_Garner;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Робби Гарнер  - американский программист.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Робби Гарнер)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_programmer
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Robbie_Garner;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Робби Гарнер получил Премию Лёбнера в 1998 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Робби Гарнер)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Loebner_prize
+};;
+*);;
+
+Robbie_Garner<=nrel_inclusion:concept_laureate;;
+Robbie_Garner-> rrel_example:[Один из первых веб чат-ботов по имени Макс Хэдколд, был написан Гарнером в 1995 году.] (*<-lang_ru;;*);;
+Robbie_Garner<=nrel_inclusion:concept_person;;

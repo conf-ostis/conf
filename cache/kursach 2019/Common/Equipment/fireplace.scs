@@ -1,0 +1,18 @@
+concept_fireplace => nrel_main_idtf:
+[камин](* <- lang_ru;; *);
+[fireplace] (* <- lang_en;; *);;
+
+concept_fireplace <- rrel_key_sc_element: 
+        ..
+	(*
+	=> nrel_main_idtf: [Опр.(камин)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Камин — комнатная печь с широкой открытой топкой.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;
+

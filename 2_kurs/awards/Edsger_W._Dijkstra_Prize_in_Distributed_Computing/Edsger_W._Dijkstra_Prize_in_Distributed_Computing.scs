@@ -1,0 +1,41 @@
+
+concept_Edsger_W._Dijkstra_Prize_in_Distributed_Computing<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Дейкстры]
+      (*<-lang_ru;;*);
+       [Edsger W. Dijkstra Prize in Distributed Computing]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия Дейкстры)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_distribution_calculation;
+       concept_treatise;
+	 concept_influence
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия Дейкстры — премия имени Эдсгера В. Дейкстры в области распределённых вычислений, вручаемая за выдающиеся работы, значимость и влияние которых были заметны на протяжении не менее десяти лет.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Дейкстры, конференция, ACM, EATCS)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_conference;
+	concept_ACM;
+concept_EATCS
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Премия Дейкстры вручается ежегодно с 2000 года поочерёдно на конференциях организаторов: ACM и EATCS.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Edsger_W._Dijkstra_Prize_in_Distributed_Computing -> rrel_example: [За алгоритм нахождения наибольшего независимого множества премия Дейкстры была вручена группе ученых в 2016 года, а в 2004 - за распределенный алгоритм нахождения минимального остового дерева.](* <- lang_ru;; *);;
+
+concept_Edsger_W._Dijkstra_Prize_in_Distributed_Computing<=nrel_inclusion:concept_award;;
+

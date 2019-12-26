@@ -1,0 +1,2 @@
+concept_Louis_Levy_Medal<-sc_node_not_relation;;
+concept_Louis_Levy_Medal => nrel_main_idtf:[Медаль Луиса Леви] (* <- lang_ru;;*);;

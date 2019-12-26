@@ -1,0 +1,38 @@
+concept_victoria => nrel_main_idtf:
+ [Виктория](* <- lang_ru;; *);
+ [Victoria] (* <- lang_en;; *);;
+ 
+ 
+ concept_victoria => nrel_count_people : [300];;
+ 
+ concept_victoria => nrel_square : [403];;
+ 
+ concept_victoria => nrel_address : [пр-т Победителей, 59];;
+ 
+ concept_victoria => nrel_phone : [ 375 (17) 239-76-55];;
+ 
+ concept_victoria => nrel_site : [http://victoria1.hotel-victoria.by/conference/kongress-hall/];;
+ 
+ concept_victoria => nrel_mail_area : [corp@hotel-victoria.by];;
+ 
+ concept_victoria => nrel_pay_per_hour : [139];;
+ 
+ concept_victoria => nrel_equipment : concept_sound_system;;
+ concept_victoria => nrel_equipment : concept_lcd_panel;;
+ concept_victoria => nrel_equipment : concept_laptop;;
+ concept_victoria => nrel_equipment : concept_wireless_microphone;;
+ concept_victoria => nrel_equipment : concept_video_camera;;
+ concept_victoria => nrel_equipment : concept_marker_board;;
+ concept_victoria => nrel_equipment : concept_multimedia_projector;;
+ concept_victoria => nrel_equipment : concept_flipchart;;
+ concept_victoria => nrel_equipment : concept_stationary_microphone;;
+ concept_victoria => nrel_equipment : concept_simultaneous_translation_equipment;;
+ concept_victoria => nrel_equipment : concept_chair;;
+ concept_victoria => nrel_equipment : concept_wifi;;
+ 
+ concept_victoria => nrel_service : concept_catering;;
+ 
+ concept_victoria => nrel_territory : concept_parking;;
+ 
+ concept_victoria => nrel_description_area : [В конгресс-холле, благодаря современному оборудованию высокого класса, возможно проведение торжественных мероприятий, номинаций, концертов и т.п. В режиме конференц-зала с помощью цифровой конгресс-системы и комплектов беспроводных микрофонов, профессионального звуковоспроизводящего и электроакустического оборудования возможно проведение конференций и заседаний, как республиканского, так и международного уровня, которые могут сопровождаться синхронным переводом на 3 языка.Благодаря наличию профессионального видеопроекционного оборудования осуществляется трансляция презентационной как графической так и видеоинформации, ТВ программ и информации с бумажных носителей. Трансляция фильмовой видеоинформации на проекционном широкоформатном экране производится со звуковым сопровождением в формате Dolby Digital EX (7.1).];;
+

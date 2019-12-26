@@ -1,0 +1,37 @@
+concept_bonotel => nrel_main_idtf:
+ [Строминвест-Эстейт](* <- lang_ru;; *);
+ [Strominvest-Estate] (* <- lang_en;; *);;
+ 
+ 
+ concept_bonotel => nrel_count_people : [8];;
+ 
+ concept_bonotel => nrel_square : [17];;
+ 
+ concept_bonotel => nrel_address : [ул. Притыцкого, 2];;
+ 
+ concept_bonotel => nrel_phone : [ 375 (17) 389 73 89];;
+ concept_bonotel => nrel_phone : [ 375 (29) 104 33 00];;
+ 
+ concept_bonotel => nrel_site : [www.bonhotel.by];;
+ 
+ concept_bonotel => nrel_mail_area : [info@bonhotel.by];;
+ 
+ concept_bonotel => nrel_pay_per_hour : [6];;
+ 
+ concept_bonotel => nrel_equipment : concept_laptop;;
+ concept_bonotel => nrel_equipment : concept_tv;;
+ concept_bonotel => nrel_equipment : concept_table;;
+ concept_bonotel => nrel_equipment : concept_marker_board;;
+ concept_bonotel => nrel_equipment : concept_flipchart;;
+ concept_bonotel => nrel_equipment : concept_stationary_microphone;;
+ concept_bonotel => nrel_equipment : concept_chair;;
+ concept_bonotel => nrel_equipment : concept_stand;;
+ concept_bonotel => nrel_equipment : concept_wifi;;
+ 
+ concept_bonotel => nrel_service : concept_catering;;
+ 
+ concept_bonotel => nrel_territory : concept_parking;;
+ 
+
+ concept_bonotel => nrel_description_area : ["БОНОТЕЛЬ – идеальное место для работы и отдыха. Бизнес-отель, предоставляющий сервис высочайшего качества и исключительный уровень гостеприимства. Пространство отеля напоминает интерактивный 3D-паззл, каждый элемент интерьера функционален и эргономичен.Конференц-зал и комнаты переговоров оснащены современным оборудованием и трансформируемой мебелью. Выгодные условия и тарифы реализованы в уникальных пакетных предложениях."];;
+

@@ -1,0 +1,15 @@
+Ivanuk_D_S=> nrel_main_idtf:
+[Иванюк Д.С.]
+(*
+<- lang_ru;;
+*);
+[Ivanuk_D_S]
+(*
+<- lang_en;;
+*);;
+
+Ivanuk_D_S => nrel_email: [ivanuk.d@bk.com](*<-lang_en;;*);;
+concept_docent <- concept_academic_title;;
+Ivanuk_D_S <- concept_docent;;
+Ivanuk_D_S <- nrel_participant_of_conference_OSTIS2019;;
+Ivanuk_D_S <- person;;

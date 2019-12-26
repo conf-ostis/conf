@@ -1,0 +1,20 @@
+concept_training  => nrel_main_idtf:
+ [тренинг](* <- lang_ru;; *);
+ [training] (* <- lang_en;; *);;
+ 
+ 
+ concept_training <- rrel_key_sc_element: 
+         ...
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(тренинг)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Тренинг - форма активного обучения, целью которого является передача знаний, развитие некоторых умений и навыков.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+//Add a comment to this line
+ 	*);;
+

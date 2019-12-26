@@ -1,0 +1,15 @@
+Luahor_T_V=> nrel_main_idtf:
+[Ляхор Т.В.]
+(*
+<- lang_ru;;
+*);
+[Luahor_T_V]
+(*
+<- lang_en;;
+*);;
+
+Luahor_T_V => nrel_email: [tvlhr@gmail.com](*<-lang_en;;*);;
+Luahor_T_V <- concept_PhD;;
+
+Luahor_T_V <- person;;
+Luahor_T_V <- nrel_participant_of_conference_OSTIS2019;;

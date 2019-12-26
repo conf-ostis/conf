@@ -1,0 +1,2 @@
+concept_IEEE_Emanuel_R._Piore_Award<-sc_node_not_relation;;
+concept_IEEE_Emanuel_R._Piore_Award => nrel_main_idtf:[Премия Эмануэля Пиора] (* <- lang_ru;;*);;

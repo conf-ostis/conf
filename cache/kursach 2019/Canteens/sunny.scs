@@ -1,0 +1,31 @@
+concept_sunny => nrel_main_idtf:
+ [Кафе «Солнечное»](* <- lang_ru;; *);
+ [Cafe "Sunny"] (* <- lang_en;; *);;
+ 
+ 
+ concept_sunny => nrel_count_people : [50];;
+ 
+ concept_sunny => nrel_address : [ул. Одесская, 14];;
+ 
+ concept_sunny => nrel_phone : [ 375 29 159 84 44];;
+ concept_sunny => nrel_phone : [ 375 29 628 18 55];;
+ 
+ concept_sunny => nrel_site : [https://solnechnoe-kafe.relax.by/];;
+ 
+ concept_sunny => nrel_medium_payment : [30];;
+ 
+ concept_sunny => nrel_equipment : concept_sound_system;;
+ concept_sunny => nrel_equipment : concept_wifi;;
+ 
+ concept_sunny => nrel_type_event : concept_banquet;;
+ concept_sunny => nrel_type_event : concept_business_meeting;;
+ concept_sunny => nrel_type_event : concept_presentation;;
+ concept_sunny => nrel_type_event : concept_seminar;;
+ concept_sunny => nrel_type_event : concept_reception;;
+ concept_sunny => nrel_type_event : concept_marriage;;
+ concept_sunny => nrel_type_event : concept_birthday;;
+ 
+ concept_sunny => nrel_territory : concept_parking;;
+ 
+ concept_sunny => nrel_description_area : [Кафе «Солнечное» - приятное место рядом с метро «Автозаводская» для празднования любых знаменательных событий и организации различных мероприятий: дня рождения, юбилея, детского праздника, свадьбы, корпоратива, деловых переговоров, фуршетов и презентаций. Традиционная кухня, профессиональное обслуживание, зал для некурящих и уютная обстановка – здесь все создано для комфортного отдыха в компании любого размера.];;
+

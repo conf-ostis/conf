@@ -1,0 +1,39 @@
+concept_astoria_riverside => nrel_main_idtf:
+ [Ресторанный комплекс «Астория Риверсайд»](* <- lang_ru;; *);
+ [Restaurant complex "Astoria Riverside"] (* <- lang_en;; *);;
+ 
+ 
+ concept_astoria_riverside => nrel_count_people : [400];;
+ 
+ concept_astoria_riverside => nrel_address : [пр. Победителей, 116];;
+ 
+ concept_astoria_riverside => nrel_phone : [ 375 17 392 79 39];;
+ concept_astoria_riverside => nrel_phone : [ 375 29 360 79 41];;
+ 
+ concept_astoria_riverside => nrel_site : [https://astoria-riverside.relax.by/];;
+ 
+ concept_astoria_riverside => nrel_medium_payment : [130];;
+ 
+ concept_astoria_riverside => nrel_equipment : concept_sound_system;;
+ concept_astoria_riverside => nrel_equipment : concept_lighting_equipment;;
+ concept_astoria_riverside => nrel_equipment : concept_tv;;
+ concept_astoria_riverside => nrel_equipment : concept_multimedia_projector;;
+ 
+ concept_astoria_riverside => nrel_type_event : concept_banquet;;
+ concept_astoria_riverside => nrel_type_event : concept_business_meeting;;
+ concept_astoria_riverside => nrel_type_event : concept_presentation;;
+ concept_astoria_riverside => nrel_type_event : concept_press_conference;;
+ concept_astoria_riverside => nrel_type_event : concept_seminar;;
+ concept_astoria_riverside => nrel_type_event : concept_reception;;
+ concept_astoria_riverside => nrel_type_event : concept_marriage;;
+ concept_astoria_riverside => nrel_type_event : concept_birthday;;
+ 
+ concept_astoria_riverside => nrel_service : concept_leading_services;;
+ concept_astoria_riverside => nrel_service : concept_musician;;
+ concept_astoria_riverside => nrel_service : concept_fireworks;;
+ 
+ concept_astoria_riverside => nrel_territory : concept_parking;;
+ concept_astoria_riverside => nrel_territory : concept_dance_floor;;
+ 
+ concept_astoria_riverside => nrel_description_area : [Уникальный по своей концепции, крупнейший по размерам гастрономический комплекс премиум-класса «Astoria Riverside» стал, пожалуй, самым узнаваем заведением Минска, куда стремятся попасть не только любители роскоши и уюта, но и ценители размеренного и спокойного отдыха. В ресторанный комплекс, который расположился на берегу водохранилища Дрозды, вошли: несколько залов, роскошные vip-комнаты, детская игровая зона, большая благоустроенная территория и 5 уютных коттеджей с гостиной, кухней и террасой, с оборудованными мангалами для семейных пикников.];;
+

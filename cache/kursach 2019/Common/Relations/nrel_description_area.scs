@@ -1,0 +1,5 @@
+ sc_node_norole_relation -> nrel_description_area;; 
+ 
+ nrel_description_area => nrel_main_idtf:[описание площадки*] (* <-lang_ru;; *);;
+ 
+ nrel_description_area => nrel_main_idtf:[description area*] (* <-lang_en;; *);;

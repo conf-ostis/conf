@@ -1,0 +1,33 @@
+concept_illusionist<-sc_node_not_relation;;
+
+concept_illusionist => nrel_main_idtf:[Illusionist] (* <- lang_en;;*);;
+
+concept_illusionist => nrel_main_idtf:[Иллюзионист] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_illusionist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Иллюзионист — человек, демонстрирующий фокусы,.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Иллюзионист)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_tricks
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_illusionist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Иллюзионист обычно использует специальные технические приспособления, а также технику манипуляции, то есть ловкости рук.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Иллюзионист)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_technical_devices;
+	concept_technology;
+	concept_manipulations;
+	concept_sleight_of_hand
+};;
+*);;
+
+concept_illusionist<=nrel_inclusion:concept_person;;
+concept_illusionist -> rrel_example:[Иллюзионисты демонстрируют появление и исчезновение предметов, людей (принцип чёрного кабинета), превращения одних предметов в другие. ] (*<-lang_ru;;*);;

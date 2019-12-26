@@ -1,0 +1,16 @@
+
+Ryibina_G_V=> nrel_main_idtf:
+[Рыбина Г.В.]
+(*
+<- lang_ru;;
+*);
+[Ryibina_G_V]
+(*
+<- lang_en;;
+*);;
+
+Ryibina_G_V => nrel_email: [fryp.g.v2@temp.com](*<-lang_en;;*);;
+Ryibina_G_V <- concept_docent;;
+Ryibina_G_V <- person;;
+
+Ryibina_G_V <- nrel_participant_of_conference_OSTIS2019;;

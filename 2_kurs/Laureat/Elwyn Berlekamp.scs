@@ -1,0 +1,62 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_date_of_death;;
+Elwyn_Berlekamp<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Richard_W._Hamming_Medal;;
+<-concept_Claude_E._Shannon_Award;;
+<-concept_IEEE_Koji_Kobayashi_Computers_and_Communications_Award;;
+*);;
+
+Elwyn_Berlekamp => nrel_main_idtf:[Elwyn Berlekamp] (* <- lang_en;;*);;
+
+Elwyn_Berlekamp => nrel_main_idtf:[Элвин Берлекэмп] (* <- lang_ru;;*);;
+
+
+Elwyn_Berlekamp <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Элвин Берлекэмп)](*<-lang_ru;;*); [Pic. (Elwyn Berlekamp)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Elwyn_Berlekamp.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+Elwyn_Berlekamp => nrel_date_of_birth:
+            concept_date_06_09_1940
+            (*
+                => nrel_main_idtf:
+                [6 сентября 1940](* <- lang_ru;;*);;
+            *);;
+
+Elwyn_Berlekamp => nrel_date_of_death:
+            concept_date_09_04_2019
+            (*
+                => nrel_main_idtf:
+                [9 апреля 2019](* <- lang_ru;;*);;
+            *);;
+
+
+definition ->...
+(*
+->rrel_key_sc_element: Elwyn_Berlekamp;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Элвин Берлекэмп  - американский математик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Элвин Берлекэмп)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Elwyn_Berlekamp;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Элвин Берлекэмп получил Премия в области компьютеров и коммуникаций имени Кодзи Кобаяси в 1990 году, медаль Ричарда Хэмминга в 1991 году, Премию Шеннона в 1993 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Элвин Берлекэмп)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Richard_W._Hamming_Medal;
+	concept_IEEE_Koji_Kobayashi_Computers_and_Communications_Award;
+	concept_Claude_E._Shannon_Award
+	
+};;
+*);;
+
+Elwyn_Berlekamp<=nrel_inclusion:concept_laureate;;
+Elwyn_Berlekamp-> rrel_example:[Элвин Бэрлекемп — изобретатель алгоритма разложения полиномов на множители и один из изобретателей алгоритмов Уэлч-Берлекэмпа и Берлекэмпа-Месси, которые используются для реализации кода Рида-Соломона.] (*<-lang_ru;;*);;
+Elwyn_Berlekamp<=nrel_inclusion:concept_person;;
+

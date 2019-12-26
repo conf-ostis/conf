@@ -1,0 +1,40 @@
+concept_Computational_Informatics<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Теоретическая информатика]
+	(*<-lang_ru;;*);
+	[Computational Informatics]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Теоретическая информатика)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+concept_scientific_field;
+concept_the_subject_of_the_study;
+concept_information;
+concept_invention;
+concept_working_medium
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Теоретическая информатика - это научная область, предметом изучения которой являются информация и информационные процессы, в которой осуществляется изобретение и создание новых средств работы с информацией.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Теоретическая информатика, фундаментальная наука, система понятий, закономерность)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_fundamental_science;
+concept_system_of_concepts;
+concept_regularity
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Как любая фундаментальная наука, теоретическая информатика занимается созданием системы понятий, выявлением общих закономерностей.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_Computational_Informatics -> rrel_example: [Теоретическая информатика сосредотачивается на более абстрактных или математических аспектах вычислительной техники и включает в себя теорию алгоритмов.] (*<-lang_ru;;*);;
+concept_Computational_Informatics<=nrel_inclusion:concept_Informatics;;

@@ -1,0 +1,17 @@
+///sc_node_not_relation-> Doklad_1_OSTISX2019;;
+Doklad_1_OSTISX2019=>nrel_main_idtf:[Доклад 1 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_1_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_1_OSTISX2019 => nrel_name_of_doclad: [АЛГОРИТМ БЫСТРОГО СЖАТИЯ ИЗОБРАЖЕНИЙ НА ГЕТЕРОГЕННЫХ ВЫЧИСЛИТЕЛЬНЫХ УСТРОЙСТВАХ](* <- lang_ru;;*);;
+
+Doklad_1_OSTISX2019 => nrel_authors: Mackevich_V_V;; 
+Doklad_1_OSTISX2019 => nrel_authors: Krasnoproshin_V_V;; 
+
+
+
+doklad_OSTISX2019 => nrel_main_idtf:
+[Все доклады OSTIS-2019]
+(*
+<- lang_ru;;
+*);;

@@ -1,0 +1,57 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Yves_Mayer<-sc_node_not_relation;
+<=nrel_reward: ...
+(* 
+<-concept_Abel_Prize;;
+<-concept_Carl_Friedrich_Gauss_Prize_for_Applications_of_Mathematics;;
+<-concept_Salem_Prize;;
+*);;
+
+Yves_Mayer => nrel_main_idtf:[Yves Meyer] (* <- lang_en;;*);;
+
+Yves_Mayer => nrel_main_idtf:[Ив Мейер] (* <- lang_ru;;*);;
+
+Yves_Mayer<-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Ив Мейер)](*<-lang_ru;;*); [Pic. (Yves Meyer)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Yves_Mayer.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+Yves_Mayer => nrel_date_of_birth:
+            concept_date_19_07_1939
+            (*
+                => nrel_main_idtf:
+                [19 июля 1939](* <- lang_ru;;*);;
+            *);;
+
+
+Yves_Mayer => nrel_place_of_birth:
+            concept_Tunis;;
+
+ concept_Tunis<-concept_city;;
+	
+definition ->...
+(*
+->rrel_key_sc_element:  Yves_Mayer;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Ив Мейер - французский математик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Ив Мейер)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Yves_Mayer;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Ив Мейер получил Премию Салема в 1970, Премию Гаусса в 2010, Абелевскую премию в 2017.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Ив Мейер)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Abel_Prize;
+	concept_Carl_Friedrich_Gauss_Prize_for_Applications_of_Mathematics;
+	concept_Salem_Prize
+};;
+*);;
+
+Yves_Mayer<=nrel_inclusion:concept_laureate;;
+Yves_Mayer-> rrel_example:[Ив Мейер - один из создателей теории вейвлетов.] (*<-lang_ru;;*);;
+
+Yves_Mayer<=nrel_inclusion:concept_person;;

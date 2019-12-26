@@ -1,0 +1,46 @@
+Andrew_James_Viterbi<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Claude_E._Shannon_Award;;
+<-concept_US_National_Science_Medal;;
+<-concept_IEEE_Medal_of_Honor;;
+*);;
+
+Andrew_James_Viterbi => nrel_main_idtf:[Andrew James Viterbi] (* <- lang_en;;*);;
+
+Andrew_James_Viterbi => nrel_main_idtf:[Эндрю Джеймс Витерби] (* <- lang_ru;;*);;
+
+Andrew_James_Viterbi <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Эндрю Джеймс Витерби)](*<-lang_ru;;*); [Pic. (Andrew James Viterbi)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Andrew_James_Viterbi.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+definition ->...
+(*
+->rrel_key_sc_element: Andrew_James_Viterbi;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Эндрю Джеймс Витерби  - американский инженер и бизнесмен.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Эндрю Джеймс Витерби)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_engineer;
+	concept_businessman
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Andrew_James_Viterbi;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Эндрю Джеймс Витерби получил Премию Шеннона в 1991 году, Национальную научную медаль США в 2008 году, Медаль почёта IEEE в 2010.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Эндрю Джеймс Витерби)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Claude_E._Shannon_Award;
+	concept_US_National_Science_Medal;
+	concept_IEEE_Medal_of_Honor
+	
+};;
+*);;
+
+Andrew_James_Viterbi<=nrel_inclusion:concept_laureate;;
+Andrew_James_Viterbi-> rrel_example:[Вместе с Ирвином Джейкобсом Витерби соосновал компанию Linkabit.] (*<-lang_ru;;*);;
+Andrew_James_Viterbi<=nrel_inclusion:concept_person;;
+

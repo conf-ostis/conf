@@ -1,0 +1,2 @@
+concept_US_National_Science_Medal<-sc_node_not_relation;;
+concept_US_National_Science_Medal => nrel_main_idtf:[Национальная научная медаль США] (* <- lang_ru;;*);;

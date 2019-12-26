@@ -1,0 +1,18 @@
+concept_stand => nrel_main_idtf:
+ [стенд](* <- lang_ru;; *);
+ [stand] (* <- lang_en;; *);;
+ 
+ concept_stand <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(стенд)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Стенд — щит, стойка, на которых выставляются предметы для обозрения.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

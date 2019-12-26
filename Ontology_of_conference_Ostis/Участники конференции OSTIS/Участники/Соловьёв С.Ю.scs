@@ -1,0 +1,15 @@
+Solovyov_S_U=> nrel_main_idtf:
+[Соловьев С. Ю.]
+(*
+<- lang_ru;;
+*);
+[Solovyov_S_U]
+(*
+<- lang_en;;
+*);;
+
+Solovyov_S_U => nrel_email: [solovey128@tut.by](*<-lang_en;;*);;
+Solovyov_S_U <- person;;
+Solovyov_S_U <- concept_graduate;;
+Solovyov_S_U <- nrel_participant_of_conference_OSTIS2019;;
+

@@ -1,0 +1,2 @@
+concept_IEEE_Medal_of_Honor<-sc_node_not_relation;;
+concept_IEEE_Medal_of_Honor => nrel_main_idtf:[Медаль почёта] (* <- lang_ru;;*);;

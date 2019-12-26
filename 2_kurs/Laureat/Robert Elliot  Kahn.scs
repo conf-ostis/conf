@@ -1,0 +1,61 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Robert_Elliot_Kahn<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Harry_H._Goode_Memorial_Award;;
+<-concept_Computer_Pioneer_Award;;
+<-concept_Turing_Award;;
+<-concept_The_Queen_Elizabeth_Prize_for_Engineering;;
+*);;
+
+Robert_Elliot_Kahn => nrel_main_idtf:[Robert Elliot Kahn] (* <- lang_en;;*);;
+
+Robert_Elliot_Kahn => nrel_main_idtf:[Роберт Эллиот Кан] (* <- lang_ru;;*);;
+
+Robert_Elliot_Kahn <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Роберт Эллиот Кан)](*<-lang_ru;;*); [Pic. (Robert Elliot Kahn)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Robert_Elliot_Kahn.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+Robert_Elliot_Kahn => nrel_date_of_birth:
+            concept_date_23_12_1938
+            (*
+                => nrel_main_idtf:
+                [23 декабря 1938](* <- lang_ru;;*);;
+            *);;
+
+Robert_Elliot_Kahn=> nrel_place_of_birth:
+            concept_New_York_City;;
+
+concept_New_York_City<-concept_city;;
+
+
+
+definition ->...
+(*
+->rrel_key_sc_element: Robert_Elliot_Kahn;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Роберт Эллиот Кан  - американский учёный.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Роберт Эллиот Кан)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_scientist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Robert_Elliot_Kahn;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Роберт Эллиот Кан получил Мемориальную премию Гарри Гуда в 1986, награду "Пионер компьютерной техники" в 1996, Премию Тьюринга в 2004 и Премию королевы Елизаветы II в области инженерного дела в 2013.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Роберт Эллиот Кан)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Harry_H._Goode_Memorial_Award;
+	concept_Computer_Pioneer_Award;
+	concept_Turing_Award;
+	concept_The_Queen_Elizabeth_Prize_for_Engineering
+};;
+*);;
+
+Robert_Elliot_Kahn<=nrel_inclusion:concept_laureate;;
+Robert_Elliot_Kahn-> rrel_example:[Роберт Эллиот Кан - изобретатель протокола TCP и, совместно с Винтоном Серфом, — изобретатель протокола IP.] (*<-lang_ru;;*);;
+Robert_Elliot_Kahn<=nrel_inclusion:concept_person;;
+

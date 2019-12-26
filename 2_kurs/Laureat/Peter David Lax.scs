@@ -1,0 +1,60 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Peter_David_Lax<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_US_National_Science_Medal;;
+<-concept_Wolf_Prize;;
+<-concept_Steel_Award;;
+<-concept_Abel_Prize;;
+<-concept_Big_gold_medal_named_after_M.V._Lomonosov;;
+*);;
+
+Peter_David_Lax => nrel_main_idtf:[Peter David Lax] (* <- lang_en;;*);;
+Peter_David_Lax => nrel_main_idtf:[Питер Дэвид Лакс] (* <- lang_ru;;*);;
+
+Peter_David_Lax <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Питер Дэвид Лакс)](*<-lang_ru;;*); [Pic. (Peter David Lax)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Peter_David_Lax.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+Peter_David_Lax=> nrel_date_of_birth:
+            concept_date_01_05_1926
+            (*
+                => nrel_main_idtf:
+                [1 мая 1926](* <- lang_ru;;*);;
+            *);;
+Peter_David_Lax => nrel_place_of_birth:
+            concept_Budapest;;
+
+concept_Budapest<-concept_city;;
+
+
+definition ->...
+(*
+->rrel_key_sc_element:  Peter_David_Lax;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Питер Дэвид Лакс - американский математик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Питер Дэвид Лакс)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:  Peter_David_Lax;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В 1986 году Питер Дэвид Лакс был награждён Национальной научной медалью США, в 1987-м — премией Вольфа, в 1992-м — премией Лероя П.Стила. В 2005 году стал лауреатом Абелевской премии. Является обладателем Большой золотой медали имени М. В. Ломоносова 2013 года. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Питер Дэвид Лакс)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_US_National_Science_Medal;
+	concept_Wolf_Award;
+	concept_Steel_Award;
+	concept_Abel_Prize;
+	concept_Big_gold_medal_named_after_M.V._Lomonosov
+};;
+*);;
+
+ Peter_David_Lax<=nrel_inclusion:concept_laureate;;
+ Peter_David_Lax -> rrel_example:[ C именем Питера Дэвида Лакса связаны такие математические достижения и числовые методы как лемма Лакса — Мильграма, теорема эквивалентности Лакса, схема Лакса — Фридрихса, схема Лакса — Вендрофа, условие энтропии Лакса и теория Лакса — Левермора, уравнение Лакса.] (*<-lang_ru;;*);;
+
+ Peter_David_Lax<=nrel_inclusion:concept_person;;

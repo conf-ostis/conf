@@ -1,0 +1,14 @@
+Svyatkina_M_N => nrel_main_idtf:
+[Святкина М.Н.]
+	(*
+	<- lang_ru;;
+	*);
+	[Svyatkina_M_N] 
+	(*
+	<- lang_en;;
+	*);;
+
+member_conference_OSTIS -> Svyatkina_M_N;;
+
+Svyatkina_M_N => nrel_contact_information:[maria.svyatkina@gmail.com];;
+

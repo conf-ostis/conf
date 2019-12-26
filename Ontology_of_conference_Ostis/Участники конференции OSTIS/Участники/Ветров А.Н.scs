@@ -1,0 +1,17 @@
+Vetrov_A_N=> nrel_main_idtf:
+[Ветров А.Н.]
+(*
+<- lang_ru;;
+*);
+[Vetrov_A_N]
+(*
+<- lang_en;;
+*);;
+
+Vetrov_A_N => nrel_email: [a.vetrov@gmail.com](*<-lang_en;;*);;
+
+Vetrov_A_N <- concept_graduate;;
+Vetrov_A_N <- nrel_participant_of_conference_OSTIS2019;;
+Vetrov_A_N <- person ;;
+
+

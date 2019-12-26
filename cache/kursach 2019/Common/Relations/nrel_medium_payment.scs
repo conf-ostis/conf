@@ -1,0 +1,5 @@
+ sc_node_norole_relation -> nrel_medium_payment;; 
+ 
+ nrel_medium_payment => nrel_main_idtf:[средний счет*] (* <-lang_ru;; *);;
+ 
+ nrel_medium_payment => nrel_main_idtf:[medium payment*] (* <-lang_en;; *);;

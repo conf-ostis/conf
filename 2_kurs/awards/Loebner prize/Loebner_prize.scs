@@ -1,0 +1,44 @@
+
+concept_Loebner_prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Лёбнера]
+      (*<-lang_ru;;*);
+       [Loebner prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия Лёбнера)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_winner;
+       concept_competition;
+	concept_program;
+	concept_Turing_test
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия Лёбнера — премия, присуждаемая победителю ежегодного конкурса «AI Loebner», в котором соревнуются программы в прохождении теста Тьюринга.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Лебнера, история, изобретатель, Кембриджский центр наук о поведении, соревнование, тест Тьюринга)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_history;
+	concept_inventor;
+	concept_Cambridge_Center_for_Behavioral_Sciences;
+	concept_competition;
+	concept_Turing_test
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[История премии началась в 1990 году, когда американский изобретатель Хью Лёбнер договорился с Кембриджским центром наук о поведении устроить соревнования на исполнение теста Тьюринга.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+concept_Loebner_prize -> rrel_example: [Первой программе, которая пройдёт стандартный (текстовый) тест Тьюринга, будет вручена серебряная медаль и вознаграждение в $25000, а Первой программе, которая пройдёт этот тест с использованием текстового, визуального и звукового подтверждения, будет вручена золотая медаль и приз в 100,000$.](* <- lang_ru;; *);;
+
+concept_Loebner_prize<=nrel_inclusion:concept_award;;
+

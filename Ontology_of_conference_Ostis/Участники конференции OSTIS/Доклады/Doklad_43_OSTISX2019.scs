@@ -1,0 +1,11 @@
+///sc_node_not_relation-> Doklad_43_OSTISX2019;;
+Doklad_43_OSTISX2019=>nrel_main_idtf:[Доклад 43 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_43_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_43_OSTISX2019 => nrel_name_of_doclad: [УТОЧНЕНИЕ НАБОРА ПРАВИЛ СИСТЕМЫ НЕЧЕТКОГО ВЫВОДА С ИСПОЛЬЗОВАНИЕМ ИСТОРИЧЕСКИХ ДАННЫХ В МЕДИЦИНСКИХ СИСТЕМАХ ПОДДЕРЖКИ ПРИНЯТИЯ РЕШЕНИЙ](* <- lang_ru;;*);;
+
+Doklad_43_OSTISX2019 => nrel_authors: Sadov_V_S;; 
+Doklad_43_OSTISX2019 => nrel_authors: Kurochkin_A_V;; 
+
+

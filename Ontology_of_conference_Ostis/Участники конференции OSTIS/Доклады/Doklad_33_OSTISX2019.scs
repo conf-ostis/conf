@@ -1,0 +1,9 @@
+///sc_node_not_relation-> Doklad_33_OSTISX2019;;
+Doklad_33_OSTISX2019=>nrel_main_idtf:[Доклад 33 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_33_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_33_OSTISX2019 => nrel_name_of_doclad: [ПРИМЕРЫ ИСПОЛЬЗОВАНИЯ НЕЙРОННЫХ СЕТЕЙ В АНАЛИЗЕ ГЕОДАННЫХ](* <- lang_ru;;*);;
+
+Doklad_33_OSTISX2019 => nrel_authors: Taranchuk_V_B;; 
+

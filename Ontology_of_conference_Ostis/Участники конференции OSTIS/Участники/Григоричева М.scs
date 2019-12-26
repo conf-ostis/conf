@@ -1,0 +1,17 @@
+Grigoricheva_M=> nrel_main_idtf:
+[Григоричева М.]
+(*
+<- lang_ru;;
+*);
+[Grigoricheva_M]
+(*
+<- lang_en;;
+*);;
+
+Grigoricheva_M => nrel_email: [m.grigoricheva@tut.by](*<-lang_en;;*);;
+
+Grigoricheva_M <- concept_professor;;
+Grigoricheva_M <- nrel_participant_of_conference_OSTIS2019;;
+Grigoricheva_M <- person ;;
+
+

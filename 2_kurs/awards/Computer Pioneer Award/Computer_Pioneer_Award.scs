@@ -1,0 +1,45 @@
+
+concept_Computer_Pioneer_Award<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Пионер компьютерной техники]
+      (*<-lang_ru;;*);
+       [Computer Pioneer Award]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Пионер компьютерной техники)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_IEEE;
+       concept_IEEE_Computer_Society;
+	concept_achievement;
+	concept_Informatics
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Пионер компьютерной техники — самая престижная награда Компьютерного общества IEEE, вручаемая за выдающиеся достижения в компьютерных науках, притом основной вклад должен быть совершён более 15 лет назад.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Пионер компьютерной техники, медаль, бронза, аверс, барельеф, реверс, формула)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_medal;
+	concept_obverse;
+	concept_bronze;
+	concept_reverse;
+	concept_basrelief;
+	concept_formula
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Медаль выполнена из бронзы, на аверсе медали выполнен барельеф Чарльза Бэббиджа, на реверсе — формула награждения.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Computer_Pioneer_Award -> rrel_example: [Данную медаль в 1995 году получил Марвин Ли Минский за работу в области искусственного интеллекта.](* <- lang_ru;; *);;
+
+concept_Computer_Pioneer_Award<=nrel_inclusion:concept_award;;
+

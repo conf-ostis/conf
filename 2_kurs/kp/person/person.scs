@@ -1,0 +1,37 @@
+concept_person<-sc_node_not_relation;;
+
+concept_person => nrel_main_idtf:[Person] (* <- lang_en;;*);;
+
+concept_person => nrel_main_idtf:[Человек] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_person;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Человек - живое существо, обладающее даром мышления и речи, способностью создавать орудия и пользоваться ими в процессе общественного труда.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Человек)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_creature;
+	concept_gift_of_thinking;
+	concept_speechless;
+	concept_the_ability;
+	concept_guns;
+	concept_process;
+	concept_social_work
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_person;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Человек возник на Земле в результате эволюционного процесса - антропогенеза.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Человек)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_evolutionary_process;
+	concept_anthropogenesis;
+	concept_Earth
+};;
+*);;
+
+concept_person -> rrel_example:[Отличительные черты человека: возможность мыслить и способность к осуществлению свободного выбора, принимать ответственность за поступки, наличие моральных суждений.] (*<-lang_ru;;*);;

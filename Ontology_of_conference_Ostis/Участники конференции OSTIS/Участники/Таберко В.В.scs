@@ -1,0 +1,16 @@
+Taberko_V_V=> nrel_main_idtf:
+[Таберко В.В.]
+(*
+<- lang_ru;;
+*);
+[Taberko_V_V]
+(*
+<- lang_en;;
+*);;
+
+Taberko_V_V => nrel_email: [taberko_v_v@gmail.com](*<-lang_en;;*);;
+Taberko_V_V <- person;;
+Taberko_V_V <- concept_professor;;
+Taberko_V_V <- nrel_participant_of_conference_OSTIS2019;;
+
+

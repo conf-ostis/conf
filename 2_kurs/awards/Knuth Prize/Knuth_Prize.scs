@@ -1,0 +1,42 @@
+
+concept_Knuth_Prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Кнута]
+      (*<-lang_ru;;*);
+       [Knuth Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Пре́мия Кнута)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_contribution;
+       concept_Informatics;
+	concept_mathematician;
+	concept_author;
+	concept_theory_of_computer_system
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Пре́мия Кнута — премия, присуждаемая с 1996 года за особый вклад в развитие основ информатики, названная в честь американского математика и автора книг о теории вычислительных систем Дональда Кнута.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Гёделя, Премия Кнута, научная работа, вклад, информатики)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_medicine;
+	concept_testament
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В отличие от Премии Гёделя, премия имени Дональда Кнута вручается не за отдельную работу, а за общий вклад в развитие основ информатики.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Knuth_Prize -> rrel_example: [Премия Кнута вручается каждые полтора года и сопровождается денежным вознаграждением размером в 5000 долларов.](* <- lang_ru;; *);;
+
+concept_Knuth_Prize<=nrel_inclusion:concept_award;;
+

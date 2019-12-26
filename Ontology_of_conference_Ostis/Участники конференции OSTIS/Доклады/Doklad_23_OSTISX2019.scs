@@ -1,0 +1,12 @@
+///sc_node_not_relation-> Doklad_23_OSTISX2019;;
+Doklad_23_OSTISX2019=>nrel_main_idtf:[Доклад 23 OSTIS-2019](*<- lang_ru;;*);;
+
+
+Doklad_23_OSTISX2019 <- doklad_OSTISX2019;;
+
+
+Doklad_23_OSTISX2019 => nrel_name_of_doclad: [ОБ ОНТОЛОГИЧЕСКОМ МОДЕЛИРОВАНИИ ИЗМЕРЕНИЙ В КОМПЛЕКСНОЙ СИСТЕМЕ МОНИТОРИНГА ТЕХНИЧЕСКОГО ОБЪЕКТА](* <- lang_ru;;*);;
+
+
+Doklad_23_OSTISX2019 => nrel_authors: Koroleva_M_N;;
+Doklad_23_OSTISX2019 => nrel_authors: Burdo_G_B;;

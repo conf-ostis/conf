@@ -1,0 +1,13 @@
+ nrel_square
+ <- sc_node_norole_relation;
+ 
+ => nrel_main_idtf:
+ 	[площадь*] (* <- lang_ru;; *);
+ 	[square*] (* <- lang_en;; *);;
+
+
+ sc_node_norole_relation -> nrel_territory;; 
+ 
+ nrel_territory => nrel_main_idtf:[прилегающая территория*] (* <-lang_ru;; *);;
+ 
+ nrel_territory => nrel_main_idtf:[territory*] (* <-lang_en;; *);;

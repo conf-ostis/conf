@@ -1,0 +1,16 @@
+Guskov_G=> nrel_main_idtf:
+[Гуськов Г.]
+(*
+<- lang_ru;;
+*);
+[Guskov_G]
+(*
+<- lang_en;;
+*);;
+
+Guskov_G => nrel_email: [makeyourown@gmail.com](*<-lang_en;;*);;
+
+Guskov_G -> concept_graduate;;
+Guskov_G <- nrel_participant_of_conference_OSTIS2019;;
+
+

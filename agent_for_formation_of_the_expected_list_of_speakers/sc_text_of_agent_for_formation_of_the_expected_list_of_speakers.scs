@@ -1,0 +1,6 @@
+sc_text_of_agent_for_formation_of_the_expected_list_of_speakers
+-> rrel_key_sc_element:
+	agent_for_formation_of_the_expected_list_of_speakers;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_for_formation_of_the_expected_list_of_speakers = [*^"file://agent_for_formation_of_the_expected_list_of_speakers.scsi"*];;

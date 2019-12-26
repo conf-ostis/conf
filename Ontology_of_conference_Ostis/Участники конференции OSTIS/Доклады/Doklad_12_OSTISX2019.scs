@@ -1,0 +1,8 @@
+///sc_node_not_relation-> Doklad_12_OSTISX2019;;
+Doklad_12_OSTISX2019=>nrel_main_idtf:[Доклад 12 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_12_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_12_OSTISX2019 => nrel_name_of_doclad: [ИНФОРМАЦИОННЫЕ СТРУКТУРЫ В КОНТЕКСТЕ ИНФОРМАЦИОННЫХ ВОЙН – ИСПОЛЬЗОВАНИЕ ОНТОЛОГИЙ](* <- lang_ru;;*);;
+
+Doklad_12_OSTISX2019 => nrel_authors: Grabust_P_S;;

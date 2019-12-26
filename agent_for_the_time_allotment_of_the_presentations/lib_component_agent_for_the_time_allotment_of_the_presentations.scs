@@ -1,0 +1,18 @@
+lib_component_agent_for_the_time_allotment_of_the_presentations
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент для выделения времени выступления докладчиков]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent for the time allotment of the presentations]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_for_the_time_allotment_of_the_presentations; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_the_time_allotment_of_the_presentations;;
+
+

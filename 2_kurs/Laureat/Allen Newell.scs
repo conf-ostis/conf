@@ -1,0 +1,78 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_date_of_death;;
+sc_node_norole_relation->nrel_place_of_birth;;
+sc_node_norole_relation->nrel_place_of_death;;
+Allen_Newell<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Harry_H._Goode_Memorial_Award;;
+<-concept_Turing_Award;;
+<-concept_IEEE_Emanuel_R._Piore_Award;;
+<-concept_US_National_Science_Medal;;
+<-concept_Louis_Levy_Medal;;
+*);;
+
+Allen_Newell => nrel_main_idtf:[Allen Newell] (* <- lang_en;;*);;
+
+Allen_Newell => nrel_main_idtf:[Аллен Ньюэлл] (* <- lang_ru;;*);;
+
+Allen_Newell <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Аллен Ньюэлл)](*<-lang_ru;;*); [Pic. (Allen Newell)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Allen_Newell.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+Allen_Newell => nrel_date_of_birth:
+            concept_date_19_03_1927
+            (*
+                => nrel_main_idtf:
+                [19 марта 1927](* <- lang_ru;;*);;
+            *);;
+
+Allen_Newell => nrel_date_of_death:
+            concept_date_19_07_1992
+            (*
+                => nrel_main_idtf:
+                [19 июля 1992](* <- lang_ru;;*);;
+            *);;
+
+Allen_Newell => nrel_place_of_birth:
+            concept_San_Francisco;;
+
+ concept_San_Francisco<-concept_city;;
+
+Allen_Newell => nrel_place_of_death:
+            concept_Pittsburgh;;
+
+concept_Pittsburgh<-concept_city;;
+
+
+definition ->...
+(*
+->rrel_key_sc_element:  Allen_Newell;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Аллен Ньюэлл -  американский учёный в области когнитивной психологии и искусственного интеллекта.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Аллен Ньюэлл)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_scientist;
+	concept_cognitive_psychology;
+	concept_artificial_intelligence
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Allen_Newell;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В 1971 году Аллен Ньюэлл стал обладателем Мемориальной премии Гарри Гуда, в 1975 - премии Тьюринга, в 1990 - Премии Эмануэля Пиора, в 1992 - Национальной научной медали США и Медали Луиса Леви.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Аллен Ньюэлл)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Harry_H._Goode_Memorial_Award;
+	concept_Turing_Award;
+	concept_IEEE_Emanuel_R._Piore_Award;
+	concept_US_National_Science_Medal;
+	concept_Louis_Levy_Medal
+};;
+*);;
+
+Allen_Newell<=nrel_inclusion:concept_laureate;;
+Allen_Newell-> rrel_example:[ Вместе со своим наставником Гербертом Саймоном Аллен Ньюэлл разработал в 1956 году компьютерную программу Logical Theorist, которая смогла автоматически доказать 38 законов из книги Рассела и Уайтхеда «Principia Mathematica», что стало символическим достижением в развитии искусственного интеллекта.] (*<-lang_ru;;*);;
+Allen_Newell<=nrel_inclusion:concept_person;;
+

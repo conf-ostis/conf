@@ -1,0 +1,15 @@
+ui_main_menu <- sc_node_not_relation;;
+
+ui_main_menu => nrel_main_idtf: [Главное меню] (* <- lang_ru;; *);;
+
+ui_main_menu <= nrel_ui_commands_decomposition: .ui_main_menu_decomposition
+(*
+	-> ui_menu_na_view_kb_extended;;
+	-> ui_menu_na_keynodes;;
+	-> ui_menu_run_scp_program;;
+	-> ui_menu_quantity_articles;;
+	-> ui_menu_file_for_formation_of_the_expected_list_of_speakers ;;
+	-> ui_menu_file_for_the_time_allotment_of_the_presentations;;
+	-> ui_menu_file_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference ;;
+*);;
+

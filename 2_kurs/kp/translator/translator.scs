@@ -1,0 +1,64 @@
+concept_translator<-sc_node_not_relation;;
+
+sc_node_not_relation->concept_translation;;
+sc_node_not_relation->concept_translation_studies;;
+sc_node_not_relation->concept_linguistics;;
+sc_node_not_relation->concept_international_relationships;;
+sc_node_not_relation->concept_foreign_local_history;;
+sc_node_not_relation->concept_teacher_education_in_foreign_languages;;
+
+sc_node_norole_relation->nrel_specialization;;
+concept_translator<=nrel_specialization:concept_translation;;
+concept_translator<=nrel_specialization:concept_translation_studies;;
+concept_translator<=nrel_specialization:concept_linguistics;;
+concept_translator<=nrel_specialization:concept_international_relationships;;
+concept_translator<=nrel_specialization:concept_foreign_local_history;;
+concept_translator<=nrel_specialization:concept_teacher_education_in_foreign_languages;;
+
+concept_translator => nrel_main_idtf:[Тranslator] (* <- lang_en;;*);;
+
+concept_translator => nrel_main_idtf:[Переводчик] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_translator;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Переводчик – это специалист, который умеет не просто передать смысл устного или письменного текста на иностранном языке, пересказав его на другом, но и интерпретировать – адаптировать к восприятию человека иной культуры, чем автор.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Переводчик)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_meaning;
+	concept_spoken_text;
+	concept_written_text;
+	concept_foreign_language;
+	concept_perception;
+	concept_person_of_different_culture;
+	concept_author
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_translator;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Деятельность переводчика напрямую зависит от направленности и вида его работы: технический перевод, перевод деловой речи и документов, художественный перевод требуют специальных знаний и умений.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Переводчик)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_the_activity;
+	concept_focus;
+	concept_type_of;
+	concept_job;
+	concept_technical_translation;
+	concept_transfer;
+	concept_business_speech;
+	concept_documentation;
+	concept_literary_translation;
+	concept_special_knowledge;
+	concept_special_skills
+};;
+*);;
+
+concept_translator<=nrel_inclusion:concept_person;;
+concept_translator -> rrel_example:[Профессия переводчика относится к востребованным. В настоящее время рынок насыщен специалистами по наиболее распространенным языкам, а переводчиков с восточных языков недостаточно.] (*<-lang_ru;;*);;
+
+sc_node_norole_relation->nrel_history;;
+friendship <= nrel_history: [Поначалу переводчиками были пленники и торговцы, но быстро выяснилось, что куда полезнее люди, специально изучающие иностранные языки. У каждого высокопоставленного государственного деятеля был свой переводчик. Но поскольку эпоха дворцовых интриг не располагала к доверию, то вельможи взяли в привычку изучение языков.](*<- text;;*);;

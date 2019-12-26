@@ -1,0 +1,72 @@
+directed_graph->graph5(*
+	->rrel_vertex: A5s;;
+	->rrel_vertex: B5s;;
+	->rrel_vertex: C5s;;
+	->rrel_vertex: D5s;;
+	->rrel_vertex: R5s;;
+	->rrel_vertex: F5s;;
+	->rrel_vertex: G5s;;
+	->rrel_vertex: K5s;;
+	->rrel_vertex: L5s;;
+	->rrel_vertex: P5s;;
+	->rrel_vertex: U5s;;
+	->rrel_vertex: M5s;;
+
+
+	->rrel_edge: (A5s => B5s)(*
+			<=5;;
+	*);;
+	->rrel_edge: (B5s => D5s)(*
+			<=10;;
+	*);;
+	->rrel_edge: (B5s => C5s)(*
+			<=5;;
+	*);;
+	->rrel_edge: (C5s => G5s)(*
+			<=0;;
+	*);;
+	->rrel_edge: (C5s => D5s)(*
+			<=25;;
+	*);;
+	->rrel_edge: (G5s => F5s)(*
+			<=25;;
+	*);;
+	->rrel_edge: (D5s => R5s)(*
+			<=5;;
+	*);;
+	->rrel_edge: (D5s => G5s)(*
+			<=20;;
+	*);;
+	->rrel_edge: (R5s => F5s)(*
+			<=30;;
+	*);;
+	->rrel_edge: (F5s => K5s)(*
+			<=0;;
+	*);;
+	->rrel_edge: (K5s => L5s)(*
+			<=20;;
+	*);;
+	->rrel_edge: (K5s => M5s)(*
+			<=10;;
+	*);;
+	->rrel_edge: (L5s => M5s)(*
+			<=5;;
+	*);;
+	->rrel_edge: (L5s => P5s)(*
+			<=20;;
+	*);;
+	->rrel_edge: (M5s => P5s)(*
+			<=15;;
+	*);;
+	->rrel_edge: (P5s => U5s)(*
+			<=25;;
+	*);;
+*);;
+
+
+
+
+
+
+
+

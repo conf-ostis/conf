@@ -1,0 +1,3 @@
+concept_Rotterdam<-sc_node_not_relation;;
+concept_Rotterdam => nrel_main_idtf:[Роттердам] (* <- lang_ru;;*);;
+

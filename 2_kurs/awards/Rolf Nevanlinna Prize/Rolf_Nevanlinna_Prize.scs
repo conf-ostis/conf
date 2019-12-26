@@ -1,0 +1,40 @@
+
+concept_Rolf_Nevanlinna_Prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Неванлинны]
+      (*<-lang_ru;;*);
+       [Rolf Nevanlinna Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия Неванлинны или приз Неванлинны)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_achievement;
+concept_mathematician;
+concept_Informatics;
+concept_Computational_Mathematics
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия Неванлинны или приз Неванлинны — награда за выдающиеся достижения молодых математиков (лауреату должно быть менее 40 лет на 1 января года присуждения премии) в области информатики или вычислительной математики.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Неванлинны, Международный конгресс математиков)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_international_mathematical_congress
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Премия Неванлинны присуждается раз в 4 года на Международном конгрессе математиков.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Rolf_Nevanlinna_Prize -> rrel_example: [Премия состоит из денежного приза (10000 евро) и золотой медали с профилем Неванлинны, на ободке которой вычеканено имя лауреата.](* <- lang_ru;; *);;
+
+concept_Rolf_Nevanlinna_Prize<=nrel_inclusion:concept_award;;
+

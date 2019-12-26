@@ -1,0 +1,14 @@
+Rogushina_J_V => nrel_main_idtf:
+[Рогушина Ю.В.]
+	(*
+	<- lang_ru;;
+	*);
+	[Rogushina_J_V] 
+	(*
+	<- lang_en;;
+	*);;
+
+member_conference_OSTIS -> Rogushina_J_V;;
+
+Rogushina_J_V => nrel_contact_information:[ladamandraka2010@gmail.com];;
+

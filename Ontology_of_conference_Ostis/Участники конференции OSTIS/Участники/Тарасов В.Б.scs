@@ -1,0 +1,18 @@
+Tarasov_V_B=> nrel_main_idtf:
+[Тарасов В. Б.]
+(*
+<- lang_ru;;
+*);
+[Tarasov_V_B]
+(*
+<- lang_en;;
+*);;
+
+Tarasov_V_B => nrel_email: [tarasov_v_b@mail.ru](*<-lang_en;;*);;
+
+Tarasov_V_B <- concept_graduate;;
+Tarasov_V_B <- nrel_participant_of_conference_OSTIS2019;;
+Tarasov_V_B <- person;;
+Tarasov_V_B <- concept_participant_of_conference_OSTIS2014;;
+Tarasov_V_B <- concept_participant_of_conference_OSTIS2012;;
+Tarasov_V_B <- concept_participant_of_conference_OSTIS2015;;

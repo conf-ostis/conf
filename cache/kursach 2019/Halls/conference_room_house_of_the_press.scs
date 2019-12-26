@@ -1,0 +1,43 @@
+concept_conference_room_house_of_the_press => nrel_main_idtf:
+[Конференц-зал Дома прессы](* <- lang_ru;; *);
+[Conference room House of the press] (* <- lang_en;; *);;
+
+
+concept_conference_room_house_of_the_press => nrel_count_people : [50];;
+
+concept_conference_room_house_of_the_press => nrel_square : [65];;
+
+concept_conference_room_house_of_the_press => nrel_address : [Минск, ул. Б. Хмельницкого, 10а, второй этаж];;
+
+concept_conference_room_house_of_the_press => nrel_phone : [+375-29-287-18-34];;
+
+concept_conference_room_house_of_the_press => nrel_site : [dompressy.by];;
+
+concept_conference_room_house_of_the_press => nrel_pay_per_hour : [28];;
+
+concept_conference_room_house_of_the_press <=> concept_assembly_hall_house_of_the_press;;
+
+
+concept_conference_room_house_of_the_press => nrel_equipment : concept_lighting_equipment;;
+concept_conference_room_house_of_the_press => nrel_equipment : concept_laptop;;
+concept_conference_room_house_of_the_press => nrel_equipment : concept_lcd_panel;;
+concept_conference_room_house_of_the_press => nrel_equipment : concept_multimedia_projector;;
+concept_conference_room_house_of_the_press => nrel_equipment : concept_sound_system;;
+concept_conference_room_house_of_the_press => nrel_equipment : concept_projection_screen;;
+concept_conference_room_house_of_the_press => nrel_equipment : concept_table;;
+concept_conference_room_house_of_the_press => nrel_equipment : concept_chair;;
+concept_conference_room_house_of_the_press => nrel_equipment : concept_wifi;;
+
+
+concept_conference_room_house_of_the_press => nrel_type_event : concept_business_meeting;;
+concept_conference_room_house_of_the_press => nrel_type_event : concept_presentation;;
+concept_conference_room_house_of_the_press => nrel_type_event : concept_press_conference;;
+concept_conference_room_house_of_the_press => nrel_type_event : concept_seminar;;
+
+
+concept_conference_room_house_of_the_press => nrel_service : concept_catering;;
+concept_conference_room_house_of_the_press => nrel_service : concept_furniture_arrangement;;
+concept_conference_room_house_of_the_press => nrel_service : concept_hall_decoration;;
+
+
+concept_conference_room_house_of_the_press => nrel_description_area : [К Вашим услугам – конференц-зал (вместительностью до 50 человек, количество мест за круглым столом – до 20). Зал идеально подходит для проведения различных мероприятий: от учебных программ и совещаний до презентаций и пресс-конференций. Чтобы Ваше мероприятие прошло максимально успешно, предусмотрено соответствующее оборудование: мультимедийный проектор, проекционный экран, ноутбук, система звукоусиления (5 проводных и 4 беспроводных микрофона, ЖКИ-панель, компьютерное оборудование). Гости могут воспользоваться Wi-Fi (беспроводным интернетом), а для большего комфорта зал оснащен системой кондиционирования. Дополнительно в холле могут быть организованы кофе-паузы.Мы будем рады видеть Вас и гарантируем уютную обстановку и доброжелательную атмосферу.];;

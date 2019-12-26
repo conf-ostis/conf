@@ -1,0 +1,32 @@
+concept_titul => nrel_main_idtf:
+ [ТитулБел Плюс](* <- lang_ru;; *);
+ [TitleBel Plus] (* <- lang_en;; *);;
+ 
+ 
+ concept_titul => nrel_count_people : [50];;
+ 
+ concept_titul => nrel_square : [55];;
+ 
+ concept_titul => nrel_address : [ул. Толстого, д.10];;
+ 
+ concept_titul => nrel_phone : [ 375 (17) 240-19-60];;
+ concept_titul => nrel_phone : [ 375 (29) 152-95-02];;
+ concept_titul => nrel_phone : [ 375 (29) 182-01-11];;
+ 
+ concept_titul => nrel_site : [http://www.titul-bc.by/];;
+ 
+ concept_titul => nrel_mail_area : [Lebedeva@titul-bc.by];;
+ 
+ concept_titul => nrel_pay_per_hour : [25];;
+ 
+ concept_titul => nrel_equipment : concept_sound_system;;
+ concept_titul => nrel_equipment : concept_table;;
+ concept_titul => nrel_equipment : concept_multimedia_projector;;
+ concept_titul => nrel_equipment : concept_flipchart;;
+ concept_titul => nrel_equipment : concept_chair;;
+ concept_titul => nrel_equipment : concept_wifi;;
+ 
+ concept_titul => nrel_service : concept_catering;;
+ 
+ concept_titul => nrel_description_area : [Конференц-зал «ТИТУЛ» расположен в центре Минска в бизнес-центре «Титул» по ул. Толстого, 10. В нашем конференц-зале вы можете провести любое деловое мероприятие: семинар, пресс-конференцию, тренинг, презентацию и т.д. Зал очень удобно расположен и ваши гости, после работы могут отдохнуть, посетив достопримечательности Минска. Рядом с БЦ «Титул» расположен отель одной из мировых гостиничных сетей, поэтому участникам деловых мероприятий не придется тратить время на поиски отеля.];;
+

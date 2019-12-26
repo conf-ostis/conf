@@ -1,0 +1,45 @@
+concept_System_engineering	<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Системотехника]
+	(*<-lang_ru;;*);
+	[System engineering]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Системотехника)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+concept_direction;
+concept_science;
+concept_technic;
+concept_design;
+concept_development;
+concept_testing;
+concept_exploitation;
+concept_system
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Системотехника - направления науки и техники, охватывающего проектирование, создание, испытание и эксплуатацию сложных систем технического характера.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Системотехника, )] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_development;
+concept_highly_automated_technical_system;
+concept_large_scale_system;
+nrel_sign
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Системотехника дает ключ к разработке крупных, сложных, высокоавтоматизированных технических систем, впервые описав основные признаки систем большого масштаба.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_System_engineering	-> rrel_example: [Примерами таких систем могут служить автоматизированный производственный процесс, сеть коммуникаций и система управления процессом.] (*<-lang_ru;;*);;
+concept_System_engineering	<=nrel_inclusion:concept_technical_science;;
+

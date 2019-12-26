@@ -1,0 +1,37 @@
+concept_engineer<-sc_node_not_relation;;
+
+concept_engineer => nrel_idtf: [engineer](* <- lang_en;; *);;
+
+concept_engineer => nrel_main_idtf:[Инженер] (* <- lang_ru;;*);;
+																																										
+ definition -> ...
+(*
+=> nrel_main_idtf: [Опр.(Инженер)](* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example: [Инженер — специалист, осуществляющий инженерную деятельность.](* <- lang_ru;; *);;
+*);;
+-> rrel_key_sc_element: concept_engineer;;
+<= nrel_using_constants :...
+(*
+-> concept_specialist; concept_engineering_activity;;
+*);;
+*);;
+
+ concept_engineer -> rrel_example: [Инженер Губаревич Анастасия Владимировна.](* <- lang_ru;; *);;
+
+statement -> ...
+(*
+=> nrel_main_idtf: [Утверждение (Инженер, проект)](* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example: [Инженер обсуждал проект с заказчиком.](* <- lang_ru;; *);;
+*);;
+-> rrel_key_sc_element: concept_engineer; concept_project;;
+*);; 
+
+concept_engineer<=nrel_inclusion:concept_person;;
+
+sc_node_norole_relation->nrel_origin_of_the_term;;
+concept_engineer <= nrel_origin_of_the_term: [Во втором веке до н. э. инженерами называли создателей военных машин. Понятие «гражданский инженер» появилось в XVI веке в Голландии применительно к строителям мостов и дорог.](*<- text;;*);;
+

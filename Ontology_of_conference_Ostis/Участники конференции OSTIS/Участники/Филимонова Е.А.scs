@@ -1,0 +1,18 @@
+Filimonova_E_A=> nrel_main_idtf:
+[Филимонова Е.А.]
+(*
+<- lang_ru;;
+*);
+[Filimonova_E_A]
+(*
+<- lang_en;;
+*);;
+
+Filimonova_E_A => nrel_email: [nightowl@gmail.com](*<-lang_en;;*);;
+
+Filimonova_E_A <- concept_candidate_sciences;;
+Filimonova_E_A <- nrel_participant_of_conference_OSTIS2019;;
+Filimonova_E_A <- person;;
+
+
+

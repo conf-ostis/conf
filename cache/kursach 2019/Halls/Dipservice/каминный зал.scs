@@ -1,0 +1,35 @@
+concept_fireplace_hall => nrel_main_idtf:
+[Каминный зал](* <- lang_ru;; *);
+[Fireplace Hall] (* <- lang_en;; *);;
+
+
+concept_fireplace_hall => nrel_count_people : [30];;
+
+concept_fireplace_hall => nrel_square : [70];;
+
+concept_fireplace_hall => nrel_address : [г. Минск, пер. Войсковый, 4, Dipservice Hall];;
+
+concept_fireplace_hall => nrel_phone : [+375-33-333-84-03];;
+
+concept_fireplace_hall => nrel_site : [http://www.dipservicehall.by];;
+
+concept_fireplace_hall => nrel_pay_per_hour : [25];;
+
+concept_fireplace_hall => nrel_equipment : concept_fireplace;;
+concept_fireplace_hall => nrel_equipment : concept_table;;
+concept_fireplace_hall => nrel_equipment : concept_chair;;
+concept_fireplace_hall => nrel_equipment : concept_sound_system;;
+concept_fireplace_hall => nrel_equipment : concept_wifi;;
+
+concept_astoria_riverside => nrel_type_event : concept_business_meeting;;
+concept_astoria_riverside => nrel_type_event : concept_presentation;;
+concept_astoria_riverside => nrel_type_event : concept_press_conference;;
+concept_astoria_riverside => nrel_type_event : concept_seminar;;
+
+concept_fireplace_hall => nrel_service : concept_catering;;
+concept_fireplace_hall => nrel_service : concept_furniture_arrangement;;
+concept_fireplace_hall => nrel_service : concept_photography;;
+
+concept_fireplace_hall => nrel_territory : concept_parking;;
+
+concept_fireplace_hall => nrel_description_area : [Главным элементом декора этого зала является действующий камин, который способствует созданию уютной и теплой атмосферы. Центральную часть зала занимает овальный стол со стульями, рассчитанный на 16 человек. В зале комфортно может располагаться до 30 человек. Зал предназначен для проведения чаепития, званых обедов и ужинов, переговоров, конференций.];;

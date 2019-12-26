@@ -1,0 +1,18 @@
+concept_table => nrel_main_idtf:
+ [стол](* <- lang_ru;; *);
+ [table] (* <- lang_en;; *);;
+ 
+ concept_table <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(стол)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Стол — предмет мебели в виде широкой горизонтальной доски на высоких опорах, ножках.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

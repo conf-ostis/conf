@@ -1,0 +1,25 @@
+
+Azarov_I_S=> nrel_main_idtf:
+	[Азаров И.С.]
+	(*
+	<- lang_ru;;
+	*);
+	[Azarov I.S.]
+	(*
+	<- lang_en;;
+	*);;
+
+Azarov_I_S => nrel_email: [azarov@bsuir.by](*<-lang_en;;*);;
+
+Azarov_I_S <- concept_participant_of_conference_OSTIS;;
+Azarov_I_S <- concept_participant_of_conference_OSTIS2015;;
+
+Azarov_I_S => nrel_email: [i.azarov@gmail.com](*<-lang_en;;*);;
+
+Azarov_I_S <- concept_PhD;;
+Azarov_I_S <- nrel_participant_of_conference_OSTIS2019;;
+Azarov_I_S <- person ;;
+
+Azarov_I_S <= nrel_authors:  ...(* -> Doklad_75_OSTISX2015;; *);;
+
+Azarov_I_S <- Ucastnik_konferenzii_OSTIS;;

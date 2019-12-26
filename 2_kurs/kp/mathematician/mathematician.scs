@@ -1,0 +1,43 @@
+concept_mathematician<-sc_node_not_relation;;
+
+concept_mathematician => nrel_main_idtf:[Mathematician] (* <- lang_en;;*);;
+
+concept_mathematician => nrel_main_idtf:[Математик] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_mathematician;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Математик — специалист в области математики.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Математик)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_specialist;
+	concept_mathematics
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_mathematician;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Профессия математика требует высшего образования. Подготовка производится в специальных учебных подразделениях университетов. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Математик)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_profession;
+	concept_higher_education;
+	concept_training;
+	concept_training_units;
+	concept_university
+};;
+*);;
+
+concept_mathematician<=nrel_inclusion:concept_person;;
+concept_mathematician -> rrel_example:[Наиболее престижной научной премией, вручаемой математикам, является Филдсовская премия. С 2002 года за выдающиеся достижения в области математики ежегодно вручается Абелевская премия. Нобелевские премии по математике не присуждаются, однако некоторым математикам они присуждались.] (*<-lang_ru;;*);;
+
+sc_node_norole_relation->nrel_origin_of_the_term;;
+friendship <= nrel_origin_of_the_term: [Слово «математик» произошло от слов восприимчивый, успевающий, позднее относящийся к изучению, впоследствии относящийся к математике.](*<- text;;*);;
+
+sc_node_norole_relation->nrel_term_creator;;
+concept_person_Aristotle<-sc_node_not_relation;;
+concept_laureatet<=nrel_term_creator:concept_person_Aristotle;;
+

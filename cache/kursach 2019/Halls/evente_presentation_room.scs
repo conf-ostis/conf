@@ -1,0 +1,48 @@
+concept_evente_presentation_room => nrel_main_idtf:
+["Evente" зал презентаций](* <- lang_ru;; *);
+["Evente" presentation room] (* <- lang_en;; *);;
+
+
+concept_evente_presentation_room => nrel_count_people : [40];;
+
+concept_evente_presentation_room => nrel_square : [51];;
+
+concept_evente_presentation_room => nrel_address : [Минск, пр-т Победителей, 7А (Бизнес-центр «Royal Plaza»), 19 этаж, помещение 59];;
+
+concept_evente_presentation_room => nrel_phone : [+375 (17) 306-06-49];;
+concept_evente_presentation_room => nrel_phone : [+375 (29) 195-19-19];;
+
+concept_evente_presentation_room => nrel_site : [http://evente.by/];;
+
+concept_evente_presentation_room => nrel_pay_per_hour : [30];;
+
+  concept_evente => concept_evente_presentation_room;;
+  concept_evente => concept_evente_meeting_room;;
+
+concept_evente_presentation_room => nrel_equipment : concept_sound_system;;
+concept_evente_presentation_room => nrel_equipment : concept_tv;;
+concept_evente_presentation_room => nrel_equipment : concept_multimedia_projector;;
+concept_evente_presentation_room => nrel_equipment : concept_table;;
+concept_evente_presentation_room => nrel_equipment : concept_chair;;
+concept_evente_presentation_room => nrel_equipment : concept_armchair;;
+concept_evente_presentation_room => nrel_equipment : concept_wifi;;
+concept_evente_presentation_room => nrel_equipment : concept_video_camera;;
+concept_evente_presentation_room => nrel_equipment : concept_wireless_microphone;;
+concept_evente_presentation_room => nrel_equipment : concept_head_radiosystem;;
+concept_evente_presentation_room => nrel_equipment : concept_laptop;;
+concept_evente_presentation_room => nrel_equipment : concept_lcd_panel;;
+concept_evente_presentation_room => nrel_equipment : concept_mixer;;
+concept_evente_presentation_room => nrel_equipment : concept_simultaneous_translation_equipment;;
+
+
+concept_evente_presentation_room => nrel_type_event : concept_business_meeting;;
+concept_evente_presentation_room => nrel_type_event : concept_presentation;;
+concept_evente_presentation_room => nrel_type_event : concept_press_conference;;
+concept_evente_presentation_room => nrel_type_event : concept_seminar;;
+
+
+concept_evente_presentation_room => nrel_service : concept_catering;;
+concept_evente_presentation_room => nrel_service : concept_photography;;
+
+
+concept_evente_presentation_room => nrel_description_area : [Комфортабельный конференц-зал в Минске на 19 этаже самого высокого бизнес-центра Минска – отличное место для проведения любых бизнес и образовательных мероприятий. Зал оборудован новейшей видео и акустической системой BOSE. Мы предоставляем арендаторам отличную акустическую аппаратуру, проектор, ноутбук, стационарный компьютер, Wi-Fi, 2 флипчарта, оборудование для кофе-паузы. Мы оборудовали наш конференц-зал креслами с откидными столиками, что особенно удобно для конспектирования за докладчиком.];;

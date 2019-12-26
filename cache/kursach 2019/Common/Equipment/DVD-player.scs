@@ -1,0 +1,17 @@
+concept_dvd_player => nrel_main_idtf:
+ [DVD-проигрыватель](* <- lang_ru;; *);
+ [DVD-player] (* <- lang_en;; *);;
+ 
+ concept_dvd_player <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(DVD-проигрыватель)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[DVD-проигрыватель — физическая составляющая: автономное устройство, содержащее оптический привод для считывания информации с оптического диска.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;

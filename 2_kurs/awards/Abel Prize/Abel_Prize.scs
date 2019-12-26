@@ -1,0 +1,39 @@
+
+concept_Abel_Prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Абелевская премия]
+      (*<-lang_ru;;*);
+       [Abel Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Абелевская пре́мия)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_Mathematics;
+       concept_mathematician
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Абелевская пре́мия — премия по математике, названная так в честь норвежского математика Нильса Хенрика Абеля.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Абелевская премия, Нобелевская премия, награда, математика)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_Nobel_Prize;
+	concept_award;
+	concept_Mathematics
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Премия быстро получила репутацию «Нобелевской премии по математике», став одной из самых престижных наград в области математики.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Abel_Prize -> rrel_example: [Лауреата Премии Абеля раз в год определяет Норвежская академия наук и литературы.](* <- lang_ru;; *);;
+concept_Abel_Prize <=nrel_inclusion:concept_award;;
+

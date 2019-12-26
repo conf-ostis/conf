@@ -1,0 +1,18 @@
+concept_fireworks => nrel_main_idtf:
+ [фейерверк](* <- lang_ru;; *);
+ [fireworks] (* <- lang_en;; *);;
+ 
+ concept_fireworks <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(фейерверк)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Фейерверк — это цветные декоративные огни, получаемые при сжигании различных пороховых составов во время торжеств, праздников.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

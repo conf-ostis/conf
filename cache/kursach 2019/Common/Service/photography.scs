@@ -1,0 +1,18 @@
+concept_photography => nrel_main_idtf:
+ [фотосъемка](* <- lang_ru;; *);
+ [photography] (* <- lang_en;; *);;
+ 
+ concept_photography <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(фотосъемка)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Фотосъемка — технология записи изображения путём регистрации оптических излучений с помощью фотоматериала или полупроводникового преобразователя.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

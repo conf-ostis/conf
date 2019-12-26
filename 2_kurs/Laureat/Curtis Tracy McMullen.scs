@@ -1,0 +1,57 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Curtis_Tracy_McMullen<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Fields_Medal;;
+<-concept_Salem_Prize;;
+*);;
+
+Curtis_Tracy_McMullen => nrel_main_idtf:[Curtis Tracy McMullen] (* <- lang_en;;*);;
+
+Curtis_Tracy_McMullen => nrel_main_idtf:[Кёртис Трэйси Макмуллен] (* <- lang_ru;;*);;
+
+Curtis_Tracy_McMullen <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Кёртис Трэйси Макмуллен)](*<-lang_ru;;*); [Pic. (Curtis Tracy McMullen)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Curtis_Tracy_McMullen.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+Curtis_Tracy_McMullen => nrel_date_of_birth:
+            concept_date_21_05_1958
+            (*
+                => nrel_main_idtf:
+                [21 мая 1958](* <- lang_ru;;*);;
+            *);;
+
+
+Curtis_Tracy_McMullen => nrel_place_of_birth:
+            concept_Berkeley;;
+
+ concept_Berkeley<-concept_city;;
+
+
+definition ->...
+(*
+->rrel_key_sc_element:  Curtis_Tracy_McMullen;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Кёртис Трэйси Макмуллен - американский математик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Кёртис Трэйси Макмуллен)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Curtis_Tracy_McMullen;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Кёртис Трэйси Макмуллен получил Премию Филдса в 1998 году, Премию Салема в 1991.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Кёртис Трэйси Макмуллен)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Fields_Medal;
+	concept_Salem_Prize
+};;
+*);;
+
+Curtis_Tracy_McMullen<=nrel_inclusion:concept_laureate;;
+Curtis_Tracy_McMullen-> rrel_example:[Научным преподавателем Кёртиса Трэйси Макмуллена является Деннис Парнелл Салливан.] (*<-lang_ru;;*);;
+
+Curtis_Tracy_McMullen<=nrel_inclusion:concept_person;;

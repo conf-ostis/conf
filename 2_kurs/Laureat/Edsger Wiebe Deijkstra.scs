@@ -1,0 +1,70 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_date_of_death;;
+sc_node_norole_relation->nrel_place_of_birth;;
+sc_node_norole_relation->nrel_place_of_death;;
+Edsger_Wiebe_Deijkstra<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Turing_Award;;
+<-concept_Edsger_W._Dijkstra_Prize_in_Distributed_Computing;;
+*);;
+
+Edsger_Wiebe_Deijkstra => nrel_main_idtf:[Edsger Wiebe Deijkstra] (* <- lang_en;;*);;
+
+Edsger_Wiebe_Deijkstra => nrel_main_idtf:[Эдсгер Вибе Дейкстра] (* <- lang_ru;;*);;
+
+
+Edsger_Wiebe_Deijkstra <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Эдсгер Вибе Дейкстра)](*<-lang_ru;;*); [Pic. (Edsger Wiebe Deijkstra)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Edsger_Wiebe_Deijkstra.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Edsger_Wiebe_Deijkstra => nrel_date_of_birth:
+            concept_date_11_05_1930
+            (*
+                => nrel_main_idtf:
+                [11 мая 1930](* <- lang_ru;;*);;
+            *);;
+
+Edsger_Wiebe_Deijkstra => nrel_date_of_death:
+            concept_date_06_08_2002
+            (*
+                => nrel_main_idtf:
+                [6 августа 2002](* <- lang_ru;;*);;
+            *);;
+Edsger_Wiebe_Deijkstra => nrel_place_of_birth:
+            concept_Rotterdam;;
+
+concept_Rotterdam<-concept_city;;
+
+Edsger_Wiebe_Deijkstra => nrel_place_of_death:
+            concept_Nuenen;;
+
+ concept_Nuenen<-concept_city;;
+
+definition ->...
+(*
+->rrel_key_sc_element:  Edsger_Wiebe_Deijkstra;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Эдсгер Вибе Дейкстра - нидерландский учёный.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Эдсгер Вибе Дейкстра)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_scientist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Edsger_Wiebe_Deijkstra;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В 1992 году Дейкстра стал лауреатом премии Тьюринга, в 2002 году стал обладателем премии Дейкстры. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Эдсгер Вибе Дейкстра)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Turing_Award;
+	concept_Edsger_W._Dijkstra_Prize_in_Distributed_Computing
+};;
+*);;
+
+Edsger_Wiebe_Deijkstra<=nrel_inclusion:concept_laureate;;
+Edsger_Wiebe_Deijkstra -> rrel_example:[В 2002 году получил ежегодную премию, вручаемую Симпозиумом по принципам распределённых вычислений Ассоциации вычислительной техники «за публикацию, оказавшую наибольшее влияние на область распределённых вычислений»; в знак признания заслуг учёного с 2003 года эта премия носит название премии Дейкстры.] (*<-lang_ru;;*);;
+Edsger_Wiebe_Deijkstra<=nrel_inclusion:concept_person;;
+

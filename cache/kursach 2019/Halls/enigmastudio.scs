@@ -1,0 +1,38 @@
+concept_enigmastudio => nrel_main_idtf:
+[Энигма Студия](* <- lang_ru;; *);
+[EnigmaStudio] (* <- lang_en;; *);;
+
+
+concept_enigmastudio=> nrel_count_people : [16-600];;
+
+concept_enigmastudio=> nrel_square : [850];;
+
+concept_enigmastudio=> nrel_address : [г. Минск, пер. Войсковый, 4];;
+
+concept_enigmastudio=> nrel_phone : [+375-33-333-84-03];;
+
+concept_enigmastudio=> nrel_site : [http://www.dipservicehall.by];;
+
+concept_enigmastudio=> concept_fireplace_hall;;
+concept_enigmastudio=> concept_wooden_hall;;
+concept_enigmastudio=> concept_avant_hall;;
+concept_enigmastudio=> concept_blue_hall;;
+
+
+concept_enigmastudio=> nrel_equipment : concept_table;;
+concept_enigmastudio=> nrel_equipment : concept_marker_board;;
+concept_enigmastudio=> nrel_equipment : concept_chair;;
+concept_enigmastudio=> nrel_equipment : concept_wifi;;
+
+concept_astoria_riverside => nrel_type_event : concept_business_meeting;;
+concept_astoria_riverside => nrel_type_event : concept_presentation;;
+concept_astoria_riverside => nrel_type_event : concept_seminar;;
+
+
+concept_enigmastudio=> nrel_service : concept_furniture_arrangement;;
+
+
+concept_enigmastudio=> nrel_territory : concept_parking;;
+
+
+concept_enigmastudio=> nrel_description_area : [Светлый, комфортный кабинет в историческом центре Минска. Идеально подойдет для индивидуальной работы и небольших групп до 8 человек. Оборудован столом, стульями, кондиционером и магнитно-маркерной доской. С обеих сторон от здания парковки, 2 минуты ходьбы от ст. метро "Площадь Победы" и в шаговой доступности от Парка им. Горького.];;

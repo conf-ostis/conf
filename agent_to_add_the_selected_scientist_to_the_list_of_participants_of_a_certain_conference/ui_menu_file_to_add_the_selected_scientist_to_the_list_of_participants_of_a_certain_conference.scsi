@@ -1,0 +1,19 @@
+ui_menu_file_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_two_argument_command_class;;
+
+ui_menu_file_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference => nrel_main_idtf: [Добавить выбранного научного деятеля в список докладчиков определенной конференции] (* <- lang_ru;; *);;
+ui_menu_file_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference => nrel_main_idtf: [Add the selected scientist to the list of participants of a certain conference] (* <- lang_en;; *);;
+	
+ui_menu_file_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference => ui_nrel_command_template:
+	[*
+		question_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference _-> ._question_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference_instance
+			(*
+			_-> rrel_1:: ui_arg_1;;	
+			_-> rrel_2:: ui_arg_2;;	
+			*);;
+		._question_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference_instance _<- question;;
+	*];;
+ui_menu_file_to_add_the_selected_scientist_to_the_list_of_participants_of_a_certain_conference => ui_nrel_command_lang_template:
+		[Результат добавления $ui_arg_2 в $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[Result of adding $ui_arg_2 in $ui_arg_1]
+                (* <- lang_en;; *);;

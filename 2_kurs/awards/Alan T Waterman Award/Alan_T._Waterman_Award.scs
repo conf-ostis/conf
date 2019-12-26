@@ -1,0 +1,43 @@
+
+concept_Alan_T._Waterman_Award<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Алана Уотермана]
+      (*<-lang_ru;;*);
+       [Alan T. Waterman Award]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия Алана Уотермана)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_National_Science_Foundation;
+       concept_scientist;
+	concept_candidate;
+	concept_Ph.D;
+	concept_achievement
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия Алана Уотермана — награда, которой Национальный научный фонд США отмечает молодых учёных (кандидаты должны быть гражданами США или постоянными жителями, не старше 35 лет или не позже, чем через 7 лет после получения степени доктора философии) за выдающиеся достижения.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Медаль Ричарда Хэмминга, Нобелевская премия, Филдсова премия, лауреат)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_laureate;
+	concept_Nobel_Prize;
+	concept_Fields_Medal
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Несколько лауреатов премии Алана Уотермана получили Нобелевскую и Филдсовскую премии.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+concept_Alan_T._Waterman_Award -> rrel_example: [Награда Алана Уотермана состоит из медали и гранта (в настоящее время размер гранта 1 миллион долларов на 5 лет исследований, в 2000-е годы размер был 500 тысяч долларов).](* <- lang_ru;; *);;
+concept_Alan_T._Waterman_Award -> rrel_example: [Награда Алана Уотермана названа так в честь американского физика Алана Уотермана (англ. Alan Tower Waterman; 1892–1967), учреждена в 1975 году, вручается с 1976 года.](* <- lang_ru;; *);;
+
+concept_Alan_T._Waterman_Award<=nrel_inclusion:concept_award;;

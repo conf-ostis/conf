@@ -1,0 +1,13 @@
+///sc_node_not_relation-> Doklad_17_OSTISX2019;;
+Doklad_17_OSTISX2019=>nrel_main_idtf:[Доклад 17 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_17_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_17_OSTISX2019 => nrel_name_of_doclad: [МЕТОДЫ И СРЕДСТВА ПЛАТФОРМЫ IACPAAS ДЛЯ СЕМАНТИЧЕСКОГО ПРЕДСТАВЛЕНИЯ ЗНАНИЙ И РАЗРАБОТКИ ДЕКЛАРАТИВНЫХ КОМПОНЕНТОВ ИНТЕЛЛЕКТУАЛЬНЫХ СИСТЕМ](* <- lang_ru;;*);;
+
+Doklad_17_OSTISX2019 => nrel_authors: Gribova_V_V;;
+Doklad_17_OSTISX2019 => nrel_authors: Kleschev_A_S;;
+Doklad_17_OSTISX2019 => nrel_authors: Moskalenko_F_M;;
+Doklad_17_OSTISX2019 => nrel_authors: Timchenko_B_A;;
+Doklad_17_OSTISX2019 => nrel_authors: Fedorishchev_L_A;;
+Doklad_17_OSTISX2019 => nrel_authors: Shalfeeva_E_A;;

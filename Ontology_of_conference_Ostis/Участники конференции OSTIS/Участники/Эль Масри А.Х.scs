@@ -1,0 +1,16 @@
+El_Masri_A_H=> nrel_main_idtf:
+[Эль Масри А.Х.]
+(*
+<- lang_ru;;
+*);
+[El_Masri_A_H]
+(*
+<- lang_en;;
+*);;
+
+El_Masri_A_H => nrel_email: [qua12igon12@gmail.com](*<-lang_en;;*);;
+El_Masri_A_H <- person;;
+El_Masri_A_H <- concept_candidate_sciences;;
+El_Masri_A_H <- nrel_participant_of_conference_OSTIS2019;;
+
+

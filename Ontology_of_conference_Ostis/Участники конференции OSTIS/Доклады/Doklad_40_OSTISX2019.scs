@@ -1,0 +1,10 @@
+///sc_node_not_relation-> Doklad_40_OSTISX2019;;
+Doklad_40_OSTISX2019=>nrel_main_idtf:[Доклад 40 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_40_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_40_OSTISX2019 => nrel_name_of_doclad: [СЕМАНТИЧЕСКАЯ ТЕХНОЛОГИЯ ПРОЕКТИРОВАНИЯ ИНТЕЛЛЕКТУАЛЬНЫХ ГЕОИНФОРМАЦИОННЫХ СИСТЕМ](* <- lang_ru;;*);;
+
+Doklad_40_OSTISX2019 => nrel_authors: Samodumkin_S_A;; 
+
+

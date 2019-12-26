@@ -1,0 +1,2 @@
+ concept_New_York_City<-sc_node_not_relation;;
+ concept_New_York_City => nrel_main_idtf:[Нью-Йорк] (* <- lang_ru;;*);;

@@ -1,0 +1,58 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+Laszlo_Lovas<-sc_node_not_relation;
+<=nrel_reward: ...
+(* 
+<-concept_Wolf_Prize;;
+<-concept_Knuth_Prize;;
+<-concept_Godel_Prize;;
+<-concept_Kyoto_Award;;
+<-concept_Fulkerson_Prize;;
+*);;
+
+Laszlo_Lovas => nrel_main_idtf:[Laszlo Lovas] (* <- lang_en;;*);;
+
+Laszlo_Lovas => nrel_main_idtf:[Ласло Ловас] (* <- lang_ru;;*);;
+
+
+Laszlo_Lovas<-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Ласло Ловас)](*<-lang_ru;;*); [Pic. (Laszlo Lovas)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Laszlo_Lovas.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Laszlo_Lovas => nrel_date_of_birth:
+            concept_date_09_03_1948
+            (*
+                => nrel_main_idtf:
+                [9 марта 1948](* <- lang_ru;;*);;
+            *);;
+	
+
+definition ->...
+(*
+->rrel_key_sc_element:  Laszlo_Lovas;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Ласло Ловас - венгерский математик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Ласло Ловас)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Laszlo_Lovas;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Ласло Ловас получил Премию Кнута и Премию Вольфа в 1999 году, Премию Гёделя в 2001, Премию Киото в 2010 и Премию Фалкерсона в 2012..](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Ласло Ловас)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Wolf_Prize;
+	concept_Knuth_Prize;
+	concept_Godel_Prize;
+	concept_Kyoto_Award;
+	concept_Fulkerson_Prize
+};;
+*);;
+
+Laszlo_Lovas<=nrel_inclusion:concept_laureate;;
+Laszlo_Lovas-> rrel_example:[Во время учёбы в школе Ласло Ловас трижды выигрывал золотые медали на Международных математических олимпиадах (1964, 1965, 1966 года; в 1963 году получил серебряную).] (*<-lang_ru;;*);;
+
+Laszlo_Lovas<=nrel_inclusion:concept_person;;
+

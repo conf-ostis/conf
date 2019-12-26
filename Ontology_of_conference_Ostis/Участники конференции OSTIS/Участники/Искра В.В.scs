@@ -1,0 +1,14 @@
+Iskra_V_V=> nrel_main_idtf:
+[Искра В.В.]
+(*
+<- lang_ru;;
+*);
+[Iskra_V_V]
+(*
+<- lang_en;;
+*);;
+
+Iskra_V_V => nrel_email: [iskra.v@rambler.ru](*<-lang_en;;*);;
+Iskra_V_V <- concept_candidate_sciences;;
+Iskra_V_V <- nrel_participant_of_conference_OSTIS2019;;
+Iskra_V_V <- person;;

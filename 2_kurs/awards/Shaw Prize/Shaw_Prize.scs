@@ -1,0 +1,41 @@
+
+concept_The_Shaw_Prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Шао]
+      (*<-lang_ru;;*);
+       [The Shaw Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Пре́мия Шао)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_science
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Пре́мия Шао Ифу или Пре́мия Шао  — ежегодная международная научная премия, присуждаемая Shaw Prize Foundation (Гонконг).] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Шао, достижение, астрономия, повседневная жизнь, медицина, математика)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_medicine;
+	concept_Mathematics;
+concept_everyday_life;
+concept_achievement;
+concept_Astronomy
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Премия Шао присуждается прижизненно за достижения в области астрономии, наук о жизни и медицины и математики.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_The_Shaw_Prize -> rrel_example: [Как в прессе, так и в научных кругах премию зачастую называют «Нобелевской премией Востока» или «Азиатской Нобелевской премией».](* <- lang_ru;; *);;
+
+concept_The_Shaw_Prize<=nrel_inclusion:concept_award;;
+

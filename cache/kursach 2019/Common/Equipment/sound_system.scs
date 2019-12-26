@@ -1,0 +1,18 @@
+concept_sound_system => nrel_main_idtf:
+ [звуковая система](* <- lang_ru;; *);
+ [sound system] (* <- lang_en;; *);;
+ 
+ concept_sound_system <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(звуковая система)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Звуковая система — материальная основа музыкально-логических отношений гармонии.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

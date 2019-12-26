@@ -1,0 +1,6 @@
+
+ sc_node_norole_relation -> nrel_mail_area;; 
+ 
+ nrel_mail_area => nrel_main_idtf:[почта площадки*] (* <-lang_ru;; *);;
+ 
+ nrel_mail__area => nrel_main_idtf:[mail area*] (* <-lang_en;; *);;

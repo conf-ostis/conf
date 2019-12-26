@@ -1,0 +1,58 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Costas_M._Soukoulis<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Descartes_Prize;;
+<-concept_Humboldt_Prize;;
+*);;
+
+Costas_M._Soukoulis => nrel_main_idtf:[Costas M. Soukoulis] (* <- lang_en;;*);;
+
+Costas_M._Soukoulis => nrel_main_idtf:[Костас М. Сукулис] (* <- lang_ru;;*);;
+
+
+Costas_M._Soukoulis <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Костас М. Сукулис)](*<-lang_ru;;*); [Pic. (Costas M. Soukoulis)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Costas_M_Soukoulis.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Costas_M._Soukoulis => nrel_date_of_birth:
+            concept_date_15_01_1951
+            (*
+                => nrel_main_idtf:
+                [15 января 1951](* <- lang_ru;;*);;
+            *);;
+
+Costas_M._Soukoulis=> nrel_place_of_birth:
+            concept_Corinth;;
+
+ concept_Corinth<-concept_city;;
+
+definition ->...
+(*
+->rrel_key_sc_element: Costas_M._Soukoulis;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Костас М. Сукулис  - греческий и американский физик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Костас М. Сукулис)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_physicist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Costas_M._Soukoulis;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Костас М. Сукулис получил Премию Гумбольдта в 2002 году, Премию Декарта в 2005 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Костас М. Сукулис)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Descartes_Prize;
+	concept_Humboldt_Prize
+	
+};;
+*);;
+
+Costas_M._Soukoulis<=nrel_inclusion:concept_laureate;;
+Costas_M._Soukoulis-> rrel_example:[C 2012 года Костас М. Сукулис является членом редакционной коллегии публикуемого Американским физическим обществом журнала «Physical Review Letters».] (*<-lang_ru;;*);;
+
+Costas_M._Soukoulis<=nrel_inclusion:concept_person;;

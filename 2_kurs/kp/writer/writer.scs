@@ -1,0 +1,30 @@
+concept_writer<-sc_node_not_relation;;
+
+concept_writer => nrel_main_idtf:[Writer] (* <- lang_en;;*);;
+
+concept_writer => nrel_main_idtf:[Писатель] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_writer;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Писатель - человек, который пишет литературные произведения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Писатель)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_literary_works
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_writer;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Писателем обычно называют человека, для которого указанное занятие является основным либо одним из основных.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Писатель)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_occupation
+};;
+*);;
+
+concept_writer<=nrel_inclusion:concept_person;;
+concept_writer -> rrel_example:[Объём понятия «писатель» неодинаков в разных культурах и в разные эпохи. ] (*<-lang_ru;;*);;

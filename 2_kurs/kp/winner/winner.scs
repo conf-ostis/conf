@@ -1,0 +1,30 @@
+concept_winner<-sc_node_not_relation;;
+
+concept_winner => nrel_main_idtf:[Winner] (* <- lang_en;;*);;
+
+concept_winner => nrel_main_idtf:[Победитель] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_winner;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Победитель - человек, который одержал победу.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Победитель)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_victory
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_winner;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Победитель может быть только один.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Победитель)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_one
+};;
+*);;
+
+concept_winner<=nrel_inclusion:concept_person;;
+concept_winner -> rrel_example:[Победитель - это не тот, кто не падает. Это тот, кто после падния встаёт и идёт дальше. Возможно, сменив маршрут.] (*<-lang_ru;;*);;

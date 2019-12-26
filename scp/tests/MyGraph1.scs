@@ -1,0 +1,20 @@
+directed_graph->graph2(*
+	->rrel_vertex: A2s;;
+	->rrel_vertex: B2s;;
+	->rrel_vertex: C2s;;
+	->rrel_vertex: G2s;;
+	->rrel_vertex: F2s;;
+	->rrel_edge: (A2s => B2s)(*
+		<=18;;
+	*);;
+	->rrel_edge: (B2s => C2s)(*
+		<=6;;
+	*);;
+	->rrel_edge: (B2s => G2s)(*
+		<=8;;
+	*);;
+	->rrel_edge: (G2s => F2s)(*
+		<=14;;
+	*);;
+
+*);;

@@ -1,0 +1,17 @@
+Jdanovsky_A_M=> nrel_main_idtf:
+[Ждановский А.М.]
+(*
+<- lang_ru;;
+*);
+[Jdanovsky_A_M]
+(*
+<- lang_en;;
+*);;
+
+Jdanovsky_A_M => nrel_email: [common_post@gmail.com](*<-lang_en;;*);;
+
+Jdanovsky_A_M <- concept_professor;;
+Jdanovsky_A_M <- nrel_participant_of_conference_OSTIS2019;;
+Jdanovsky_A_M <- person;;
+
+

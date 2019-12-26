@@ -1,0 +1,30 @@
+concept_enzo => nrel_main_idtf:
+ [Абиус](* <- lang_ru;; *);
+ [Abius] (* <- lang_en;; *);;
+ 
+ 
+ concept_enzo => nrel_count_people : [80];;
+ 
+ concept_enzo => nrel_square : [200];;
+ 
+ concept_enzo => nrel_address : [ул.Октябрьская, 23, 2 этаж];;
+ 
+ concept_enzo => nrel_phone : [ 375 (29) 308-46-73];;
+ 
+ concept_enzo => nrel_mail_area : [veronika.abius@gmail.com];;
+ 
+ concept_enzo => nrel_pay_per_hour : [70];;
+ 
+ concept_enzo => nrel_equipment : concept_lcd_panel;;
+ concept_enzo => nrel_equipment : concept_table;;
+ concept_enzo => nrel_equipment : concept_multimedia_projector;;
+ concept_enzo => nrel_equipment : concept_flipchart;;
+ concept_enzo => nrel_equipment : concept_chair;;
+ concept_enzo => nrel_equipment : concept_wifi;;
+ 
+ concept_enzo => nrel_service : concept_catering;;
+ 
+ concept_enzo => nrel_territory : concept_parking;;
+
+concept_enzo => nrel_description_area : [Предлагаем в аренду пространство ENZO school. Пространство находится в центре города и отлично подойдет для проведения мастер-классов, тренингов и семинаров.Дизайн выполнен в стиле лофт. Помещение оборудовано барной стойкой. Также имеется проектор и флип-чарт.По необходимости предоставляются микрофоны.Преимуществом является возможность организовать кейтеринг для вашего мероприятия, так как в шаговой доступности находятся такие заведения как «ЛАЎКА», ENZO, ДЭПО и Simple.А также наличие вместительной парковки рядом со зданием, где расположено пространство.Наша команда с радостью подготовит помещение для мероприятия с учетом ваших пожеланий!];;
+

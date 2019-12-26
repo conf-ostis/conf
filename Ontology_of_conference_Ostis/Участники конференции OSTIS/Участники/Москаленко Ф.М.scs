@@ -1,0 +1,28 @@
+
+Moskalenko_F_M=> nrel_main_idtf:
+	[Москаленко Ф.М.]
+	(*
+	<- lang_ru;;
+	*);
+	[Moskalenko_F.M.]
+	(*
+	<- lang_en;;
+	*);;
+
+Moskalenko_F_M => nrel_email: [mail.msk_f_m@gmail.com](*<-lang_en;;*);;
+Moskalenko_F_M <- concept_candidate_sciences;;
+
+Moskalenko_F_M<- person;;
+Moskalenko_F_M <- nrel_participant_of_conference_OSTIS2019;;
+
+//Moskalenko_F_M <- concept_participant_of_conference_OSTIS;;
+
+Moskalenko_F_M <- concept_participant_of_conference_OSTIS2011;;
+
+Moskalenko_F_M <- concept_participant_of_conference_OSTIS2015;;
+
+/*Moskalenko_F.M. -> m.n.s.;;
+
+Moskalenko_F.M. <- rrel_key_sc_element: ..illustration_Moskalenko_F.M.(* <- sc_illustation;; *);;
+..illustration_Moskalenko_F.M. <= nrel_translation : ..translation_illustration_Moskalenko_F.M.;;
+..translation_illustration_Moskalenko_F.M.-> rrel_example : [<img src="http://127.0.0.1:8181/Moskalenko.png"/>] (* => nrel_format: format_html;; *);;*/

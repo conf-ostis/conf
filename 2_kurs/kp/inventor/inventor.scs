@@ -1,0 +1,35 @@
+concept_inventor<-sc_node_not_relation;;
+
+concept_inventor => nrel_main_idtf:[Inventor] (* <- lang_en;;*);;
+
+concept_inventor => nrel_main_idtf:[Изобретатель] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_inventor;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Изобретaтель — творческий человек, который создаёт новые изобретения, главным образом, технические устройства.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Изобретатель)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_creative_person;
+	concept_inventions;
+	concept_technical_devices
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_inventor;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Обычно изобретатели — инженеры, создающие технические новшества на базе открытий других учёных.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Изобретатель)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_engineers;
+	concept_technical_innovations;
+	concept_scientists;
+	concept_discovery_base
+};;
+*);;
+
+concept_inventor<=nrel_inclusion:concept_person;;
+concept_inventor -> rrel_example:[Часто изобретатели улучшают существующие устройства или комбинируют их для создания новых полезных устройств.] (*<-lang_ru;;*);;

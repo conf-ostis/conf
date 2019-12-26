@@ -1,0 +1,16 @@
+Barya_A_D=> nrel_main_idtf:
+[Баря А.Д.]
+(*
+<- lang_ru;;
+*);
+[Barya_A_D]
+(*
+<- lang_en;;
+*);;
+
+Barya_A_D => nrel_email: [a.barya@gmail.com](*<-lang_en;;*);;
+
+Barya_A_D <- concept_docent;;
+Barya_A_D <- nrel_participant_of_conference_OSTIS2019;;
+Barya_A_D <- person ;;
+

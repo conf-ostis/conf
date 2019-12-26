@@ -1,0 +1,16 @@
+Bugajenko_U_M=> nrel_main_idtf:
+[Бугаенко Ю.М.]
+(*
+<- lang_ru;;
+*);
+[Bugajenko_U_M]
+(*
+<- lang_en;;
+*);;
+
+Bugajenko_U_M => nrel_email: [u.bugajenko@gmail.com](*<-lang_en;;*);;
+
+Bugajenko_U_M <- concept_PhD;;
+Bugajenko_U_M <- nrel_participant_of_conference_OSTIS2019;;
+Bugajenko_U_M <- person ;;
+

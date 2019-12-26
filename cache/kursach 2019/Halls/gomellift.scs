@@ -1,0 +1,33 @@
+concept_gomellift => nrel_main_idtf:
+ [Гомельлифт](* <- lang_ru;; *);
+ [Gomellift] (* <- lang_en;; *);;
+ 
+ 
+ concept_gomellift => nrel_count_people : [30];;
+ 
+ concept_gomellift => nrel_square : [34];;
+ 
+ concept_gomellift => nrel_address : [ул.Пушкина, 2];;
+ 
+ concept_gomellift => nrel_phone : [ 375 (29) 675-41-07];;
+ 
+ concept_gomellift => nrel_site : [Gomellift.by];;
+ 
+ concept_gomellift => nrel_mail_area : [alkoprof@yandex.ru];;
+ 
+ concept_gomellift => nrel_pay_per_hour : [17];;
+ 
+ concept_gomellift => nrel_equipment : concept_laptop;;
+ concept_gomellift => nrel_equipment : concept_table;;
+ concept_gomellift => nrel_equipment : concept_marker_board;;
+ concept_gomellift => nrel_equipment : concept_multimedia_projector;;
+ concept_gomellift => nrel_equipment : concept_flipchart;;
+ concept_gomellift => nrel_equipment : concept_chair;;
+ concept_gomellift => nrel_equipment : concept_wifi;;
+ 
+ concept_gomellift => nrel_service : concept_catering;;
+ 
+ concept_gomellift => nrel_territory : concept_parking;;
+ 
+ concept_gomellift => nrel_description_area : [Помещение светлое , с двумя окнами, красивый вид из окна, новое в центре города. Имеется кулер с горячей и холодной водой. При проведении мероприятий наша компания предлагает организацию кофе-брейков и бизнес-ланчей.];;
+

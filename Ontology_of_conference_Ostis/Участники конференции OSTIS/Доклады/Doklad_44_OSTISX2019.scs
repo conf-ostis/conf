@@ -1,0 +1,10 @@
+///sc_node_not_relation-> Doklad_44_OSTISX2019;;
+Doklad_44_OSTISX2019=>nrel_main_idtf:[Доклад 44 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_44_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_44_OSTISX2019 => nrel_name_of_doclad: [CЛЕДУЮЩАЯ СТАДИЯ ИНДУСТРИИ 4.0: ОТ КОГНИТИВНЫХ К КОЛЛАБОРАТИВНЫМ И «ПОНИМАЮЩИМ» АГЕНТАМ](* <- lang_ru;;*);;
+
+Doklad_44_OSTISX2019 => nrel_authors: Tarasov_V_B;; 
+
+

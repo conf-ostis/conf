@@ -1,0 +1,50 @@
+sc_agent_for_formation_of_the_expected_list_of_speakers
+=> nrel_main_idtf:
+	[sc-агент для формирования предполагаемого списка докладчиков] 
+	(* <- lang_ru;; *);
+	[sc-agent for formation of the expected list of speakers] 
+	(* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_for_formation_of_the_expected_list_of_speakers_condition => ..sc_agent_for_formation_of_the_expected_list_of_speakers_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	question_formation_of_the_expected_list_of_speakers
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_for_formation_of_the_expected_list_of_speakers
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_for_formation_of_the_expected_list_of_speakers
+		};;
+	-> sc_agent_for_formation_of_the_expected_list_of_speakers_scp   
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_for_formation_of_the_expected_list_of_speakers_condition
+= [*
+	question_formation_of_the_expected_list_of_speakers _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+
+..sc_agent_for_formation_of_the_expected_list_of_speakers_result
+= [*
+	question_formation_of_the_expected_list_of_speakers _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;

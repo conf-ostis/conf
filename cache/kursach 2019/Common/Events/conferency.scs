@@ -1,0 +1,19 @@
+concept_conferency  => nrel_main_idtf:
+ [конференция](* <- lang_ru;; *);
+ [conferency] (* <- lang_en;; *);;
+ 
+ 
+ concept_conferency <- rrel_key_sc_element: 
+         ...
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(конференция)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Конференция — это собрание, совещание представителей каких-нибудь государств, организаций.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

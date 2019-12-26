@@ -1,0 +1,41 @@
+
+concept_Grace_Murray_Hopper_Award<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия имени Грейс Мюррей Хоппер]
+      (*<-lang_ru;;*);
+       [Grace Murray Hopper Award]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Пре́мия и́мени Грейс Мюррей Хоппер)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_contribution;
+       concept_specialist;
+concept_computer_engineering
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Пре́мия и́мени Грейс Мюррей Хоппер — награда, присуждаемая молодому (до 35 лет) специалисту, сделавшему значительный вклад в области вычислительной техники.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Пре́мия и́мени Грейс Мюррей Хоппер, лауреат, поддержка, Microsoft)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_laureate;
+	concept_support;
+	concept_Microsoft
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Лауреат премии получает в качестве приза $35 000, финансовая поддержка предоставляется корпорацией Microsoft.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Grace_Murray_Hopper_Award -> rrel_example: [Ежегодная «Премия имени Грейс Мюррей Хоппер» была учреждена Ассоциацией вычислительной техники (ACM) ещё в 1971 году.](* <- lang_ru;; *);;
+
+concept_Grace_Murray_Hopper_Award<=nrel_inclusion:concept_award;;
+

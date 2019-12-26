@@ -1,0 +1,61 @@
+concept_avant_hall => nrel_main_idtf:
+[Аванзал](* <- lang_ru;; *);
+[Avant Hall] (* <- lang_en;; *);;
+
+
+concept_avant_hall => nrel_count_people : [150];;
+
+concept_avant_hall => nrel_square : [150];;
+
+concept_avant_hall => nrel_address : [г. Минск, пер. Войсковый, 4, Dipservice Hall];;
+
+concept_avant_hall => nrel_phone : [+375-33-333-84-03];;
+
+concept_avant_hall => nrel_site : [http://www.dipservicehall.by];;
+
+concept_avant_hall => nrel_pay_per_hour : [40];;
+
+
+concept_avant_hall => nrel_equipment : concept_table;;
+concept_avant_hall => nrel_equipment : concept_chair;;
+concept_avant_hall => nrel_equipment : concept_armchair;;
+concept_avant_hall => nrel_equipment : concept_sofa;;
+concept_avant_hall => nrel_equipment : concept_sound_system;;
+concept_avant_hall => nrel_equipment : concept_wifi;;
+concept_avant_hall => nrel_equipment : concept_stationary_microphone;;
+concept_avant_hall => nrel_equipment : concept_video_camera;;
+concept_avant_hall => nrel_equipment : concept_wireless_microphone;;
+concept_avant_hall => nrel_equipment : concept_dvd_player;;
+concept_avant_hall => nrel_equipment : concept_head_radiosystem;;
+concept_avant_hall => nrel_equipment : concept_laptop;;
+concept_avant_hall => nrel_equipment : concept_lcd_panel;;
+concept_avant_hall => nrel_equipment : concept_mixer;;
+concept_avant_hall => nrel_equipment : concept_simultaneous_translation_equipment;;
+
+
+concept_avant_hall => nrel_equipment : concept_fireplace;;
+concept_avant_hall => nrel_equipment : concept_lighting_equipment;;
+concept_avant_hall => nrel_equipment : concept_tv;;
+concept_avant_hall => nrel_equipment : concept_multimedia_projector;;
+concept_avant_hall => nrel_equipment : concept_sound_system;;
+concept_avant_hall => nrel_equipment : concept_projection_screen;;
+concept_avant_hall => nrel_equipment : concept_marker_board;;
+concept_avant_hall => nrel_equipment : concept_flipchart;;
+concept_avant_hall => nrel_equipment : concept_chair;;
+concept_avant_hall => nrel_equipment : concept_wifi;;
+
+concept_avant_hall => nrel_type_event : concept_banquet;;
+concept_avant_hall => nrel_type_event : concept_business_meeting;;
+concept_avant_hall => nrel_type_event : concept_presentation;;
+concept_avant_hall => nrel_type_event : concept_press_conference;;
+concept_avant_hall => nrel_type_event : concept_seminar;;
+concept_avant_hall => nrel_type_event : concept_reception;;
+
+concept_avant_hall => nrel_service : concept_catering;;
+concept_avant_hall => nrel_service : concept_furniture_arrangement;;
+concept_avant_hall => nrel_service : concept_photography;;
+
+concept_avant_hall => nrel_territory : concept_parking;;
+concept_avant_hall => nrel_territory : concept_dance_floor;;
+
+concept_avant_hall => nrel_description_area : [Аванзал со вторым светом в виде стеклянного купола, на стенах гобелен и оригинальные картины. Аванзал является центральным холлом здания и может служить как непосредственно местом проведения торжественного мероприятия, так и холлом для общения гостей во время проведения приемов, фуршетов и других торжеств. В укромных уголках фойе-гостиной, примыкающей к аванзалу расположены диваны, кресла, столики, располагающие к уединенному отдыху и тесному общению группы гостей с возможностью комфортно разместиться с бокалом вина или чашкой чая.];;

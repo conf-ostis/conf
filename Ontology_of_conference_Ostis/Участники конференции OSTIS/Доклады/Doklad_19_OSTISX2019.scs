@@ -1,0 +1,13 @@
+///sc_node_not_relation-> Doklad_19_OSTISX2019;;
+Doklad_19_OSTISX2019=>nrel_main_idtf:[Доклад 19 OSTIS-2019](*<- lang_ru;;*);;
+
+
+Doklad_19_OSTISX2019 <- doklad_OSTISX2019;;
+
+
+Doklad_19_OSTISX2019 => nrel_name_of_doclad: [МЕТОДЫ И ТЕХНОЛОГИИ ОЦЕНКИ ВОЗДЕЙСТВИЯ ЭНЕРГЕТИКИ НА ГЕОЭКОЛОГИЮ РЕГИОНА (НА ПРИМЕРЕ БАЙКАЛЬСКОГО РЕГИОНА (РОССИЯ) И БЕЛАРУСИ)](* <- lang_ru;;*);;
+
+
+Doklad_19_OSTISX2019 => nrel_authors: Massel_A_G;; 
+Doklad_19_OSTISX2019 => nrel_authors: Massel_L_V;; 
+Doklad_19_OSTISX2019 => nrel_authors: Zorina_T_G;; 

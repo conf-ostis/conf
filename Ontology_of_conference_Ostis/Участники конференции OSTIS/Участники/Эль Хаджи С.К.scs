@@ -1,0 +1,16 @@
+El_Hadzhi_S_K=> nrel_main_idtf:
+[Эль Хаджи С.К.]
+(*
+<- lang_ru;;
+*);
+[El_Hadzhi_S_K]
+(*
+<- lang_en;;
+*);;
+
+El_Hadzhi_S_K => nrel_email: [Hadzhi12350@gmail.com](*<-lang_en;;*);;
+El_Hadzhi_S_K <- person;;
+El_Hadzhi_S_K <- concept_candidate_sciences;;
+El_Hadzhi_S_K <- nrel_participant_of_conference_OSTIS2019;;
+
+

@@ -1,0 +1,2 @@
+concept_Humboldt_Prize<-sc_node_not_relation;;
+concept_Humboldt_Prize => nrel_main_idtf:[Премия Гумбольдта] (* <- lang_ru;;*);;

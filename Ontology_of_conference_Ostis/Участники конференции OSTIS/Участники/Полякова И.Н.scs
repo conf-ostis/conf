@@ -1,0 +1,17 @@
+Polyakova_I_N=> nrel_main_idtf:
+[Полякова И.Н.]
+(*
+<- lang_ru;;
+*);
+[Polyakova_I_N]
+(*
+<- lang_en;;
+*);;
+
+Polyakova_I_N => nrel_email: [pol.i.n087@pmail.com](*<-lang_en;;*);;
+
+Polyakova_I_N <- concept_professor;;
+
+Polyakova_I_N <- nrel_participant_of_conference_OSTIS2019;;
+
+Polyakova_I_N <- person;;

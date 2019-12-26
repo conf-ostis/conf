@@ -1,0 +1,20 @@
+ui_menu_file_for_formation_of_the_expected_list_of_speakers
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Сформировать предполагаемый список докладчиков](* <- lang_ru;; *);
+		[Form of the expected list of speakers] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_formation_of_the_expected_list_of_speakers _-> ._question_formation_of_the_expected_list_of_speakers_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._question_formation_of_the_expected_list_of_speakers_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос формирования прдполагаемого списка докладчиков в $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[Request of forming the expected list of speakers in $ui_arg_1] 
+		(* <- lang_en;; *);;
+

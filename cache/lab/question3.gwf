@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/group" idtf="book" shapeColor="193" id="42432896" parent="43409472" left="0" top="0" right="43.7812" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="284" y="77" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="" shapeColor="0" id="43036432" parent="43409472" x="173" y="230" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="" shapeColor="0" id="43027888" parent="43409472" x="174" y="76" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/relation" idtf="nrel_adaptation" shapeColor="0" id="43037168" parent="43409472" left="0" top="0" right="123.344" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="236" y="130" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="44027632" parent="43409472" id_b="42432896" id_e="43027888" b_x="284" b_y="77" e_x="174" e_y="76" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <pair type="pair/var/orient" idtf="" shapeColor="0" id="43398368" parent="43409472" id_b="43027888" id_e="43036432" b_x="174" b_y="76" e_x="173" e_y="230" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="43397232" parent="43409472" id_b="43037168" id_e="43398368" b_x="236" b_y="130" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.497558">
+            <points/>
+        </arc>
+        <contour type="" idtf="question3" shapeColor="0" id="43409472" parent="0" left="0" top="0" right="80.9531" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10">
+            <points>
+                <point x="89" y="47"/>
+                <point x="89" y="272"/>
+                <point x="369" y="272"/>
+                <point x="369" y="47"/>
+            </points>
+        </contour>
+    </staticSector>
+</GWF>

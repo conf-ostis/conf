@@ -1,0 +1,18 @@
+concept_parking => nrel_main_idtf:
+ [парковка](* <- lang_ru;; *);
+ [parking] (* <- lang_en;; *);;
+ 
+ concept_parking <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(парковка)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Парковка — технический термин, означающий штатный перевод механизма, устройства, транспортного средства в нерабочее, неподвижное положение в предусмотренном для этого безопасном месте.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

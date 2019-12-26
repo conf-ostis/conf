@@ -1,0 +1,42 @@
+concept_astrometry<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Астрометрия]
+	(*<-lang_ru;;*);
+	[concept_astrometry]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Астрометрия)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_Astronomy;
+nrel_geometric_property;
+nrel_the_kinematic_property;
+concept_celestial_body
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Астрометрия - раздел астрономии, главной задачей которого является изучение геометрических и кинематических свойств небесных тел.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Астрометрия,задача, местоположение, вектор,  скорость )] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+	concept_task;
+	nrel_location;
+	concept_celestial_body;
+	concept_vector;
+	concept_speed
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Основная задача астрометрии более развёрнуто формулируется как высокоточное определение местонахождения небесных тел и векторов их скоростей в данный момент времени.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_astrometry -> rrel_example: [Существует несколько астрометрических параметров: небесные экваториальные координаты, собственное движение, параллаксы, лучевая скорость] (*<-lang_ru;;*);;
+concept_astrometry<=nrel_inclusion:concept_Astronomy;;
+concept_astrometry->concept_absolute_luminosity_of_the_object;;

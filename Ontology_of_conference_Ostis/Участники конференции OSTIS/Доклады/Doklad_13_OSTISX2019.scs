@@ -1,0 +1,8 @@
+///sc_node_not_relation-> Doklad_13_OSTISX2019;;
+Doklad_13_OSTISX2019=>nrel_main_idtf:[Доклад 13 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_13_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_13_OSTISX2019 => nrel_name_of_doclad: [ИНФОРМАЦИОННЫЙ ПОИСК И МАШИННЫЙ ПЕРЕВОД В РЕШЕНИИ ЗАДАЧИ АВТОМАТИЧЕСКОГО РАСПОЗНАВАНИЯ ЗАИМСТВОВАННЫХ ФРАГМЕНТОВ ТЕКСТОВЫХ ДОКУМЕНТОВ](* <- lang_ru;;*);;
+
+Doklad_13_OSTISX2019 => nrel_authors: Krapivin_U_B;;

@@ -1,0 +1,55 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Ravindran_Kannan<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Fulkerson_Prize;;
+<-concept_Knuth_Prize;;
+*);;
+
+Ravindran_Kannan => nrel_main_idtf:[Ravindran Kannan] (* <- lang_en;;*);;
+
+Ravindran_Kannan => nrel_main_idtf:[Равиндран Каннан] (* <- lang_ru;;*);;
+
+Ravindran_Kannan <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Равиндран Каннан)](*<-lang_ru;;*); [Pic. (Ravindran Kannan)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Ravindran_Kannan.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+Ravindran_Kannan => nrel_date_of_birth:
+            concept_date_12_03_1953
+            (*
+                => nrel_main_idtf:
+                [12 марта 1953](* <- lang_ru;;*);;
+            *);;
+
+Ravindran_Kannan=> nrel_place_of_birth:
+            concept_Chennai;;
+
+concept_Chennai<-concept_city;;
+
+definition ->...
+(*
+->rrel_key_sc_element: Ravindran_Kannan;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Равиндран Каннан  - индийский учёный.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Равиндран Каннан)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_scientist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Ravindran_Kannan;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Равиндран Каннан получил Премию Фалкерсона в 1991 году и Премию Кнута в 2011 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Равиндран Каннан)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Fulkerson_Prize;
+	concept_Knuth_Prize	
+};;
+*);;
+
+Ravindran_Kannan<=nrel_inclusion:concept_laureate;;
+Ravindran_Kannan-> rrel_example:[Научные интересы Равиндрана Каннана включают алгоритмы, теоретические компьютерные науки и дискретную математику, а также оптимизацию..] (*<-lang_ru;;*);;
+Ravindran_Kannan<=nrel_inclusion:concept_person;;
+

@@ -1,0 +1,29 @@
+concept_taverna => nrel_main_idtf:
+ [Кафе «Таверна»](* <- lang_ru;; *);
+ [Cafe "Tavern"] (* <- lang_en;; *);;
+ 
+ 
+ concept_taverna => nrel_count_people : [160];;
+ 
+ concept_taverna => nrel_address : [пр-т Газеты Правда, 20];;
+ 
+ concept_taverna => nrel_phone : [ 375 17 277 26 71];;
+ concept_taverna => nrel_phone : [ 375 29 160 60 56];;
+ 
+ concept_taverna => nrel_site : [https://taverna-minsk.relax.by/];;
+ 
+ concept_taverna => nrel_medium_payment : [30];;
+ 
+ concept_taverna => nrel_equipment : concept_sound_system;;
+ 
+ concept_taverna => nrel_type_event : concept_banquet;;
+ concept_taverna => nrel_type_event : concept_business_meeting;;
+ concept_taverna => nrel_type_event : concept_anniversary;;
+ concept_taverna => nrel_type_event : concept_reception;;
+ concept_taverna => nrel_type_event : concept_marriage;;
+ concept_taverna => nrel_type_event : concept_birthday;;
+ 
+ concept_taverna => nrel_service : concept_musician;;
+ 
+ concept_taverna => nrel_description_area : [Уютный и располагающий интерьер, вкусная и разнообразная кухня, теплая и расслабляющая атмосфера… Кафе «Таверна» является именно тем местом, где все это дополняется демократичностью цен и возможностью на высоком уровне организовать любое ваше мероприятие.];;
+

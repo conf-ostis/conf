@@ -1,0 +1,6 @@
+sc_text_of_agent_for_the_time_allotment_of_the_presentations
+-> rrel_key_sc_element:
+	agent_for_the_time_allotment_of_the_presentations;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_for_the_time_allotment_of_the_presentations = [*^"file://agent_for_the_time_allotment_of_the_presentations.scsi"*];;

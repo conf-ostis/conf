@@ -1,0 +1,19 @@
+concept_filming => nrel_main_idtf:
+ [видеосъемка](* <- lang_ru;; *);
+ [filming] (* <- lang_en;; *);;
+ 
+ concept_filming <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(видеосъемка)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Видеосъемка — процесс создания кинематографического изображения на киноплёнке или цифровом носителе.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+//Add a comment to this line
+ 	*);;
+

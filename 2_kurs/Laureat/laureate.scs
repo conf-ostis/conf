@@ -1,0 +1,33 @@
+sc_node_not_relation->concept_laureate;;
+
+concept_laureate=> nrel_main_idtf: [лауреат](* <- lang_ru;; *);;
+concept_laureate=> nrel_main_idtf: [laureate](* <- lang_en;; *);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_laureate;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Лауреат - лицо, которому присуждена государственная или международная премия за выдающиеся достижения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (лауреат)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_person;
+	concept_achievement;
+	concept_award
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_laureate;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Термин «лауреат» возник в Древней Греции, где почётным лавровым венком награждались победители каких-либо состязаний.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(лауреат)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_term;
+	concept_laurel_wreath;
+	concept_winner;
+	concept_competition
+};;
+*);;
+
+Peter_David_Lax<-rrel_example:concept_laureate;;

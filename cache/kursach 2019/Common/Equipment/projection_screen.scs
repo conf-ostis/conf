@@ -1,0 +1,18 @@
+concept_projection_screen => nrel_main_idtf:
+ [проекционный экран](* <- lang_ru;; *);
+ [projection screen] (* <- lang_en;; *);;
+ 
+ concept_projection_screen <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(проекционный экран)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Проекционный экран — являются заключительным элементом в цепочке аудиовизуальных систем.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

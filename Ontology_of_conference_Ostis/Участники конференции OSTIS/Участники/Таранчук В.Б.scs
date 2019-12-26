@@ -1,0 +1,17 @@
+Taranchuk_V_B=> nrel_main_idtf:
+[Таранчук В. Б.]
+(*
+<- lang_ru;;
+*);
+[Taranchuk_V_B]
+(*
+<- lang_en;;
+*);;
+
+Taranchuk_V_B => nrel_email: [taran_vit1@mail.ru](*<-lang_en;;*);;
+Taranchuk_V_B <- person;;
+Taranchuk_V_B <- concept_PhD;;
+Taranchuk_V_B <- nrel_participant_of_conference_OSTIS2019;;
+Tarancuk_V_B <- concept_participant_of_conference_OSTIS2015;;
+
+

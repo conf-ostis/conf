@@ -1,0 +1,19 @@
+concept_hall_decoration => nrel_main_idtf:
+ [украшение зала](* <- lang_ru;; *);
+ [hall_decoration] (* <- lang_en;; *);;
+ 
+ concept_hall_decoration <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(украшение зала)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Украшение зала — это оформление зала, свадебное оформление.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+
+ 	*);;
+

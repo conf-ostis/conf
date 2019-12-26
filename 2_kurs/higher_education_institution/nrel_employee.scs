@@ -1,0 +1,51 @@
+
+nrel_employee<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[работник*]
+(*<-lang_ru;;*);
+[nrel_employee*]
+(*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=> nrel_main_idtf: [Определение (работник)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+concept_human;
+concept_place
+};;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Выпусник --человек работающий в определенном месте ] (* <- lang_ru;;*);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(работник*)] (* <- lang_ru;; *);;
+=> nrel_using_constants:
+{
+concept_salary
+};;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Работник получает заработную плату ](*<-lang_ru;;*);;
+      *);;
+
+*);
+=> nrel_definitional_domain: ... (*
+        <= nrel_combination:
+{concept_human;
+ concept_place
+};;
+*);
+=>nrel_first_domain:
+concept_place;
+=> nrel_second_domain:
+concept_human;;
+nrel_employee->(concept_Israel_Institute_of_Technology=> Yaakov_Ziv);;
+
+oriented_relation->nrel_employee;;
+antisymmetric_relation->nrel_employee;;
+transitive_relation-|>nrel_employee;;
+antireflexive_relation->nrel_employee;;
+

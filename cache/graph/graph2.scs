@@ -1,0 +1,25 @@
+graph -> G2;;
+G2 -> rrel_arcs: ..arcs;;
+G2 -> rrel_nodes: ..nodes;;
+
+..nodes -> A3;;
+..nodes -> B3;;
+..nodes -> C3;;
+..nodes -> D3;;
+..nodes -> F3;;
+..nodes -> G3;;
+
+..arcs -> (A3 => B3);;
+..arcs -> (A3 => C3);;
+..arcs -> (B3 => D3);;
+..arcs -> (D3 => F3);;
+..arcs -> (F3 => G3);;
+..arcs -> (C3 => D3);;
+
+25=>(A3 => B3);;
+10=>(B3 => D3);;
+10=>(A3 => C3);;
+25=>(C3 => D3);;
+20=>(D3 => F3);;
+35=>(F3 => G3);;
+

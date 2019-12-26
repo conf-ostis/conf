@@ -1,0 +1,30 @@
+concept_neman_hotel => nrel_main_idtf:
+ [Отель Неман](* <- lang_ru;; *);
+ [Neman Hotel] (* <- lang_en;; *);;
+ 
+ 
+ concept_neman_hotel => nrel_count_people : [60];;
+ 
+ concept_neman_hotel => nrel_address : [ул. Стефана Батория, д.8];;
+ 
+ concept_neman_hotel => nrel_phone : [ 380 (44) 392-07-81];;
+ concept_neman_hotel => nrel_phone : [ 380 (44) 392-48-33];;
+ 
+ concept_neman_hotel => nrel_site : [http://www.hotel-neman.by/];;
+ 
+ concept_neman_hotel => nrel_pay_per_hour : [91];;
+ 
+ concept_neman_hotel => nrel_equipment : concept_sound_system;;
+ concept_neman_hotel => nrel_equipment : concept_projection_screen;;
+ concept_neman_hotel => nrel_equipment : concept_table;;
+ concept_neman_hotel => nrel_equipment : concept_multimedia_projector;;
+ concept_neman_hotel => nrel_equipment : concept_flipchart;;
+ concept_neman_hotel => nrel_equipment : concept_chair;;
+ concept_neman_hotel => nrel_equipment : concept_wifi;;
+ 
+ concept_neman_hotel => nrel_service : concept_catering;;
+ 
+ concept_neman_hotel => nrel_territory : concept_parking;;
+ 
+ concept_neman_hotel => nrel_description_area : [Отель «НЕМАН» распложен в самом сердце Гродно на Советской Площади, которая после реконструкции стала главной площадкой города во время проведения Праздников и Фестивалей.];;
+

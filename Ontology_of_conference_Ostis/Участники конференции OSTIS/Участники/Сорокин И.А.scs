@@ -1,0 +1,15 @@
+Sorokin_I_A=> nrel_main_idtf:
+[Сорокин И.А.]
+(*
+<- lang_ru;;
+*);
+[Sorokin_I_A]
+(*
+<- lang_en;;
+*);;
+
+Sorokin_I_A => nrel_email: [ia.soroka@gmail.com](*<-lang_en;;*);;
+Sorokin_I_A <- person;;
+Sorokin_I_A <- concept_candidate_sciences;;
+Sorokin_I_A <- nrel_participant_of_conference_OSTIS2019;;
+

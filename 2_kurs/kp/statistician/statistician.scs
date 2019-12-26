@@ -1,0 +1,35 @@
+concept_statistician<-sc_node_not_relation;;
+
+concept_statistician => nrel_main_idtf:[Statistician] (* <- lang_en;;*);;
+
+concept_statistician => nrel_main_idtf:[Статистик] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_statistician;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Статистик - человек, который собирает и анализирует эмпирические данные, обрабатывает их и представляет в виде графиков.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Статистик)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_empirical_evidence;
+	concept_chart
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_statistician;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Исходя из цели статистического обследования, статистики выбирают методы обследования и анализа и определяют области обследования.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Статистик)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_target;
+	concept_statistical_survey;
+	concept_survey_methods;
+	concept_analysis_methods;
+	concept_field_of_study
+};;
+*);;
+
+concept_statistician<=nrel_inclusion:concept_person;;
+concept_statistician -> rrel_example:[Статистики работают в компаниях практически всех секторов экономики, в институтах исследования рынка и общественного мнения, на государственной службе, в университетах и научно-исследовательских институтах.] (*<-lang_ru;;*);;

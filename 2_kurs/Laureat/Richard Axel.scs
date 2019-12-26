@@ -1,0 +1,61 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+
+Richard_Axel<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Nobel_Prize;;
+<-concept_Alan_T._Waterman_Award;;
+<-concept_Rosenstiel_Award;;
+*);;
+
+Richard_Axel => nrel_main_idtf:[Richard Axel] (* <- lang_en;;*);;
+
+Richard_Axel => nrel_main_idtf:[Ричард Аксел] (* <- lang_ru;;*);;
+
+
+Richard_Axel <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Ричард Аксел)](*<-lang_ru;;*); [Pic. (Richard Axel)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Richard_Axel.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Richard_Axel => nrel_date_of_birth:
+            concept_date_02_07_1946
+            (*
+                => nrel_main_idtf:
+                [2 июля 1946](* <- lang_ru;;*);;
+            *);;
+
+Richard_Axel => nrel_place_of_birth:
+            concept_New_York_City;;
+
+ concept_New_York_City<-concept_city;;
+
+definition ->...
+(*
+->rrel_key_sc_element: Richard_Axel;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Ричард Аксел  - американский нейробиолог.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Ричард Аксел)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_neuroscientist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Richard_Axel;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Ричард Аксел получил Премию Алана Уотермана в 1982 году, Премию Розенстила в 1996 году и Нобелевскую премию в 2004 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Ричард Аксел)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Nobel_Prize;
+	concept_Alan_T._Waterman_Award;
+	concept_Rosenstiel_Award
+	
+};;
+*);;
+
+Richard_Axel<=nrel_inclusion:concept_laureate;;
+Richard_Axel-> rrel_example:[В 2016 году Ричард Аксел подписал письмо с призывом к Greenpeace, Организации Объединенных Наций и правительствам всего мира прекратить борьбу с генетически модифицированными организмами.] (*<-lang_ru;;*);;
+Richard_Axel<=nrel_inclusion:concept_person;;
+

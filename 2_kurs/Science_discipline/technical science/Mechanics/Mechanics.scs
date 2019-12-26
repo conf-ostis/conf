@@ -1,0 +1,41 @@
+concept_Mechanics<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Механика]
+	(*<-lang_ru;;*);
+	[Mechanics]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Механика)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+concept_Physics;
+concept_science;
+concept_movement;
+concept_material_body;
+concept_interaction
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Механика - раздел физики, наука, изучающая движение материальных тел и взаимодействие между ними.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Механика, закон Ньютона, преобразование Галилея, инерциальная система отсчёта)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_Newton_s_law;
+concept_Galilean_transformation;
+concept_inertial_reference_frame
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Классическая механика основана на законах Ньютона, преобразовании скоростей Галилея и существовании инерциальных систем отсчёта.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_Mechanics-> rrel_example: [ По предмету изучения механика подразделяется на: теоретическую механику; механику сплошных сред; специальные механические дисциплины: теорию механизмов и машин, сопротивление материалов, гидравлику, механику грунтов и др.] (*<-lang_ru;;*);;
+concept_Mechanics <=nrel_inclusion:concept_technical_science;;
+concept_Mechanics<=nrel_inclusion:concept_Physics;;

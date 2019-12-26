@@ -1,0 +1,19 @@
+concept_laptop => nrel_main_idtf:
+ [ноутбук](* <- lang_ru;; *);
+ [laptop] (* <- lang_en;; *);;
+ 
+ concept_laptop <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(ноутбук)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Ноутбук — переносной персональный компьютер, в корпусе которого объединены типичные компоненты ПК, включая дисплей, клавиатуру и устройство указания (обычно сенсорная панель или тачпад), а также аккумуляторные батареи.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+//Add a comment to this line
+ 	*);;
+

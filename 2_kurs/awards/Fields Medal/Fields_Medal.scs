@@ -1,0 +1,43 @@
+
+concept_Fields_Medal<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Филдсовская премия]
+      (*<-lang_ru;;*);
+       [Fields Medal]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Фи́лдсовская пре́мия)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_prize;
+       concept_medal;
+	concept_international_mathematical_congress;
+	concept_mathematician
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Фи́лдсовская пре́мия — международная премия и меда́ль, которые вручаются один раз в четыре года на каждом международном математическом конгрессе двум, трём или четырём молодым математикам в возрасте не старше 40 лет (или достигшим 40-летия в год вручения премии).] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Филдсова премия, президент международного математического конгресса, идея, математический конгресс, математик, заслуги)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_President_of_the_International_Mathematical_Congress;
+	concept_international_mathematical_congress;
+	concept_mathematician;
+	concept_idea;
+	concept_merit
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Джон Филдс, будучи президентом международного математического конгресса, выступил с идеей на каждом математическом конгрессе (который проводится раз в четыре года) награждать двух математиков золотой медалью в знак признания их выдающихся заслуг мировым математическим сообществом.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Fields_Medal -> rrel_example: [Первые две Филдсовы Медали были вручены в 1936 году на X конгрессе в Осло.](* <- lang_ru;; *);;
+concept_Fields_Medal <=nrel_inclusion:concept_award;;
+

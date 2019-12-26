@@ -1,0 +1,18 @@
+concept_musician => nrel_main_idtf:
+ [музыкант](* <- lang_ru;; *);
+ [musician] (* <- lang_en;; *);;
+ 
+ concept_musician <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(музыкант)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Музыкант — специалист в области музыки или тот, кто занимается игрой на музыкальном инструменте.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

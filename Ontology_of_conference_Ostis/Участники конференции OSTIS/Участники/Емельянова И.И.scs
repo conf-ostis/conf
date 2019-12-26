@@ -1,0 +1,17 @@
+Yemelyanova_I_I=> nrel_main_idtf:
+[Емельянова И.И.]
+(*
+<- lang_ru;;
+*);
+[Yemelyanova_I_I]
+(*
+<- lang_en;;
+*);;
+
+Yemelyanova_I_I => nrel_email: [i.emelyanova@mail.ru](*<-lang_en;;*);;
+
+Yemelyanova_I_I <- concept_graduate;;
+Yemelyanova_I_I <- nrel_participant_of_conference_OSTIS2019;;
+Yemelyanova_I_I <- person;;
+
+

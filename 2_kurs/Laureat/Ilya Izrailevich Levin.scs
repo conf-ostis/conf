@@ -1,0 +1,49 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+Ilya_Izrailevich_Levin<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Prize_named_after_A.A._Raspletina;;
+*);;
+
+Ilya_Izrailevich_Levin => nrel_main_idtf:[Ilya Izrailevich Levin] (* <- lang_en;;*);;
+
+Ilya_Izrailevich_Levin => nrel_main_idtf:[Илья Израилевич Левин] (* <- lang_ru;;*);;
+
+Ilya_Izrailevich_Levin <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Илья Израилевич Левин)](*<-lang_ru;;*); [Pic. (Ilya Izrailevich Levin)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Ilya_Izrailevich_Levin.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Ilya_Izrailevich_Levin => nrel_date_of_birth:
+            concept_date_22_10_1962
+            (*
+                => nrel_main_idtf:
+                [22 октября 1962](* <- lang_ru;;*);;
+            *);;
+
+definition ->...
+(*
+->rrel_key_sc_element: Ilya_Izrailevich_Levin;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Илья Израилевич Левин  - советский учёный.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Илья Израилевич Левин)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_scientist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Ilya_Izrailevich_Levin;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Илья Израилевич Левин получил Премию имени А. А. Расплетина в 2009 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Илья Израилевич Левин)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Prize_named_after_A.A._Raspletina
+	
+};;
+*);;
+
+Ilya_Izrailevich_Levin<=nrel_inclusion:concept_laureate;;
+Ilya_Izrailevich_Levin-> rrel_example:[Илья Израилевич Левин является руководителем ряда НИР и главным конструктором опытно-конструкторских работ.] (*<-lang_ru;;*);;
+Ilya_Izrailevich_Levin<=nrel_inclusion:concept_person;;
+

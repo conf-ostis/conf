@@ -1,0 +1,40 @@
+
+concept_Prize_named_after_S.A._Lebedeva<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия имени С.А. Лебедева]
+      (*<-lang_ru;;*);
+       [Nobel Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия имени С.А. Лебедева)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_Russian_Academy_of_Sciences;
+       concept_treatise;
+concept_Computational_Mathematics
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия имени С.А. Лебедева — премия, присуждаемая Российской академией наук за выдающиеся работы в области разработок вычислительных систем.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия имени С.А. Лебедева, медицина, завещание)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_academician;
+	concept_Corresponding_Member_of_RAS
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Премия имени С.А. Лебедева впервые была присуждена в 1993 академику и члену-корреспонденту РАН за цикл работ «Новые каталитические системы и пути совершенствования синтеза цис- и транс-полидиенов».](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Prize_named_after_S.A._Lebedeva -> rrel_example: [В 1994 году доктор технических наук А.А Соколов получил премию имени С.А. Лебедева за создание модульно-конвейерного процессора/МКП/ для векторно-скалярных вычислений с пиковой производительностью до 400 Мфлопс с полным аппаратным контролем и резервированием функциональных модулей.](* <- lang_ru;; *);;
+
+concept_Prize_named_after_S.A._Lebedeva<=nrel_inclusion:concept_award;;
+

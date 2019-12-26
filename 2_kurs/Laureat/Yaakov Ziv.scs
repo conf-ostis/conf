@@ -1,0 +1,61 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Yaakov_Ziv<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Richard_W._Hamming_Medal;;
+<-concept_Claude_E._Shannon_Award;;
+<-concept_Paris_Kanellakis_Theory_and_Practice_Award;;
+*);;
+
+Yaakov_Ziv => nrel_main_idtf:[Yaakov Ziv] (* <- lang_en;;*);;
+
+Yaakov_Ziv => nrel_main_idtf:[Яаков Зив] (* <- lang_ru;;*);;
+
+
+Yaakov_Ziv<-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Яаков Зив)](*<-lang_ru;;*); [Pic. (Yaakov Ziv)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Yaakov_Ziv.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Yaakov_Ziv => nrel_date_of_birth:
+            concept_date_27_11_1931
+            (*
+                => nrel_main_idtf:
+                [27 ноября 1931](* <- lang_ru;;*);;
+            *);;
+
+Yaakov_Ziv=> nrel_place_of_birth:
+            concept_Tiberias;;
+
+concept_Tiberias<-concept_city;;
+
+definition ->...
+(*
+->rrel_key_sc_element: Yaakov_Ziv;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Яаков Зив  - израильский учёный и математик,.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Яаков Зив)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_scientist;
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Yaakov_Ziv;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Яаков Зив получил Медаль Ричарда Хэмминга в 1995 году,Премию Шеннона и Премию Канеллакиса в 1997 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Яаков Зив)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Richard_W._Hamming_Medal;
+	concept_Claude_E._Shannon_Award;
+	concept_Paris_Kanellakis_Theory_and_Practice_Award
+	
+};;
+*);;
+
+Yaakov_Ziv<=nrel_inclusion:concept_laureate;;
+Yaakov_Ziv-> rrel_example:[В 1955—1959, 1962—1968 годах работал в Министерстве обороны Израиля.] (*<-lang_ru;;*);;
+
+Yaakov_Ziv<=nrel_inclusion:concept_person;;

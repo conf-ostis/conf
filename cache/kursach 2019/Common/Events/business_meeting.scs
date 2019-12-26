@@ -1,0 +1,19 @@
+concept_business_meeting  => nrel_main_idtf:
+ [бизнес-встреча](* <- lang_ru;; *);
+ [business_meeting] (* <- lang_en;; *);;
+ 
+ 
+ concept_business_meeting <- rrel_key_sc_element: 
+         ...
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(бизнес-встреча)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Бизнес-встреча — это самая распространенная форма международного делового общения и удобная бизнес-площадка для успешных людей.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

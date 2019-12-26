@@ -1,0 +1,53 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+Leslie_Gabriel_Valiant<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Rolf_Nevanlinna_Prize;;
+<-concept_Turing_Award;;
+<-concept_Knuth_Prize;;
+*);;
+Leslie_Gabriel_Valiant => nrel_main_idtf:[Leslie Gabriel Valiant] (* <- lang_en;;*);;
+
+Leslie_Gabriel_Valiant=> nrel_main_idtf:[Лесли Гэбриел Вэлиант] (* <- lang_ru;;*);;
+
+
+Leslie_Gabriel_Valiant<-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Лесли Гэбриел Вэлиант)](*<-lang_ru;;*); [Pic. (Leslie Gabriel Valiant)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Leslie_Gabriel_Valiant.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Leslie_Gabriel_Valiant => nrel_date_of_birth:
+            concept_date_28_03_1949
+            (*
+                => nrel_main_idtf:
+                [28 марта 1949](* <- lang_ru;;*);;
+            *);;
+
+
+definition ->...
+(*
+->rrel_key_sc_element: Leslie_Gabriel_Valiant;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Лесли Гэбриел Вэлиант  - британский и американский учёный.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Лесли Гэбриел Вэлиант)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_scientist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Leslie_Gabriel_Valiant;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Лесли Гэбриел Вэлиант получил Премию Неванлинны в 1986 году, Премию Кнута в 1997 году, Премию Тьюринга в 2010 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Лесли Гэбриел Вэлиант)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Rolf_Nevanlinna_Prize;
+	concept_Turing_Award;
+	concept_Knuth_Prize	
+};;
+*);;
+
+Leslie_Gabriel_Valiant<=nrel_inclusion:concept_laureate;;
+Leslie_Gabriel_Valiant-> rrel_example:[Лесли Гэбриел Вэлиант занимается исследованиями в области теоретической информатики..] (*<-lang_ru;;*);;
+
+Leslie_Gabriel_Valiant<=nrel_inclusion:concept_person;;

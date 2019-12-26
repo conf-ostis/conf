@@ -1,0 +1,24 @@
+
+Vishnyakov_V_A=> nrel_main_idtf:
+	[Вишняков В.А.]
+	(*
+	<- lang_ru;;
+	*);
+	[Visnakov V.A.]
+	(*
+	<- lang_en;;
+	*);;
+
+Vishnyakov_V_A => nrel_email: [vish2002@list.ru](*<-lang_en;;*);;
+
+Vishnyakov_V_A <= nrel_authors:  ...(* -> Doklad_15_OSTISX2015;Doklad_56_OSTISX2014;; *);;
+
+//Vishnyakov_V_A -> Ucastnik_konferenzii_OSTIS;;
+Vishnyakov_V_A <- concept_participant_of_conference_OSTIS2014;;
+Vishnyakov_V_A <- concept_participant_of_conference_OSTIS2013;;
+Vishnyakov_V_A <- concept_participant_of_conference_OSTIS2015;;
+Vishnyakov_V_A <- nrel_participant_of_conference_OSTIS2019;;
+
+
+Vishnyakov_V_A <- concept_professor;;
+Vishnyakov_V_A <- person ;;

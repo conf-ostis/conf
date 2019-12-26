@@ -1,0 +1,5 @@
+ sc_node_norole_relation -> nrel_count_people;; 
+ 
+ nrel_count_people => nrel_main_idtf:[вместимость] (* <-lang_ru;; *);;
+ 
+ nrel_count_people => nrel_main_idtf:[count people*] (* <-lang_en;; *);;

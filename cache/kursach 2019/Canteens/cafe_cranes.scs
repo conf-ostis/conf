@@ -1,0 +1,24 @@
+concept_cafe_cranes => nrel_main_idtf:
+ [Кафе «Журавли»](* <- lang_ru;; *);
+ [Cafe "Cranes"] (* <- lang_en;; *);;
+ 
+ 
+ concept_cafe_cranes => nrel_count_people : [30];;
+ 
+ concept_cafe_cranes => nrel_address : [ул. Глебки, дом 2, помещение 1Б];;
+ 
+ concept_cafe_cranes => nrel_phone : [ 375 29 649 59 00];;
+ concept_cafe_cranes => nrel_phone : [ 375 29 954 48 75];;
+ 
+ concept_cafe_cranes => nrel_site : [https://zhuravli.relax.by/];;
+ 
+ concept_cafe_cranes => nrel_equipment : concept_sound_system;;
+ concept_cafe_cranes => nrel_equipment : concept_lighting_equipment;;
+ concept_cafe_cranes => nrel_equipment : concept_tv;;
+ 
+ concept_cafe_cranes => nrel_type_event : concept_banquet;;
+ 
+ concept_cafe_cranes => nrel_territory : concept_parking;;
+ 
+ concept_cafe_cranes => nrel_description_area : [В семейном кафе «Журавли» всегда рады и дружеским компаниям, и парам, и, конечно, гостям с детьми. Кухня здесь восточноевропейская – кроме основного, есть обеденное и отдельное детское меню, авторские чайная, кофейная и коктейльная карты. Но это больше чем кафе – в  будни по вечерам здесь можно послушать байки от артиста Георгия Волчека, по воскресениям – готовить на мастер-классах от Ирины Савиной. И если вы любите камерные уютные заведения, это как раз то, что нужно.];;
+

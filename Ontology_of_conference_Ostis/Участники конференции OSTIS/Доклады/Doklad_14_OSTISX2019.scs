@@ -1,0 +1,11 @@
+///sc_node_not_relation-> Doklad_14_OSTISX2019;;
+Doklad_14_OSTISX2019=>nrel_main_idtf:[Доклад 14 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_14_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_14_OSTISX2019 => nrel_name_of_doclad: [ИСПОЛЬЗОВАНИЕ ТЕХНОЛОГИИ ИНТЕЛЛЕКТУАЛЬНОЙ МНОГОАГЕНТНОЙ ОБРАБОТКИ ИНФОРМАЦИИ С БЛОКЧЕЙН ДЛЯ СИСТЕМ УПРАВЛЕНИЯ](* <- lang_ru;;*);;
+
+Doklad_14_OSTISX2019 => nrel_authors: Vishnyakov_V_A;;
+Doklad_14_OSTISX2019 => nrel_authors: Shayiya_B_H;;
+Doklad_14_OSTISX2019 => nrel_authors: El_Masri_A_H;;
+Doklad_14_OSTISX2019 => nrel_authors: El_Hadzhi_S_K;;

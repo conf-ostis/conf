@@ -1,0 +1,32 @@
+
+Efimenko_I.V.=> nrel_main_idtf:
+	[Ефименко И.В.]
+	(*
+	<- lang_ru;;
+	*);
+	[Efimenko_I.V.]
+	(*
+	<- lang_en;;
+	*);;
+
+Efimenko_I.V. => nrel_email: [iefimenko@hse.ru](*<-lang_en;;*);;
+
+/*Efimenko_I.V. <= nrel_authors:  ...(* -> Doklad_02_OSTISX2015;Doklad_01_OSTISX2014;Doklad_4.5_OSTISX2013;Doklad_4.10_OSTISX2012;Doklad_2.01_OSTISX2011;; *);;*/
+
+
+//Efimenko_I.V. <- concept_participant_of_conference_OSTIS;;
+Efimenko_I.V. <- concept_participant_of_conference_OSTIS2011;;
+Efimenko_I.V. <- concept_participant_of_conference_OSTIS2012;
+concept_participant_of_conference_OSTIS2013; concept_participant_of_conference_OSTIS2015;;
+
+
+/*Efimenko_I.V. -> k.fil.n.;;
+k.fil.n. <- ucenaa_stepenX;;
+
+Efimenko_I.V. -> zam._dekana_fakulXteta_filologii;;
+
+Efimenko_I.V. -> v.n.s.;;
+
+Efimenko_I.V. <- rrel_key_sc_element: ..illustration_Efimenko_I.V.(* <- sc_illustation;; *);;
+..illustration_Efimenko_I.V. <= nrel_translation : ..translation_illustration_Efimenko_I.V.;;
+..translation_illustration_Efimenko_I.V.-> rrel_example : [<img src="http://127.0.0.1:8181/EfimenkoI.jpg"/>] (* => nrel_format: format_html;; *);;*/

@@ -1,0 +1,19 @@
+Aruskina_N_G=> nrel_main_idtf:
+[Ярушкина Н.]
+(*
+<- lang_ru;;
+*);
+[Yarushkina_N_G]
+(*
+<- lang_en;;
+*);;
+
+Aruskina_N_G => nrel_email: [yarushkina_n@gmail.com](*<-lang_en;;*);;
+
+Aruskina_N_G <- concept_PhD;;
+Aruskina_N_G <- nrel_participant_of_conference_OSTIS2019;;
+Aruskina_N_G <- person;;
+
+
+//Aruskina_N.G. <- concept_participant_of_conference_OSTIS;;
+Aruskina_N_G <- concept_participant_of_conference_OSTIS2015;;

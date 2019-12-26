@@ -1,0 +1,15 @@
+
+Sadov_V_S=> nrel_main_idtf:
+[Садов В.С.]
+(*
+<- lang_ru;;
+*);
+[Sadov_V_S]
+(*
+<- lang_en;;
+*);;
+
+Sadov_V_S => nrel_email: [mail.sav.v87@rambler.ru](*<-lang_en;;*);;
+Sadov_V_S <- concept_candidate_sciences;;
+Sadov_V_S <- person;;
+Sadov_V_S <- nrel_participant_of_conference_OSTIS2019;;

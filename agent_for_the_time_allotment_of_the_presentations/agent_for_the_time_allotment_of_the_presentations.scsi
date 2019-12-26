@@ -1,0 +1,406 @@
+agent_for_the_time_allotment_of_the_presentations
+=> nrel_main_idtf:
+	[агентная scp-программа для выделения времени выступления докладчиков] 
+	(* <- lang_ru;; *);
+	[agent scp-program for the time allotment of the presentations] 
+	(* <- lang_en;; *);
+
+<- agent_scp_program;;
+
+scp_program -> agent_for_the_time_allotment_of_the_presentations
+	(*
+		-> rrel_params: ..agent_for_the_time_allotment_of_the_presentations_params 
+			(*
+				-> rrel_1: rrel_in: _event;;
+				-> rrel_2: rrel_in: _input_arc;;
+			*);;
+
+		->rrel_operators: ..agent_for_the_time_allotment_of_the_presentations_set 
+			(*
+				->rrel_init: ..agent_for_the_time_allotment_of_the_presentations_operator1 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+						=>nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator2;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator2 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: question_the_time_allotment_of_the_presentations ;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+						=>nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator3;;
+						=>nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator_return;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator3 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+						=>nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator4;;
+						=>nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator_return;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator4
+					(*
+						<- genEl ;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer ;;
+					 	
+					 	=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator5;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator5
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: OSTIS_conference ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _param ;;
+
+						=> nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator6 ;;
+						=> nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator_return ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator6
+					(*
+						<- searchSetStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _person ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_speaker ;;
+		
+						-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _set_of_persons ;;
+
+						=> nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator7 ;;
+						=> nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator_return ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator7
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_persons ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _person ;;
+
+						=> nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator8 ;;
+						=> nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator21 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator8
+					(*
+						<- eraseEl ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc ;;
+		
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator9 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator9
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _person ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _some_duration ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_speaking_time ;;
+
+						=> nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator10 ;;
+						=> nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator11 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator10
+					(*
+						<- eraseEl ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_common: rrel_erase: _com ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator11 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator11
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_professor ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _person ;;
+
+						=> nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator12 ;;
+						=> nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator13 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator12
+					(*
+						<- genElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _person ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 30minutes ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_speaking_time ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator7 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator13
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_PhD ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _person ;;
+
+						=> nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator14 ;;
+						=> nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator15 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator14
+					(*
+						<- genElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _person ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 25minutes ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_speaking_time ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator7 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator15
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_docent ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _person ;;
+
+						=> nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator16 ;;
+						=> nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator17 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator16
+					(*
+						<- genElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _person ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 25minutes ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_speaking_time ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator7 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator17
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_candidate_sciences ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _person ;;
+
+						=> nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator18 ;;
+						=> nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator19 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator18
+					(*
+						<- genElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _person ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 20minutes ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_speaking_time ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator7 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator19
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_graduate ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _person ;;
+
+						=> nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator20 ;;
+						=> nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator7 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator20
+					(*
+						<- genElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _person ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 15minutes ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_speaking_time ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator7 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator21
+					(*
+						<- searchSetStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _person ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm : _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_speaker ;;
+
+						-> rrel_set_3 : rrel_assign: rrel_scp_var: rrel_node: _set_of_speakers ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator22 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator22
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_speakers ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _person ;;
+		
+						=> nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator22A ;;
+						=> nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator31 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator22A
+					(*
+						<- eraseEl ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase : _arc ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator23 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator23
+					(*
+						<- searchElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _person ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _answer_com1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _time ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _answer_arc1 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_speaking_time ;;
+
+						=> nrel_then: ..agent_for_the_time_allotment_of_the_presentations_operator24 ;;
+						=> nrel_else: ..agent_for_the_time_allotment_of_the_presentations_operator22 ;;
+			 		*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator24
+					(*
+						<- searchElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _answer_com2 ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _person ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _answer_arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_speaker ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator25 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator25
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _time ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator26 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator26
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer_com1 ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator27 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator27
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer_arc1 ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator28 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator28
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _person ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator29 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator29
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer_com2 ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator30 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator30
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer_arc2 ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator22 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator31
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: nrel_speaking_time ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator32 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator32
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: nrel_speaker ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator33 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator33
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _param ;;
+
+						=> nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator34 ;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator34
+					(*
+						<- genElStr5;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+						-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+		
+						=>nrel_goto: ..agent_for_the_time_allotment_of_the_presentations_operator_return;;
+					*);;
+				-> ..agent_for_the_time_allotment_of_the_presentations_operator_return 
+					(*
+						<- return;;
+					*);;
+			*);;
+	*);;

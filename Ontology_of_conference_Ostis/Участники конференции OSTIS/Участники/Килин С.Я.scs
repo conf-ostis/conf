@@ -1,0 +1,14 @@
+Kilin_S_J=> nrel_main_idtf:
+[Килин С. Я]
+(*
+<- lang_ru;;
+*);
+[Kilin_S_J]
+(*
+<- lang_en;;
+*);;
+
+Kilin_S_J => nrel_email: [kilin.s.j@temp.com](*<-lang_en;;*);;
+Kilin_S_J <- concept_docent;;
+Kilin_S_J <- nrel_participant_of_conference_OSTIS2019;;
+Kilin_S_J <- person;;

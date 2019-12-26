@@ -1,0 +1,10 @@
+///sc_node_not_relation-> Doklad_21_OSTISX2019;;
+Doklad_21_OSTISX2019=>nrel_main_idtf:[Доклад 21 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_21_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_21_OSTISX2019 => nrel_name_of_doclad: [НЕЙРОСЕТОВОЕ РАСПОЗНАВАНИЕ ИЗОБРАЖЕНИЙ С ИСПОЛЬЗОВАНИЕМ ОНТОЛОГИЧЕСКОГО ПОДХОДА](* <- lang_ru;;*);;
+
+Doklad_21_OSTISX2019 => nrel_authors: Iskra_V_V;;
+Doklad_21_OSTISX2019 => nrel_authors: Iskra_N_A;;
+Doklad_21_OSTISX2019 => nrel_authors: Lukashevich_M_M;;

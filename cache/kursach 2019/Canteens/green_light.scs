@@ -1,0 +1,28 @@
+concept_green_light => nrel_main_idtf:
+ [Кафе «Зеленый свет»](* <- lang_ru;; *);
+ [Cafe "Green Light"] (* <- lang_en;; *);;
+ 
+ 
+ concept_green_light => nrel_count_people : [50];;
+ 
+ concept_green_light => nrel_address : [ул. Чкалова, 2];;
+ 
+ concept_green_light => nrel_phone : [ 375 29 660 86 63];;
+ 
+ concept_green_light => nrel_site : [https://zelenyj-svet.relax.by/];;
+ 
+ concept_green_light => nrel_medium_payment : [30];;
+ 
+ concept_green_light => nrel_equipment : concept_sound_system;;
+ 
+ concept_green_light => nrel_type_event : concept_business_meeting;;
+ concept_green_light => nrel_type_event : concept_birthday;;
+ 
+ concept_green_light => nrel_service : concept_leading_services;;
+ concept_green_light => nrel_service : concept_musician;;
+ concept_green_light => nrel_service : concept_fireworks;;
+ 
+ concept_green_light => nrel_territory : concept_parking;;
+ 
+ concept_green_light => nrel_description_area : [«Зеленый свет» – традиционное кафе, которое расположилось недалеко от железнодорожного вокзала в Минске, созданное для бюджетного и размеренного отдыха, в шумной столице. Если вы любите настоящую итальянскую кухню и белорусское гостеприимство – добро пожаловать в кафе «Зеленый свет»!];;
+

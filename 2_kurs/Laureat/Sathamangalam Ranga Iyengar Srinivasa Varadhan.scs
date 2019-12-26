@@ -1,0 +1,59 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Sathamangalam_Ranga_Iyengar_Srinivasa_Varadhan<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_US_National_Science_Medal;;
+<-concept_Birkhoff_Prize;;
+<-concept_Steel_Award;;
+<-concept_Abel_Prize;;
+*);;
+
+Sathamangalam_Ranga_Iyengar_Srinivasa_Varadhan => nrel_main_idtf:[Sathamangalam Ranga Iyengar Srinivasa Varadhan] (* <- lang_en;;*);;
+
+Sathamangalam_Ranga_Iyengar_Srinivasa_Varadhan => nrel_main_idtf:[Сатхамангалам Ранга Иенгар Сриниваса Варадхан] (* <- lang_ru;;*);;
+
+
+Sathamangalam_Ranga_Iyengar_Srinivasa_Varadhan <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Сатхамангалам Ранга Иенгар Сриниваса Варадхан)](*<-lang_ru;;*); [Pic. (Sathamangalam Ranga Iyengar Srinivasa Varadhan)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Sathamangalam_Ranga_Iyengar_Srinivasa_Varadhan.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Sathamangalam_Ranga_Iyengar_Srinivasa_Varadhan => nrel_date_of_birth:
+            concept_date_02_01_1940
+            (*
+                => nrel_main_idtf:
+                [2 января 1940](* <- lang_ru;;*);;
+            *);;
+Sathamangalam_Ranga_Iyengar_Srinivasa_Varadhan => nrel_place_of_birth:
+            concept_Chennai;;
+
+concept_Chennai<-concept_city;;
+definition ->...
+(*
+->rrel_key_sc_element:  Sathamangalam_Ranga_Iyengar_Srinivasa_Varadhan;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Сатхамангалам Ранга Иенгар Сриниваса Варадхан - американский математик индийского происхождения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Сатхамангалам Ранга Иенгар Сриниваса Варадхан)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:  Sathamangalam_Ranga_Iyengar_Srinivasa_Varadhan;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В 1994 году Сатхамангалам Ранга Иенгар Сриниваса Варадхан стал обладателем премии Биркхофа, в 1996 - премии Лероя П.Стила, в 2007 - Абелевской премии, в 2010 - Национальной научной медали США. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Сатхамангалам Ранга Иенгар Сриниваса Варадхан)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_US_National_Science_Medal;
+	concept_Birkhoff_Prize;
+	concept_Steel_Award;
+	concept_Abel_Prize
+};;
+*);;
+
+ Sathamangalam_Ranga_Iyengar_Srinivasa_Varadhan<=nrel_inclusion:concept_laureate;;
+ Sathamangalam_Ranga_Iyengar_Srinivasa_Varadhan -> rrel_example:[Сатхамангалам Ранга Иенгар Сриниваса Варадхан является специалистом в области теории вероятностей.] (*<-lang_ru;;*);;
+ Sathamangalam_Ranga_Iyengar_Srinivasa_Varadhan<=nrel_inclusion:concept_person;;
+

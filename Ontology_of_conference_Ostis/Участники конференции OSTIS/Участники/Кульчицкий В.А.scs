@@ -1,0 +1,15 @@
+
+Kulchickiy_V_A=> nrel_main_idtf:
+[Кульчицкий В.А.]
+(*
+<- lang_ru;;
+*);
+[Kulchickiy_V_A]
+(*
+<- lang_en;;
+*);;
+
+Kulchickiy_V_A => nrel_email: [kulva0902@rm.ru](*<-lang_en;;*);;
+Kulchickiy_V_A <- concept_docent;;
+Kulchickiy_V_A <- nrel_participant_of_conference_OSTIS2019;;
+Iskra_N_A <- person;;

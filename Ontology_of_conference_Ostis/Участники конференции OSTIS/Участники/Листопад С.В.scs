@@ -1,0 +1,17 @@
+
+Listopad_S_V=> nrel_main_idtf:
+[Листопад С.В.]
+(*
+<- lang_ru;;
+*);
+[Listopad_S_V]
+(*
+<- lang_en;;
+*);;
+
+Listopad_S_V => nrel_email: [list_s_v45@gmail.com](*<-lang_en;;*);;
+
+Listopad_S_V <- concept_professor;;
+Listopad_S_V <- person;;
+
+Listopad_S_V <- nrel_participant_of_conference_OSTIS2019;;

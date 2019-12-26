@@ -1,0 +1,36 @@
+concept_manager<-sc_node_not_relation;;
+
+concept_manager => nrel_main_idtf:[Manager] (* <- lang_en;;*);;
+
+concept_manager => nrel_main_idtf:[Менеджер] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_manager;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Менеджер — начальник, занятый управлением процессами и персоналом на определённом участке предприятия.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Менеджер)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_chief;
+	concept_control;
+	concept_the_processes;
+	concept_staff;
+	concept_site_of_the_enterprise
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_manager;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Менеджер может быть владельцем предприятия, но чаще является наёмным работником.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Менеджер)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_owner;
+	concept_company;
+	concept_employee
+};;
+*);;
+
+concept_manager<=nrel_inclusion:concept_person;;
+concept_manager -> rrel_example:[В зависимости от величины и количества объектов управления различают уровни управления, а, следовательно, и менеджеров. ] (*<-lang_ru;;*);;

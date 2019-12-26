@@ -1,0 +1,20 @@
+Golenkov_V_V=> nrel_main_idtf:
+[Голенков В.В.]
+(*
+<- lang_ru;;
+*);
+[Golenkov_V_V]
+(*
+<- lang_en;;
+*);;
+
+Golenkov_V_V => nrel_email: [golen@bsuir.by](*<-lang_en;;*);;
+
+Golenkov_V_V <- concept_PhD;;
+Golenkov_V_V <- concept_professor;;
+Golenkov_V_V <- person ;;
+
+
+Golenkov_V_V <- nrel_participant_of_conference_OSTIS2019;;
+
+

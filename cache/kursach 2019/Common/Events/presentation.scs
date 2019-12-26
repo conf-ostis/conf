@@ -1,0 +1,19 @@
+concept_presentation  => nrel_main_idtf:
+ [презентация](* <- lang_ru;; *);
+ [presentation] (* <- lang_en;; *);;
+ 
+ 
+ concept_presentation <- rrel_key_sc_element: 
+         ...
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(презентация)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Презентация — это официальное публичное представление нового фильма, издания, а также новой организации.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

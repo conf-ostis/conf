@@ -1,0 +1,38 @@
+concept_Discrete_Math<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Дискретная математика]
+	(*<-lang_ru;;*);
+	[Discrete Math]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Дискретная математика)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+concept_discrete_mathematical_structure;
+concept_graph;
+concept_statement;
+concept_logics
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Дискретная математика — часть математики, изучающая дискретные математические структуры, такие, как графы и утверждения в логике.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Дискретная математика,алгоритм, вычислительная сложность)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_algorithm;
+concept_computational_complexity
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В дискретной математике важную роль играют задачи построения конкретных алгоритмов, и в том числе, эффективных с точки зрения вычислительной сложности.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_Discrete_Math -> rrel_example: [ В рамках учебных программ дискретная математика обычно рассматривается как совокупность разделов, связанных с приложениями к информатике и вычислительной технике.] (*<-lang_ru;;*);;
+concept_Discrete_Math<=nrel_inclusion:concept_Mathematics;;

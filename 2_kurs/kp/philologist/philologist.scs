@@ -1,0 +1,36 @@
+concept_philologist<-sc_node_not_relation;;
+
+concept_philologist => nrel_main_idtf:[Philologist] (* <- lang_en;;*);;
+
+concept_philologist => nrel_main_idtf:[Филолог] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_philologist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Филолог – это специалист в области языка, который разбирается в его закономерностях, знает историю развития и современное состояние языка.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Филолог)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_language_area;
+	concept_patterns;
+	concept_history_of_development;
+	concept_current_state;
+	concept_language
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_philologist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Профессия филолога включает широкий спектр деятельности и предполагает умственный труд.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Филолог)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_profession;
+	concept_wide_range_of_activities;
+	concept_brainwork
+};;
+*);;
+
+concept_philologist<=nrel_inclusion:concept_person;;
+concept_philologist -> rrel_example:[Классический вариант работы для филолога — преподавание.] (*<-lang_ru;;*);;

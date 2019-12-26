@@ -1,0 +1,22 @@
+concept_cimohin_zakutok => nrel_main_idtf:
+ [Кафе «Цiмохiн закуток»](* <- lang_ru;; *);
+ [Cafe "Tsimohin nook"] (* <- lang_en;; *);;
+ 
+ 
+ concept_cimohin_zakutok => nrel_count_people : [30];;
+ 
+ concept_cimohin_zakutok => nrel_address : [ул. Руссиянова, 4];;
+ 
+ concept_cimohin_zakutok => nrel_phone : [ 375 29 399 22 44];;
+ 
+ concept_cimohin_zakutok => nrel_site : [https://cimohin-zakutok.relax.by/];;
+ 
+ concept_cimohin_zakutok => nrel_medium_payment : [30];;
+ 
+ concept_cimohin_zakutok => nrel_equipment : concept_sound_system;;
+ 
+ concept_cimohin_zakutok => nrel_type_event : concept_banquet;;
+ concept_cimohin_zakutok => nrel_type_event : concept_wifi;;
+ 
+ concept_cimohin_zakutok => nrel_description_area : [В меню кафе «Цiмохiн закуток» представлена белорусская кухня. Аппетитные домашние блюда, как знакомые с самого детства, так и приготовленные специально для Вас по традиционным белорусским рецептам исключительно из натуральных продуктов. Ловкие руки наших поваров заботливо вылепливают каждый пельмешек и вареник, чтобы порадовать гостей по-домашнему вкусной едой.];;
+

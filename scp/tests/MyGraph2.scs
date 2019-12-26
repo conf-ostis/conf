@@ -1,0 +1,27 @@
+directed_graph->graph3(*
+	->rrel_vertex: A3s;;
+	->rrel_vertex: B3s;;
+	->rrel_vertex: C3s;;
+	->rrel_vertex: D3s;;
+	->rrel_vertex: F3s;;
+	->rrel_vertex: G3s;;
+
+	->rrel_edge: (A3s => B3s)(*
+		<=25;;
+	*);;
+	->rrel_edge: (B3s => D3s)(*
+		<=10;;
+	*);;
+	->rrel_edge: (A3s => C3s)(*
+		<=10;;
+	*);;
+	->rrel_edge: (C3s => D3s)(*
+		<=25;;
+	*);;
+	->rrel_edge: (D3s => F3s)(*
+		<=20;;
+	*);;
+	->rrel_edge: (F3s => G3s)(*
+		<=35;;
+	*);;
+*);;

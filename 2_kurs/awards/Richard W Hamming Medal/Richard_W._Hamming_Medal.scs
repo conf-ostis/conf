@@ -1,0 +1,43 @@
+
+concept_Richard_W._Hamming_Medal<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Медаль Ричарда Хэмминга]
+      (*<-lang_ru;;*);
+       [Richard W. Hamming Meda]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Медаль Ричарда Хэмминга)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_IEEE;
+       concept_contribution;
+	concept_science;
+concept_information;
+concept_information_system;
+concept_technology
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Медаль Ричарда Хэмминга — награда, присуждаемая ежегодно институтом инженеров электротехники и электроники (англ. IEEE) за исключительный вклад в науку об информации, информационные системы и технологии.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Медаль Ричарда Хэмминга, награда, человек, научная группа)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_award;
+	concept_person;
+concept_scientific_group
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[К награде могут быть представлены как один человек, так и научная группа](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Richard_W._Hamming_Medal -> rrel_example: [Медаль Ричарда Хэмминга была учреждена советом директоров IEEE в 1986 году и названа в честь Ричарда Хэмминга, которому отводится центральная роль в развитии компьютеров и информатики, и который сделал значительный вклад в науку об информации.](* <- lang_ru;; *);;
+
+concept_Richard_W._Hamming_Medal<=nrel_inclusion:concept_award;;

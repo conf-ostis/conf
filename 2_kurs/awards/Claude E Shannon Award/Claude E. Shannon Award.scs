@@ -1,0 +1,39 @@
+
+concept_Claude_E._Shannon_Award<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Шеннона]
+      (*<-lang_ru;;*);
+       [Claude E. Shannon Award]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия Шеннона)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_IEEE_Group_Information_Theory;
+       concept_contribution;
+	concept_information_theory
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия Шеннона  — награда, присуждаемая ежегодно Группой теории информации IEEE за исключительный вклад в теорию информации.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Декарта, достижение, экономика, социальная наука, гуманитарная наука, техника, научная группа)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_limitation;
+	concept_information_theory
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Вопрос о фундаментальных ограничениях возник почти сразу после создания Клодом Шенноном основ теории информации.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Claude_E._Shannon_Award -> rrel_example: [Известная в физико-математической научной среде премия Шеннона присуждена Александру Семеновичу Холево, профессору, сотруднику Математического института имени В.А. Стеклова и Российского квантового центра (РКЦ).](* <- lang_ru;; *);;
+
+concept_Claude_E._Shannon_Award<=nrel_inclusion:concept_award;;

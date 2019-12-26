@@ -1,0 +1,72 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_date_of_death;;
+sc_node_norole_relation->nrel_place_of_birth;;
+sc_node_norole_relation->nrel_place_of_death;;
+John_Cocke<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Turing_Award;;
+<-concept_Computer_Pioneer_Award;;
+<-concept_US_National_Science_Medal;;
+<-concept_IEEE_John_von_Neumann_Medal;;
+*);;
+
+John_Cocke => nrel_main_idtf:[John Cocke] (* <- lang_en;;*);;
+
+John_Cocke => nrel_main_idtf:[Джон Кок] (* <- lang_ru;;*);;
+
+
+John_Cocke <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Джон Кок)](*<-lang_ru;;*); [Pic. (John Cocke)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/John_Cocke.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+John_Cocke => nrel_date_of_birth:
+            concept_date_30_05_1925
+            (*
+                => nrel_main_idtf:
+                [30 мая 1925](* <- lang_ru;;*);;
+            *);;
+
+John_Cocke => nrel_date_of_death:
+            concept_date_16_07_2002
+            (*
+                => nrel_main_idtf:
+                [16 июля 2002](* <- lang_ru;;*);;
+            *);;
+
+
+John_Cocke => nrel_place_of_death:
+            concept_New_York_City;;
+
+concept_New_York_City<-concept_city;;
+
+
+definition ->...
+(*
+->rrel_key_sc_element: John_Cocke;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Джон Кок  - американский учёный в области информатики.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Джон Кок)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_scientist;
+	concept_Informatics
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: John_Cocke;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Джон Кок получил Премию Тьюринга в 1987 году, Медаль «Пионер компьютерной техники» в 1989 году, Национальную научную медаль США и Медаль Джона фон Неймана в 1994 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Джон Кок)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Turing_Award;
+	concept_Computer_Pioneer_Award;
+	concept_US_National_Science_Medal;
+	concept_IEEE_John_von_Neumann_Medal
+};;
+*);;
+
+John_Cocke<=nrel_inclusion:concept_laureate;;
+John_Cocke ->rrel_example:[Джон Кок был одним из основателей CYK-алгоритма (алгоритм Кока — Янгера — Касами).] (*<-lang_ru;;*);;
+John_Cocke<=nrel_inclusion:concept_person;;
+

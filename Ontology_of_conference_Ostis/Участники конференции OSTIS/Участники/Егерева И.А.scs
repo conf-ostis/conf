@@ -1,0 +1,17 @@
+Yegereva_I_A=> nrel_main_idtf:
+[Егерева И.А.]
+(*
+<- lang_ru;;
+*);
+[Yegereva_I_A]
+(*
+<- lang_en;;
+*);;
+
+Yegereva_I_A => nrel_email: [eger.ia@mail.ru](*<-lang_en;;*);;
+
+Yegereva_I_A <- concept_candidate_sciences;;
+Yegereva_I_A <- nrel_participant_of_conference_OSTIS2019;;
+Yegereva_I_A <- person;;
+
+

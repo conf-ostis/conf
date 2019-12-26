@@ -1,0 +1,45 @@
+
+concept_Paris_Kanellakis_Theory_and_Practice_Award<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Канеллакиса]
+      (*<-lang_ru;;*);
+       [Paris Kanellakis Theory and Practice Award]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия Париса Канеллакиса за теоретические и практические достижения)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_Association_for_Computing_Machinery;
+       concept_achievement;
+	concept_development;
+	concept_Information_Technology
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия Париса Канеллакиса за теоретические и практические достижения — ежегодная научная премия Ассоциации вычислительной техники, вручаемая за особые теоретические достижения, которые оказали значительное влияние на практическое развитие информационных технологий.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Канеллакиса, лауреат, денежная награда, группы ACM, спонсор)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_laureatet;
+	concept_ACM;
+	concept_ACM_SIGACT;
+	concept_ACM_SIGDA;
+	concept_sponsor;
+	concept_cash_reward
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Лауреатам  премия Канеллакиса вручается денежная премия в размере в $10 тыс., субсидируемая родителями Канеллакиса, несколькими тематическими группами ACM (SIGACT, SIGDA) и индивидуальными спонсорами.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Paris_Kanellakis_Theory_and_Practice_Award -> rrel_example: [В 2012 премия Канеллакиса была присуждена группе ученых «за прорывную работу над локально-чувствительным хешированием, которая оказала большое влияние на многие области».](* <- lang_ru;; *);;
+
+concept_Paris_Kanellakis_Theory_and_Practice_Award<=nrel_inclusion:concept_award;;
+

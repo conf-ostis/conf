@@ -1,0 +1,14 @@
+Koroleva_M_N=> nrel_main_idtf:
+[Королева М.Н.]
+(*
+<- lang_ru;;
+*);
+[Koroleva_M_N]
+(*
+<- lang_en;;
+*);;
+
+Koroleva_M_N => nrel_email: [korolmn@mail.ru](*<-lang_en;;*);;
+Koroleva_M_N <- concept_graduate;;
+Koroleva_M_N <- nrel_participant_of_conference_OSTIS2019;;
+Koroleva_M_N <- person;;

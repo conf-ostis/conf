@@ -1,0 +1,40 @@
+
+concept_Prize_named_after_A.A._Raspletina<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия имени А.А. Расплетина]
+      (*<-lang_ru;;*);
+       [Nobel Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия имени А.А. Расплетина)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_Russian_Academy_of_Sciences;
+       concept_treatise;
+concept_automated_control_radio_system
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия имени А. А. Расплетина — премия, присуждаемая Российской академией наук за выдающиеся работы в области создания радиотехнических систем автоматизированного управления.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия имени А.А. Расплетина, медицина, завещание)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_award;
+	concept_treatise
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Впервые премия имени А.А. Расплетина была выдана российскому ученому за серию работ «Разработка и исследование алгоритмов наведения ракет и оценка характеристик зенитной ракетной системы С-300ПМ».](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Prize_named_after_A.A._Raspletina -> rrel_example: [Названа премия в честь советского учёного и конструктора Александра Андреевича Расплетина.](* <- lang_ru;; *);;
+
+concept_Prize_named_after_A.A._Raspletina<=nrel_inclusion:concept_award;;
+

@@ -1,0 +1,22 @@
+Globa_L_C=> nrel_main_idtf:
+[Глоба Л.С.]
+(*
+<- lang_ru;;
+*);
+[Globa_L_C]
+(*
+<- lang_en;;
+*);;
+
+Globa_L_C => nrel_email: [l.globa@gmail.com](*<-lang_en;;*);;
+
+Globa_L_C <- concept_candidate_sciences;;
+Globa_L_C <- nrel_participant_of_conference_OSTIS2019;;
+
+Globa_L_C <- person ;;
+
+person => nrel_main_idtf:
+[человек]
+(*
+<- lang_ru;;
+*);;

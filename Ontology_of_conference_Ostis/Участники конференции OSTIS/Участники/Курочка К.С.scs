@@ -1,0 +1,15 @@
+Kurochka_K_S=> nrel_main_idtf:
+[Курочка К.С.]
+(*
+<- lang_ru;;
+*);
+[Kurochka_K_S]
+(*
+<- lang_en;;
+*);;
+
+Kurochka_K_S => nrel_email: [kskur621@yandex.com](*<-lang_en;;*);;
+Kurochka_K_S <- concept_PhD;;
+Kurochka_K_S <- nrel_participant_of_conference_OSTIS2019;;
+Kurochka_K_S <- person;;
+

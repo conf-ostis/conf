@@ -1,0 +1,39 @@
+concept_space_honey => nrel_main_idtf:
+[Пространство "Мёд"](* <- lang_ru;; *);
+[Space "Honey"] (* <- lang_en;; *);;
+
+
+concept_space_honey => nrel_count_people : [50];;
+
+concept_space_honey => nrel_square : [98];;
+
+concept_space_honey => nrel_address : [Минск, ул. Толбухина, 4, 3 этаж];;
+
+concept_space_honey => nrel_phone : [ +375 (44) 575-21-21];;
+
+concept_space_honey => nrel_site : [https://vk.com/honey_space];;
+
+
+concept_space_honey => nrel_equipment : concept_lighting_equipment;;
+concept_space_honey => nrel_equipment : concept_multimedia_projector;;
+concept_space_honey => nrel_equipment : concept_sound_system;;
+concept_space_honey => nrel_equipment : concept_projection_screen;;
+concept_space_honey => nrel_equipment : concept_table;;
+concept_space_honey => nrel_equipment : concept_marker_board;;
+concept_space_honey => nrel_equipment : concept_chair;;
+concept_space_honey => nrel_equipment : concept_wifi;;
+concept_space_honey => nrel_equipment : concept_stationary_microphone;;
+
+concept_space_honey => nrel_type_event : concept_business_meeting;;
+concept_space_honey => nrel_type_event : concept_presentation;;
+concept_space_honey => nrel_type_event : concept_press_conference;;
+concept_space_honey => nrel_type_event : concept_seminar;;
+
+
+concept_space_honey => nrel_service : concept_furniture_arrangement;;
+concept_space_honey => nrel_service : concept_hall_decoration;;
+concept_space_honey => nrel_service : concept_photography;;
+
+concept_space_honey => nrel_territory : concept_parking;;
+
+concept_space_honey => nrel_description_area : [Пространство "МЁД" - это уютное арт-пространство, наполненное светом и воздухом, подходящее для проведения любого рода мероприятий. Вместимость до 50 человек. Возможны различные виды рассадки для удобства гостей. В стоимость уже входит предварительная подготовка пространства, техническое обеспечение, проекция на 5-ти метровый экран (будет видно всем), WI-FI, помощь в проведении, если требуется.];;

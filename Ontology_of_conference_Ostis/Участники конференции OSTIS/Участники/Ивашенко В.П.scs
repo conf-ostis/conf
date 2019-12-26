@@ -1,0 +1,16 @@
+
+Ivanshenko_V_P=> nrel_main_idtf:
+[Ивашенко В.П.]
+(*
+<- lang_ru;;
+*);
+[Ivanshenko_V_P]
+(*
+<- lang_en;;
+*);;
+
+Ivanshenko_V_P => nrel_email: [ivashenko@bsuir.by](*<-lang_en;;*);;
+Ivanshenko_V_P <- concept_docent;;
+Ivanshenko_V_P <- concept_PhD;;
+Ivanshenko_V_P <- nrel_participant_of_conference_OSTIS2019;;
+Ivanshenko_V_P <- person;;

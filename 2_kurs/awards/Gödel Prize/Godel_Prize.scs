@@ -1,0 +1,41 @@
+
+
+concept_Godel_Prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Гёделя]
+      (*<-lang_ru;;*);
+       [Godel Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Пре́мия Гёделя)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_theory_of_computer_systems;
+       concept_ACM_SIGACT;
+concept_EATCS;
+concept_Computational_Informatics;
+concept_logics
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Пре́мия Гёделя — премия в области теории вычислительных систем имени Курта Гёделя, вручаемая ежегодно организациями ACM SIGACT, (Special Interest Group on Algorithms and Computation Theory) и EATCS, (European Association for Theoretical Computer Science) за выдающиеся труды по логике и теоретической информатике.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Публикация, номинация, научный труд)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_nomination;
+	concept_treatise
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Основным требованием к работе является дата первой публикации — к номинации допускаются лишь труды не старше 14 лет.](*<-lang_ru;;*);;
+      *);;
+  *);;
+concept_Godel_Prize -> rrel_example: [Премия Гёделя вручается с 1993 года и сопровождается денежным вознаграждением размером в 5000 долларов США.](* <- lang_ru;; *);;
+
+concept_Godel_Prize<=nrel_inclusion:concept_award;;

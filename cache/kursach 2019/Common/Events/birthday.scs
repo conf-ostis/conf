@@ -1,0 +1,19 @@
+concept_birthday  => nrel_main_idtf:
+ [день рождения](* <- lang_ru;; *);
+ [birthday] (* <- lang_en;; *);;
+ 
+ 
+ concept_birthday <- rrel_key_sc_element: 
+         ...
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(день рождения)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[День рождения - это годовщина рождения, соответствует дате рождения человека.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

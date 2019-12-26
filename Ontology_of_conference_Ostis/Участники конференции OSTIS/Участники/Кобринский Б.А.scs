@@ -1,0 +1,20 @@
+
+Kobrinskiy_B_A=> nrel_main_idtf:
+	[Кобринский Б.А.]
+	(*
+	<- lang_ru;;
+	*);
+	[Kobrinskiy B.A.]
+	(*
+	<- lang_en;;
+	*);;
+
+
+Kobrinskiy_B_A <- concept_participant_of_conference_OSTIS;;
+Kobrinskiy_B_A<- concept_participant_of_conference_OSTIS2012;;
+
+Kobrinskiy_B_A => nrel_email: [kba99@kernel.com](*<-lang_en;;*);;
+Kobrinskiy_B_A <- concept_PhD;;
+Kobrinskiy_B_A <- nrel_participant_of_conference_OSTIS2019;;
+
+Kobrinskiy_B_A <- person;;

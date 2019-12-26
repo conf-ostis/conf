@@ -1,0 +1,32 @@
+concept_terrace => nrel_main_idtf:
+ [Ресторан «Терраса»](* <- lang_ru;; *);
+ [Restaurant "Terrace"] (* <- lang_en;; *);;
+ 
+ 
+ concept_terrace => nrel_count_people : [150];;
+ 
+ concept_terrace => nrel_address : [ул. Захарова, 31];;
+ 
+ concept_terrace => nrel_phone : [ 375 29 177 77 55];;
+ 
+ concept_terrace => nrel_site : [https://restoranterrasa.relax.by/];;
+ 
+ concept_terrace => nrel_medium_payment : [50];;
+ 
+ concept_terrace => nrel_equipment : concept_sound_system;;
+ 
+ concept_terrace => nrel_type_event : concept_banquet;;
+ concept_terrace => nrel_type_event : concept_business_meeting;;
+ concept_terrace => nrel_type_event : concept_presentation;;
+ concept_terrace => nrel_type_event : concept_press_conference;;
+ concept_terrace => nrel_type_event : concept_seminar;;
+ concept_terrace => nrel_type_event : concept_reception;;
+ concept_terrace => nrel_type_event : concept_marriage;;
+ concept_terrace => nrel_type_event : concept_birthday;;
+ concept_terrace => nrel_type_event : concept_anniversary;;
+ 
+ concept_terrace => nrel_service : concept_musician;;
+concept_terrace => nrel_territory : concept_parking;;
+ 
+ concept_terrace => nrel_description_area : [Ресторан «Терраса» расположен в сердце Минска, недалеко от площади Победы. Именно здесь, на самой живописной террасе столицы, гостям будет оказан теплый прием. Профессионалы помогут организовать любое мероприятие, будь то торжество в кругу семьи, веселый корпоративный праздник или свадьба.];;
+

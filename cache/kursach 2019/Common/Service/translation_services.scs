@@ -1,0 +1,18 @@
+concept_translation_services => nrel_main_idtf:
+ [услуги переводчика](* <- lang_ru;; *);
+ [translation_services] (* <- lang_en;; *);;
+ 
+ concept_translation_services <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(услуги переводчика)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Услуги переводчика — услуги, оказываемые переводчиком.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

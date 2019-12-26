@@ -1,0 +1,16 @@
+
+Prigozhii_A_A=> nrel_main_idtf:
+[Пригожий А.А.]
+(*
+<- lang_ru;;
+*);
+[Prigozhii_A_A]
+(*
+<- lang_en;;
+*);;
+
+Prigozhii_A_A => nrel_email: [a.a.prgz1@temp.com](*<-lang_en;;*);;
+Prigozhii_A_A <- concept_professor;;
+Prigozhii_A_A<- person;;
+
+Prigozhii_A_A <- nrel_participant_of_conference_OSTIS2019;;

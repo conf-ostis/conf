@@ -1,0 +1,17 @@
+concept_sofa => nrel_main_idtf:
+[диван](* <- lang_ru;; *);
+[sofa] (* <- lang_en;; *);;
+
+concept_sofa <- rrel_key_sc_element: 
+        ..
+	(*
+	=> nrel_main_idtf: [Опр.(диван)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диван — мягкая мебель для сидения и лежания, со спинкой и ручками или валиками..]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

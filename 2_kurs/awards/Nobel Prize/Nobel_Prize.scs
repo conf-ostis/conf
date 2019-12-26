@@ -1,0 +1,42 @@
+
+concept_Nobel_Prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Нобелевская премия]
+      (*<-lang_ru;;*);
+       [Nobel Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Но́белевская пре́мия)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_research;
+       concept_culture;
+concept_society;
+concept_development;
+concept_invention
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Но́белевская пре́мия — одна из наиболее престижных международных премий, ежегодно присуждаемая за выдающиеся научные исследования, революционные изобретения или крупный вклад в культуру или развитие общества.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Нобелевская премия, медицина, завещание)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_medicine;
+	concept_testament
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Нобелевская премия по физиологии или медицине была учреждена Альфредом Нобелем в его завещании, написанном 27 ноября 1895 года в Париже, где она упоминается третьей.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Nobel_Prize -> rrel_example: [Многие знают, что в области математики Нобелевская премия не присуждается.](* <- lang_ru;; *);;
+
+concept_Nobel_Prize<=nrel_inclusion:concept_award;;
+

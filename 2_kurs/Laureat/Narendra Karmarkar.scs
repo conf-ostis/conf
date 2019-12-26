@@ -1,0 +1,42 @@
+Narendra_Karmarkar<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Paris_Kanellakis_Theory_and_Practice_Award;;
+<-concept_Fulkerson_Prize;;
+*);;
+
+Narendra_Karmarkar => nrel_main_idtf:[Narendra Karmarkar] (* <- lang_en;;*);;
+
+Narendra_Karmarkar => nrel_main_idtf:[Нарендра Кармаркар] (* <- lang_ru;;*);;
+
+Narendra_Karmarkar<-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Нарендра Кармаркар)](*<-lang_ru;;*); [Pic. (Narendra Karmarkar)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Narendra_Karmarkar.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+definition ->...
+(*
+->rrel_key_sc_element: Narendra_Karmarkar;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Нарендра Кармаркар  - индийский и американский математик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Нарендра Кармаркар)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Narendra_Karmarkar;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Нарендра Кармаркар получил Премию Фалкерсона в 1988 году, Премию Канеллакиса в 2000.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Нарендра Кармаркар)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Paris_Kanellakis_Theory_and_Practice_Award;
+	concept_Fulkerson_Prize
+};;
+*);;
+
+Narendra_Karmarkar<=nrel_inclusion:concept_laureate;;
+Narendra_Karmarkar-> rrel_example:[С 2008 года и по настоящее время Нарендра Кармаркар работает над новой архитектурой для суперкомпьютеров.] (*<-lang_ru;;*);;
+Narendra_Karmarkar<=nrel_inclusion:concept_person;;
+

@@ -1,0 +1,19 @@
+Davydenko_I_T=> nrel_main_idtf:
+[Давыденко И.Т.]
+(*
+<- lang_ru;;
+*);
+[Davydenko_I_T]
+(*
+<- lang_en;;
+*);;
+
+Davydenko_I_T => nrel_email: [davydenko@bsuir.by](*<-lang_en;;*);;
+
+Davydenko_I_T <- concept_candidate_sciences;;
+Davydenko_I_T <- concept_docent;;
+Davydenko_I_T <- person;;
+
+Davydenko_I_T <- nrel_participant_of_conference_OSTIS2019;;
+
+

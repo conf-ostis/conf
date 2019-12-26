@@ -1,0 +1,36 @@
+concept_candidate<-sc_node_not_relation;;
+
+concept_candidate => nrel_main_idtf:[Сandidate] (* <- lang_en;;*);;
+
+concept_candidate => nrel_main_idtf:[Кандидат] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_candidate;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Кандидат - человек, который предполагается к избранию, назначению или к приёму куда-либо.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Кандидат)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_election;
+	concept_appointment;
+	concept_reception
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_candidate;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Кандидатом на работу человек станосится, пряйдя несколько этапов: отборочное собеседование, психологическое тестирование или стрессовое интервью.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Кандидат)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_job;
+	concept_stages;
+	concept_screening_interview;
+	concept_psychological_testing;
+	concept_stressful_interview
+};;
+*);;
+
+concept_candidate<=nrel_inclusion:concept_person;;
+concept_candidate -> rrel_example:["Победителем" становится "идеальный" кандидат - претендент, который субъективно и объективно соответствует требованиям работодателя в максимально возможной степени. ] (*<-lang_ru;;*);;

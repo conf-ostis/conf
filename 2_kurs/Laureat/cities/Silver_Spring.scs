@@ -1,0 +1,2 @@
+concept_Silver_Spring<-sc_node_not_relation;;
+concept_Silver_Spring => nrel_main_idtf:[Силвер-Спринг] (* <- lang_ru;;*);;

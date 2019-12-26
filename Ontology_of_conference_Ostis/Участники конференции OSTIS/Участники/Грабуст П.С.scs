@@ -1,0 +1,17 @@
+Grabust_P_S=> nrel_main_idtf:
+[Грабуст П.С.]
+(*
+<- lang_ru;;
+*);
+[Grabust_P_S]
+(*
+<- lang_en;;
+*);;
+
+Grabust_P_S => nrel_email: [a.graber@rambler.ru](*<-lang_en;;*);;
+
+Grabust_P_S <- concept_graduate;;
+Grabust_P_S <- nrel_participant_of_conference_OSTIS2019;;
+Grabust_P_S <- person ;;
+
+

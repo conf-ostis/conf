@@ -1,0 +1,17 @@
+Vorobjov_V_V=> nrel_main_idtf:
+[Воробьев В.В.]
+(*
+<- lang_ru;;
+*);
+[Vorobjov_V_V]
+(*
+<- lang_en;;
+*);;
+
+Vorobjov_V_V => nrel_email: [v.vorobyev@rambler.ru](*<-lang_en;;*);;
+
+Vorobjov_V_V <- concept_graduate;;
+Vorobjov_V_V <- nrel_participant_of_conference_OSTIS2019;;
+Vorobjov_V_V <- person ;;
+
+

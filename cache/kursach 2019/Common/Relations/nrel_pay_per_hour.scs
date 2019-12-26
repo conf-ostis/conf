@@ -1,0 +1,5 @@
+sc_node_norole_relation -> nrel_pay_per_hour;; 
+ 
+ nrel_pay_per_hour => nrel_main_idtf:[стоимость в час*] (* <-lang_ru;; *);;
+ 
+ nrel_pay_per_hour => nrel_main_idtf:[pay per hour*] (* <-lang_en;; *);;

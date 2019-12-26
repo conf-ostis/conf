@@ -1,0 +1,19 @@
+Grakova_N_V=> nrel_main_idtf:
+[Гракова Н.В.]
+(*
+<- lang_ru;;
+*);
+[Grakova_N_V]
+(*
+<- lang_en;;
+*);;
+
+Grakova_N_V => nrel_email: [grakova@bsuir.by](*<-lang_en;;*);;
+
+Grakova_N_V <- concept_candidate_sciences;;
+Grakova_N_V <- person ;;
+
+
+Grakova_N_V <- nrel_participant_of_conference_OSTIS2019;;
+
+

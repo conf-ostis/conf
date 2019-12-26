@@ -1,0 +1,41 @@
+concept_history<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[История]
+	(*<-lang_ru;;*);
+	[history]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(История)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+concept_science;
+concept_source;
+concept_sequence;
+concept_event;
+concept_past
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[ История - наука, изучающая всевозможные источники о прошлом для того, чтобы установить последовательность событий. ] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(История, )] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_partition;
+concept_period;
+concept_classification;
+concept_idea
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Разбиение истории на те или иные периоды используется для классификации с точки зрения определённых общих идей.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_history-> rrel_example: [Выделяются следующие крупнейшие периоды истории: первобытное общество, древний мир, средние века, новое время, новейшее время.] (*<-lang_ru;;*);;
+concept_history <=nrel_inclusion:concept_science_discipline;;

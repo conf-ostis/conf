@@ -1,0 +1,3 @@
+concept_Pittsburgh<-sc_node_not_relation;;
+concept_Pittsburgh => nrel_main_idtf:[Питтсбург] (* <- lang_ru;;*);;
+

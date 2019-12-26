@@ -1,0 +1,43 @@
+concept_economist<-sc_node_not_relation;;
+
+concept_economist => nrel_main_idtf:[Economist] (* <- lang_en;;*);;
+
+concept_economist => nrel_main_idtf:[Экономист] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_economist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Экономист —  эксперт по экономическим вопросам промышленности, сельского хозяйства, банковского дела и других. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Экономист)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_expert;
+	concept_economic_issues;
+	concept_industry;
+	concept_agriculture;
+	concept_banking
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_economist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В организациях экономисты принимают участие в разработке системы бюджетирования, осуществляют контроль исполнения бюджета, а также подготовку и создание периодической и управленческой отчётности.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Экономист)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_organizations;
+	concept_participation;
+	concept_development;
+	concept_budgeting_system;
+	concept_control;
+	concept_budget_execution;
+	concept_training;
+	concept_creature;
+	concept_periodic_reporting;
+	concept_management_reporting
+};;
+*);;
+
+concept_economist<=nrel_inclusion:concept_person;;
+concept_economist -> rrel_example:[Экономисты нужны и небольшим фирмам, и крупным банкам, и международным корпорациям.] (*<-lang_ru;;*);;

@@ -1,0 +1,59 @@
+concept_blue_hall => nrel_main_idtf:
+[Голубой зал](* <- lang_ru;; *);
+[Blue Hall] (* <- lang_en;; *);;
+
+
+concept_blue_hall => nrel_count_people : [180-600];;
+
+concept_blue_hall => nrel_square : [190];;
+
+concept_blue_hall => nrel_address : [г. Минск, пер. Войсковый, 4, Dipservice Hall];;
+
+concept_blue_hall => nrel_phone : [+375-33-333-84-03];;
+
+concept_blue_hall => nrel_site : [http://www.dipservicehall.by];;
+
+concept_blue_hall => nrel_pay_per_hour : [43];;
+
+
+concept_blue_hall => nrel_equipment : concept_table;;
+concept_blue_hall => nrel_equipment : concept_chair;;
+concept_blue_hall => nrel_equipment : concept_armchair;;
+concept_blue_hall => nrel_equipment : concept_sofa;;
+concept_blue_hall => nrel_equipment : concept_sound_system;;
+concept_blue_hall => nrel_equipment : concept_wifi;;
+
+
+concept_blue_hall => nrel_equipment : concept_fireplace;;
+concept_blue_hall => nrel_equipment : concept_lighting_equipment;;
+concept_blue_hall => nrel_equipment : concept_tv;;
+concept_blue_hall => nrel_equipment : concept_multimedia_projector;;
+concept_blue_hall => nrel_equipment : concept_sound_system;;
+concept_blue_hall => nrel_equipment : concept_projection_screen;;
+concept_blue_hall => nrel_equipment : concept_marker_board;;
+concept_blue_hall => nrel_equipment : concept_flipchart;;
+concept_blue_hall => nrel_equipment : concept_chair;;
+concept_blue_hall => nrel_equipment : concept_wifi;;
+
+concept_blue_hall => nrel_service : concept_catering;;
+concept_blue_hall => nrel_service : concept_musician;;
+concept_blue_hall => nrel_service : concept_artist;;
+concept_blue_hall => nrel_service : concept_musician;;
+concept_blue_hall => nrel_service : concept_furniture_arrangement;;
+concept_blue_hall => nrel_service : concept_hall_decoration;;
+concept_blue_hall => nrel_service : concept_leading_services;;
+concept_blue_hall => nrel_service : concept_photography;;
+
+concept_blue_hall => nrel_type_event : concept_banquet;;
+concept_blue_hall => nrel_type_event : concept_business_meeting;;
+concept_blue_hall => nrel_type_event : concept_presentation;;
+concept_blue_hall => nrel_type_event : concept_press_conference;;
+concept_blue_hall => nrel_type_event : concept_seminar;;
+concept_blue_hall => nrel_type_event : concept_reception;;
+concept_blue_hall => nrel_type_event : concept_marriage;;
+concept_blue_hall => nrel_type_event : concept_birthday;;
+
+concept_blue_hall => nrel_territory : concept_parking;;
+concept_blue_hall => nrel_territory : concept_dance_floor;;
+
+concept_blue_hall => nrel_description_area : [Голубой зал является главным залом Dipservice Hall. Учитывая, что из Голубого зала имеется прямой доступ в кухню и подсобное помещение, он прекрасно подходит для проведения приемов, раутов, фуршетов, банкетов и других торжественных мероприятий, которые сопровождаются угощением гостей напитками и закусками. В зале возможна любая, удобная расстановка столов, организация функциональных зон, музыкальное сопровождение, как живое, так и в записи, а также демонстрация видеоматериалов во время торжества. Кроме того, Голубой зал идеально подходит для проведения выездных церемоний регистрации брака и организаций свадебных торжеств. Особое роскошное оформление зала придает ему невероятный антураж и удивительный облик, что создает праздничное настроение у гостей и дарит самые лучшие впечатления от проведенного в нем времени.];;

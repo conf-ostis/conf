@@ -1,0 +1,15 @@
+
+Romanov_A=> nrel_main_idtf:
+[Романов А.]
+(*
+<- lang_ru;;
+*);
+[Romanov_A]
+(*
+<- lang_en;;
+*);;
+
+Romanov_A => nrel_email: [romv.a.9@bk.ru](*<-lang_en;;*);;
+Romanov_A <- concept_docent;;
+Romanov_A <- person;;
+Romanov_A <- nrel_participant_of_conference_OSTIS2019;;

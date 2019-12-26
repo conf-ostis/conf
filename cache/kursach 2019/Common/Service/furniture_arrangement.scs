@@ -1,0 +1,18 @@
+concept_furniture_arrangement => nrel_main_idtf:
+ [расстановка мебели](* <- lang_ru;; *);
+ [furniture_arrangement] (* <- lang_en;; *);;
+ 
+ concept_furniture_arrangement <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(расстановка мебели)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Расстановка мебели — верная расстановка предметов мебели, образующая правильное распределение энергии пространства помещений.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

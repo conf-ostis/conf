@@ -1,0 +1,43 @@
+
+concept_Descartes_Prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Декарта]
+      (*<-lang_ru;;*);
+       [Descartes Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Пре́мия Декарта)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_European_Union;
+       concept_mathematician;
+	concept_philosopher
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Пре́мия Декарта — ежегодная премия, вручаемая Европейским союзом с 2000 года, названная в честь французского математика и философа Рене Декарта.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Декарта, достижение, экономика, социальная наука, гуманитарная наука, техника, научная группа)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_achievement;
+	concept_economy;
+concept_social_science;
+concept_humanities;
+concept_technology;
+concept_scientific_group
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Количество тезисов и тем конференции ничем не ограничено.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Descartes_Prize -> rrel_example: [С 2004 года в рамках премии Декарта выдавалась премия за популяризацию науки, которая в 2007 году выделилась в отдельную премию.](* <- lang_ru;; *);;
+
+concept_Descartes_Prize<=nrel_inclusion:concept_award;;

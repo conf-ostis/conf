@@ -1,0 +1,18 @@
+concept_leading_services => nrel_main_idtf:
+ [услуги ведущего](* <- lang_ru;; *);
+ [leading_services] (* <- lang_en;; *);;
+ 
+ concept_leading_services <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(услуги ведущего)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Услуги ведущего — услуги, оказываемые ведущим.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

@@ -1,0 +1,19 @@
+concept_stationary_microphone => nrel_main_idtf:
+ [стационарный микрофон](* <- lang_ru;; *);
+ [stationary microphone] (* <- lang_en;; *);;
+ 
+ concept_stationary_microphone <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(стационарный микрофон)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Стационарный микрофон —  магнитно-микшерный пульт с креплением для листа или блока бумаги, переворачиваемой по принципу блокнота.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+
+ 	*);;
+

@@ -1,0 +1,54 @@
+concept_information_theory<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Теория информации]
+	(*<-lang_ru;;*);
+	[information theory]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Теория информации)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+concept_Applied_Mathematics;
+concept_Radiotechnics;
+concept_the_theory_of_signal_processing;
+concept_Informatics;
+nrel_amount;
+concept_information;
+concept_system;
+nrel_property;
+nrel_transmission;
+concept_data
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Теория информации — раздел прикладной математики, радиотехники (теория обработки сигналов) и информатики, относящийся к измерению количества информации, её свойств и устанавливающий предельные соотношения для систем передачи данных.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Теория информации, математическая теория, математическая модель, физический объект, источник, канал связи )] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_mathematical_theory;
+concept_mathematical_model;
+concept_physical_object;
+concept_source;
+concept_communication_channel
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Как и любая математическая теория, теория оперирует математическими моделями, а не реальными физическими объектами (источниками и каналами связи).](*<-lang_ru;;*);;
+      *);;
+*);;
+concept_information_theory<=nrel_inclusion:concept_theory;;
+concept_information_theory<=nrel_inclusion:concept_Applied_Mathematics;;
+
+concept_theory <= nrel_subdividing: ...
+(*
+	<-concept_compression_coding;;
+	<-concept_noisepro_of_coding;;
+*);;
+
+

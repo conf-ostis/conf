@@ -1,0 +1,19 @@
+concept_multimedia_projector => nrel_main_idtf:
+ [мультимедиа-проектор](* <- lang_ru;; *);
+ [multimedia projector] (* <- lang_en;; *);;
+ 
+ concept_multimedia_projector <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(мультимедиа-проектор)]  (* <- lang_ru;; *);;
+//Add a comment to this line
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Мультимедиа-проектор — это устройство, способное воспроизвести на большой экран информацию, которая может быть получена от различных устройств: видеокамер, компьютеров, DVD-проигрывателей, USB-носителей.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

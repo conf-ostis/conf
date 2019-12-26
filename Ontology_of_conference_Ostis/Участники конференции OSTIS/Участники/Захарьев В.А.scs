@@ -1,0 +1,26 @@
+
+Zaharyev_V_A => nrel_main_idtf:
+	[Захарьев В.А.]
+	(*
+	<- lang_ru;;
+	*);
+	[Zaharyev V.A.]
+	(*
+	<- lang_en;;
+	*);;
+
+Zaharyev_V_A => nrel_email: [obivan213@rambler.ru](*<-lang_en;;*);;
+
+Zaharyev_V_A <- concept_docent;;
+Zaharyev_V_A <- nrel_participant_of_conference_OSTIS2019;;
+
+Zaharyev_V_A <- concept_participant_of_conference_OSTIS2014;;
+Zaharyev_V_A <- concept_participant_of_conference_OSTIS2015;;
+Zaharyev_V_A <- person;;
+
+
+/*ZaharXev_V._A. <= nrel_authors:  ...(* -> Doklad_73_OSTISX2015;Doklad_69_OSTISX2014;; *);;
+
+ZaharXev_V._A. -> Ucastnik_konferenzii_OSTIS;;
+
+ZaharXev_V._A. -> assistent;;*/

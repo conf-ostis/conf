@@ -1,0 +1,18 @@
+concept_marker_board => nrel_main_idtf:
+ [маркерная доска](* <- lang_ru;; *);
+ [marker board] (* <- lang_en;; *);;
+ 
+ concept_marker_board <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(маркерная доска)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Маркерная доска — вид классной доски, как правило белого цвета с глянцевым покрытием, предназначенная для черчения на ней особыми маркерами.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

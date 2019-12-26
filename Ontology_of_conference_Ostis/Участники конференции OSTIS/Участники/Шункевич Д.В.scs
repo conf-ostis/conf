@@ -1,0 +1,18 @@
+Shunkevich_D_V=> nrel_main_idtf:
+[Шункевич Д.В.]
+(*
+<- lang_ru;;
+*);
+[Shunkevich_D_V]
+(*
+<- lang_en;;
+*);;
+
+Shunkevich_D_V => nrel_email: [shu.dv@tut.by](*<-lang_en;;*);;
+Shunkevich_D_V <- person;;
+Shunkevich_D_V <- concept_docent;;
+Shunkevich_D_V <- concept_candidate_sciences;;
+
+Shunkevich_D_V <- nrel_participant_of_conference_OSTIS2019;;
+
+

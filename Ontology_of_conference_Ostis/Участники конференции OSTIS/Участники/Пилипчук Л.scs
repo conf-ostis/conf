@@ -1,0 +1,14 @@
+
+Pilipchuk_L=> nrel_main_idtf:
+[Пилипчук Л.]
+(*
+<- lang_ru;;
+*);
+[Pilipchuk_L]
+(*
+<- lang_en;;
+*);;
+Pilipchuk_L<- person;;
+Pilipchuk_L => nrel_email: [pilip.ms.l@gmail.com](*<-lang_en;;*);;
+Pilipchuk_L <- concept_candidate_sciences;;
+Pilipchuk_L <- nrel_participant_of_conference_OSTIS2019;;

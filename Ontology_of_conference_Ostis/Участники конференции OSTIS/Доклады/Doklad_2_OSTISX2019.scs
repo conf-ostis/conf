@@ -1,0 +1,10 @@
+///sc_node_not_relation-> Doklad_2_OSTISX2019;;
+Doklad_2_OSTISX2019=>nrel_main_idtf:[Доклад 2 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_2_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_2_OSTISX2019 => nrel_name_of_doclad: [АЛГОРИТМ ГЕНЕРАЦИИ КОНЕЧНОЭЛЕМЕНТНОЙ СЕТКИ ДЛЯ СИСТЕМЫ «ПОЗВОНОК – МЕЖПОЗВОНОЧНЫЙ ДИСК – ПОЗВОНОК» НА ОСНОВЕ STL МОДЕЛИ](* <- lang_ru;;*);;
+
+Doklad_2_OSTISX2019 => nrel_authors: Kurochka_K_S;;
+Doklad_2_OSTISX2019 => nrel_authors: Panarin_K_A;;
+Doklad_2_OSTISX2019 => nrel_authors: Karabchikova_E_A;;

@@ -1,0 +1,18 @@
+ concept_video_camera => nrel_main_idtf:
+ [видеокамера](* <- lang_ru;; *);
+ [video camera] (* <- lang_en;; *);;
+ 
+ concept_video_camera <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(видеокамера)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Видеокамера — комбинация телевизионной передающей камеры и устройства для видеозаписи.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

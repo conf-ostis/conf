@@ -1,0 +1,25 @@
+
+Kleschev_A_S=> nrel_main_idtf:
+	[Клещев А.С.]
+	(*
+	<- lang_ru;;
+	*);
+	[Kleschev A.S.]
+	(*
+	<- lang_en;;
+	*);;
+
+Kleschev_A_S => nrel_email: [kleschev@iacp.dvo.ru](*<-lang_en;;*);;
+
+Kleschev_A_S <- concept_participant_of_conference_OSTIS2014;;
+Kleschev_A_S <- concept_participant_of_conference_OSTIS2011;;
+Kleschev_A_S <- concept_participant_of_conference_OSTIS2012;
+concept_participant_of_conference_OSTIS2013; concept_participant_of_conference_OSTIS2015;;
+
+
+concept_PhD <- concept_degree;;
+Kleschev_A_S <- concept_PhD;;
+
+Kleschev_A_S <- nrel_participant_of_conference_OSTIS2019;;
+Kleschev_A_S <- person;;
+

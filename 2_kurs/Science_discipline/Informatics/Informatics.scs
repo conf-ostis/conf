@@ -1,0 +1,48 @@
+concept_Informatics<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Информатика]
+	(*<-lang_ru;;*);
+	[Informatics]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Информатика)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+concept_science;
+concept_method_of_collection;
+concept_storage_method;
+concept_processing_method;
+concept_transmission_method;
+concept_method_of_analysis;
+concept_method_of_evaluating_information;
+concept_computer_technology
+
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Информатика - наука о методах и процессах сбора, хранения, обработки, передачи, анализа и оценки информации с применением компьютерных технологий, обеспечивающих возможность её использования для принятия решений.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Информатика, исследование, программа, база данных, теория вычислимости, искусственный интеллект)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+	concept_research;
+	concept_program;
+	concept_data_base;
+	concept_computability_theory;
+	concept_artificial_intelligence
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Темами исследований в информатике являются вопросы: что можно, а что нельзя реализовать в программах и базах данных (теория вычислимости и искусственный интеллект).](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_Informatics-> rrel_example: [Информатика включает дисциплины, относящиеся к обработке информации в вычислительных машинах и вычислительных сетях.] (*<-lang_ru;;*);;
+concept_Informatics <=nrel_inclusion:concept_science_discipline;;
+concept_Informatics =>nrel_inclusion:concept_Computational_Informatics;;
+concept_Informatics <=nrel_inclusion:concept_technical_science;;

@@ -1,0 +1,40 @@
+
+concept_The_Queen_Elizabeth_Prize_for_Engineering<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия королевы Елизаветы II в области инженерного дела]
+      (*<-lang_ru;;*);
+       [The Queen Elizabeth Prize for Engineering]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия королевы Елизаветы II в области инженерного дела)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_technical_innovation;
+       concept_influence;
+	  concept_humanity	
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия королевы Елизаветы II в области инженерного дела — награда, вручаемая раз в два года за потрясающие технические инновации, которые положительно повлияли на человечество.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия королевы Елизаветы II в области инженерного дела, история, )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_Queen_Elizabeth_Prize_for_Engineering_Foundation;
+	concept_Royal_Academy_of_Engineering
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Премия королевы Елизаветы II в области инженерного дела присуждается британским фондом Queen Elizabeth Prize for Engineering Foundation при активном участии Королевской инженерной академии наук Великобритании.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+concept_The_Queen_Elizabeth_Prize_for_Engineering -> rrel_example: [В состав жюри премии королевы Елизаветы II в области инженерного дела входят не только ученые, но и бизнесмен.](* <- lang_ru;; *);;
+
+concept_The_Queen_Elizabeth_Prize_for_Engineering<=nrel_inclusion:concept_award;;
+

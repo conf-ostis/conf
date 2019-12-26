@@ -1,0 +1,60 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+David_Leigh_Donoho<-sc_node_not_relation;
+<=nrel_reward: ...
+(* 
+<-concept_The_Shaw_Prize;;
+<-concept_Carl_Friedrich_Gauss_Prize_for_Applications_of_Mathematics;;
+<-concept_Norbert_Wiener_Prize_in_Applied_Mathematics;;
+*);;
+
+David_Leigh_Donoho => nrel_main_idtf:[David Leigh Donoho] (* <- lang_en;;*);;
+
+David_Leigh_Donoho => nrel_main_idtf:[Дэвид Ли Донохо] (* <- lang_ru;;*);;
+
+
+David_Leigh_Donoho <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Дэвид Ли Донохо)](*<-lang_ru;;*); [Pic. (David Leigh Donoho)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/David_Leigh_Donoho.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+David_Leigh_Donoho => nrel_date_of_birth:
+            concept_date_05_03_1957
+            (*
+                => nrel_main_idtf:
+                [5 марта 1957](* <- lang_ru;;*);;
+            *);;
+
+
+David_Leigh_Donoho => nrel_place_of_birth:
+            concept_Los_Angeles;;
+
+ concept_Los_Angeles<-concept_city;;
+
+
+definition ->...
+(*
+->rrel_key_sc_element:  David_Leigh_Donoho;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Дэвид Ли Донохо - американский статистик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Дэвид Ли Донохо)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_statistician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: David_Leigh_Donoho;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Дэвид Ли Донохо получил Премию Норберта Винера по прикладной математике в 2010 году, Премию Шао в 2013 и Премию Гаусса в 2018.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Дэвид Ли Донохо)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_The_Shaw_Prize;
+	concept_Carl_Friedrich_Gauss_Prize_for_Applications_of_Mathematics;
+	concept_Norbert_Wiener_Prize_in_Applied_Mathematics
+};;
+*);;
+
+David_Leigh_Donoho<=nrel_inclusion:concept_laureate;;
+David_Leigh_Donoho-> rrel_example:[Донохо известен благодаря своим работам по снижению размерности, разработке специализированных вариантов вейвлетов и Compressive sensing.] (*<-lang_ru;;*);;
+
+David_Leigh_Donoho<=nrel_inclusion:concept_person;;

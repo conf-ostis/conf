@@ -1,0 +1,16 @@
+directed_graph->graph4(*
+	->rrel_vertex: A4s;;
+	->rrel_vertex: B4s;;
+	->rrel_vertex: D4s;;
+	->rrel_vertex: C4s;;
+
+	->rrel_edge: (A4s => B4s)(*
+			<=7;;
+	*);;
+	->rrel_edge: (B4s => C4s)(*
+			<=9;;
+	*);;
+	->rrel_edge: (C4s => D4s)(*
+			<=7;;
+	*);;
+*);;

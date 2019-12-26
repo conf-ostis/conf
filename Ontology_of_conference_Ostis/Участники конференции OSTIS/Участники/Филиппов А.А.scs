@@ -1,0 +1,33 @@
+
+Filippov_A_A=> nrel_main_idtf:
+	[Филиппов А.А.]
+	(*
+	<- lang_ru;;
+	*);
+	[Filippov A.A.]
+	(*
+	<- lang_en;;
+	*);;
+
+Filippov_A_A => nrel_email: [a.filippov@gmail.com](*<-lang_en;;*);;
+
+Filippov_A_A <- concept_graduate;;
+Filippov_A_A <- nrel_participant_of_conference_OSTIS2019;;
+
+Filippov_A_A <- concept_participant_of_conference_OSTIS2014;;
+Filippov_A_A <- concept_participant_of_conference_OSTIS2015;;
+
+Filippov_A_A <- person;;
+
+
+/*Filippov_A._A. <= nrel_authors:  ...(* -> Doklad_52_OSTISX2014;; *);;
+
+Filippov_A._A. -> Ucastnik_konferenzii_OSTIS;;
+
+Filippov_A._A. -> k.t.n.;;
+k.t.n. <- ucenaa_stepenX;;
+
+Filippov_A._A. -> dozent;;
+dozent <- ucenoe_zvanie;;
+
+Filippov_A._A. -> dozent;;*/

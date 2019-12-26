@@ -1,0 +1,19 @@
+concept_press_conference  => nrel_main_idtf:
+ [пресс-конференция](* <- lang_ru;; *);
+ [press conference] (* <- lang_en;; *);;
+ 
+ 
+ concept_press_conference <- rrel_key_sc_element: 
+         ...
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(пресс-конференция)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Пресс-конференция — это собрание представителей печати, созываемое каким-либо официальным лицом для информации по общественно-политическим вопросам.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

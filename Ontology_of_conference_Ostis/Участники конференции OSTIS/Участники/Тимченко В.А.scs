@@ -1,0 +1,17 @@
+Timchenko_B_A=> nrel_main_idtf:
+[Тимченко В.А.]
+(*
+<- lang_ru;;
+*);
+[Timchenko_B_A]
+(*
+<- lang_en;;
+*);;
+
+Timchenko_B_A => nrel_email: [timchenko_off@yandex.ru](*<-lang_en;;*);;
+
+Timchenko_B_A <- concept_graduate;;
+Timchenko_B_A <- nrel_participant_of_conference_OSTIS2019;;
+Timchenko_B_A <- person;;
+
+

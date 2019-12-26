@@ -1,0 +1,18 @@
+concept_tv => nrel_main_idtf:
+ [телевизор](* <- lang_ru;; *);
+ [tv] (* <- lang_en;; *);;
+ 
+ concept_tv <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(телевизор)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Телевизор — приёмник телевизионных сигналов изображения и звукового сопровождения, отображающий их на экране и с помощью громкоговорителей.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

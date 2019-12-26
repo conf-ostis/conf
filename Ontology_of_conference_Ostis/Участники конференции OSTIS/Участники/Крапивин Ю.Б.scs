@@ -1,0 +1,15 @@
+
+Krapivin_U_B=> nrel_main_idtf:
+[Крапивин Ю.Б.]
+(*
+<- lang_ru;;
+*);
+[Krapivin_U_B]
+(*
+<- lang_en;;
+*);;
+
+Krapivin_U_B => nrel_email: [krapiva_u_b@hounter.ua](*<-lang_en;;*);;
+Krapivin_U_B <- concept_candidate_sciences;;
+Krapivin_U_B <- nrel_participant_of_conference_OSTIS2019;;
+Krapivin_U_B <- person;;

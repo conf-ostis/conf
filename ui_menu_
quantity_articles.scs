@@ -1,0 +1,14 @@
+ui_menu_quantity_articles<-ui_user_command_class_atom; ui_user_command_class_view_kb;;
+ui_menu_quantity_articles=>nrel_main_idtf:[Поиск количества статей в конференции](*<-lang_ru;;*);;
+ui_menu_quantity_articles=>nrel_main_idtf:[Search for the quantity of articles in the conference](*<-lang_en;;*);;
+ui_menu_quantity_articles=>ui_nrel_command_template:
+[*
+               question_quantity_articles _-> ._question_quantity_articles_instance
+                         (*
+                              _->ui_arg_1;;   
+                                      *);;
+
+               ._question_quantity_articles_instance _<- question;;
+*];;
+ui_menu_quantity_articles=>ui_nrel_command_lang_template: [Запрос по поиску количества статей в конференции: $ui_arg_1](*<-lang_ru;;*);;
+ui_menu_quantity_articles=>ui_nrel_command_lang_template: [Request of search for the quantity of articles in the conference: $ui_arg_1](*<-lang_en;;*);;

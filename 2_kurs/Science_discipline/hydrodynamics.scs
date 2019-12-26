@@ -1,0 +1,45 @@
+concept_hydrodynamics<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Гидродинамика]
+	(*<-lang_ru;;*);
+	[hydrodynamics]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Гидродтнамика)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_physics_of_continuous_media;
+	concept_movement;
+	concept_ideal_fluid;
+	concept_ideal_gas;
+	nrel_interaction;
+	concept_solid
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Гидродинамика -  раздел физики сплошных сред, изучающий движение идеальных и реальных жидкостей и газа и их силовое взаимодействие с твёрдыми телами.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Гидродинамика, исследование, сопротивление среды, движение, тело, Леонардо да Винчи, Галилео Галилей)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_research;
+concept_environmental_resistance;
+concept_movement;
+concept_body;
+concept_Leonardo_da_Vinci;
+concept_Galileo_Galilei
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Первые попытки исследования сопротивления среды движению тела были сделаны Леонардо да Винчи и Галилео Галилеем.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_hydrodynamics->concept_ideal_environment;;
+concept_hydrodynamics =>nrel_inclusion:concept_Computational_Physics;;
+concept_hydrodynamics <=nrel_inclusion:concept_Physics;;

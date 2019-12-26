@@ -1,0 +1,54 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Karen_Keskulla_Uhlenbeck<-sc_node_not_relation;
+<=nrel_reward: ...
+(* 
+<-concept_US_National_Science_Medal;;
+<-concept_Steel_Award;;
+<-concept_Abel_Prize;;
+*);;
+
+Karen_Keskulla_Uhlenbeck => nrel_main_idtf:[Karen Keskulla Uhlenbeck] (* <- lang_en;;*);;
+Karen_Keskulla_Uhlenbeck => nrel_main_idtf:[Карен Кескалла Уленбек] (* <- lang_ru;;*);;
+
+Karen_Keskulla_Uhlenbeck<-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Карен Кескалла Уленбек)](*<-lang_ru;;*); [Pic. (Karen Keskulla Uhlenbeck)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Karen_Keskulla_Uhlenbeck.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Karen_Keskulla_Uhlenbeck => nrel_date_of_birth:
+            concept_date_24_08_1942
+            (*
+                => nrel_main_idtf:
+                [24 августа 1942](* <- lang_ru;;*);;
+            *);;
+Karen_Keskulla_Uhlenbeck => nrel_place_of_birth:
+            concept_Cleveland;;
+concept_Cleveland<-concept_city;;
+
+definition ->...
+(*
+->rrel_key_sc_element:  Karen_Keskulla_Uhlenbeck;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Карен Кескалла Уленбек  - американский математик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Карен Кескалла Уленбек)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:  Karen_Keskulla_Uhlenbeck;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ В 2000 году она была удостоена Национальной научной медали США, а в 2007 году — Премии Лероя П. Стила. В 2019 году Карен Уленбек стала первой женщиной, удостоенной Абелевской премии ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Карен Кескалла Уленбек)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_US_National_Science_Medal;
+	concept_Steel_Award;
+	concept_Abel_Prize
+};;
+*);;
+
+Karen_Keskulla_Uhlenbeck<=nrel_inclusion:concept_laureate;;
+Karen_Keskulla_Uhlenbeck-> rrel_example:[В 1991 Уленбек вместе с математиками Гербертом Клеменсом и Даном Фридом стала соосновательницей Park City Mathematics Institute (PCMI).] (*<-lang_ru;;*);;
+
+Karen_Keskulla_Uhlenbeck<=nrel_inclusion:concept_person;;

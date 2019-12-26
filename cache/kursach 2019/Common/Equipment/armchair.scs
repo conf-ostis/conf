@@ -1,0 +1,17 @@
+concept_armchair => nrel_main_idtf:
+[кресло](* <- lang_ru;; *);
+[armchair] (* <- lang_en;; *);;
+
+concept_armchair <- rrel_key_sc_element: 
+        ..
+	(*
+	=> nrel_main_idtf: [Опр.(кресло)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Кресло — просторный стул с ручками для опоры локтей.]
+			(* <- lang_ru;; *);;
+		*);; 
+	*);;

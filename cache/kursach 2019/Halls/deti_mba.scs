@@ -1,0 +1,34 @@
+concept_deti_mba => nrel_main_idtf:
+ [Дети МВА](* <- lang_ru;; *);
+ [MBA children] (* <- lang_en;; *);;
+ 
+ 
+ concept_deti_mba => nrel_count_people : [50];;
+ 
+ concept_deti_mba => nrel_square : [100];;
+ 
+ concept_deti_mba => nrel_address : [ул. Октябрьская, д. 16];;
+ 
+ concept_deti_mba => nrel_phone : [ 375 (29) 601-46-41];;
+ concept_deti_mba => nrel_phone : [ 375 (33) 601-44-24];;
+ 
+ concept_deti_mba => nrel_site : [https://deti-mba.by/arenda/];;
+ 
+ concept_deti_mba => nrel_equipment : concept_sound_system;;
+ concept_deti_mba => nrel_equipment : concept_lcd_panel;;
+ concept_deti_mba => nrel_equipment : concept_laptop;;
+ concept_deti_mba => nrel_equipment : concept_video_camera;;
+ concept_deti_mba => nrel_equipment : concept_table;;
+ concept_deti_mba => nrel_equipment : concept_marker_board;;
+ concept_deti_mba => nrel_equipment : concept_multimedia_projector;;
+ concept_deti_mba => nrel_equipment : concept_flipchart;;
+ concept_deti_mba => nrel_equipment : concept_chair;;
+ concept_deti_mba => nrel_equipment : concept_wifi;;
+ 
+ concept_deti_mba => nrel_service : concept_catering;;
+ 
+ concept_deti_mba => nrel_territory : concept_parking;;
+ 
+
+ concept_deti_mba => nrel_description_area : [Наша уютная площадка deti-MBA предлагает Вам свои услуги по организации мероприятий. Мы открыты для амбициозных творческих и обучающих проектов, которые нуждаются в стильном и современном зале для своих ивентов. На базе нашего ивент-пространства Вы можете организовать мероприятия любого формата: мастер-классы, тренинги, презентации, выставки, конференции, концерты, поэтические вечера, деловые игры, квизы, корпоративы и др. Светлый белый зал, большие окна, искусственная трава, качели и удобные кресла – все это выгодно выделяет нас среди других площадок нашего города. Ивент-пространство оснащено всей технической базой для Вашего мероприятия: мультимедийный проектор, экран, магнитный флип-чарт, аудиосистема, ноутбук, Wi-Fi, X-box.];;
+

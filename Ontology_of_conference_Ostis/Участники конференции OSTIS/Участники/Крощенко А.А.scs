@@ -1,0 +1,22 @@
+Kroschenko_A_A => nrel_main_idtf:
+[Крощенко А.А.]
+	(*
+	<- lang_ru;;
+	*);
+	[Kroschenko_A_A] 
+	(*
+	<- lang_en;;
+	*);;
+
+
+Kroschenko_A_A => nrel_email: [a_a_kros@gmail.com](*<-lang_en;;*);;
+
+Kroschenko_A_A <- concept_professor;;
+
+Kroschenko_A_A <- nrel_participant_of_conference_OSTIS2019;;
+
+Kroschenko_A_A <- concept_participant_of_conference_OSTIS2015;;
+
+Kroschenko_A_A <- concept_participant_of_conference_OSTIS;;
+
+Kroschenko_A_A <- person;;

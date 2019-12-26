@@ -1,0 +1,40 @@
+concept_neuroscientist<-sc_node_not_relation;;
+
+concept_neuroscientist => nrel_main_idtf:[Neuroscientist] (* <- lang_en;;*);;
+
+concept_neuroscientist => nrel_main_idtf:[Нейробиолог] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_neuroscientist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Нейробиолог – человек, который работает в области нейробиологии,может проводить исследования, наблюдения и эксперименты, формируя теоретические подходы, находя новые общие закономерности, которые могут объяснить происхождение частных случаев.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Нейробиолог)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_field_of_neurobiology;
+	concept_research;
+	concept_observations;
+	concept_experiments;
+	concept_theoretical_approaches;
+	concept_new_general_patterns;
+	concept_origin;
+	concept_special_cases
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_neuroscientist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Нейробиолог также может посвятить себя прктике, применяя фундаментальные знания для решения конкретных задач.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Нейробиолог)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_practice;
+	concept_fundamental_knowledge;
+	concept_decision;
+	concept_specific_tasks
+};;
+*);;
+
+concept_neuroscientist<=nrel_inclusion:concept_person;;
+concept_neuroscientist -> rrel_example:[По оценкам экспертов, помимо решения «серьезных» задач разработки нейробиологов скоро могут быть использованы в развлекательных целях, например, в индустрии компьютерных игр, чтобы сделать их еще более реалистичными для игрока, при создании специальных спортивных экзоскелетов.] (*<-lang_ru;;*);;

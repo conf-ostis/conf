@@ -1,0 +1,52 @@
+
+nrel_graduate<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[выпускник*]
+(*<-lang_ru;;*);
+[graduate*]
+(*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=> nrel_main_idtf: [Определение (выпускник)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+concept_human;
+concept_educational_institution
+};;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Выпусник --человек окончивший учебное заведение ] (* <- lang_ru;;*);;
+    *);;
+*);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(выпускник*)] (* <- lang_ru;; *);;
+=> nrel_using_constants:
+{
+concept_higher_education_institution;
+concept_diploma
+};;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Выпусник высшего учебного заведения получает диплом](*<-lang_ru;;*);;
+      *);;
+
+*);
+=> nrel_definitional_domain: ... (*
+        <= nrel_combination:
+{concept_human;
+ concept_higher_education_institution
+};;
+*);
+=>nrel_first_domain:
+concept_educational_institution;
+=> nrel_second_domain:
+concept_human;;
+nrel_graduate->(concept_Israel_Institute_of_Technology=> Yaakov_Ziv);;
+
+oriented_relation->nrel_graduate;;
+antisymmetric_relation->nrel_graduate;;
+transitive_relation-|>nrel_graduate;;
+antireflexive_relation->nrel_graduate;;
+

@@ -1,0 +1,40 @@
+
+concept_Lemelson_MIT_Prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Лемельсона]
+      (*<-lang_ru;;*);
+       [Lemelson MIT Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия Лемельсона)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_inventor;
+       concept_cash_reward;
+	concept_MIT
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия Лемельсона — ежегодная премия для изобретателей, названная в честь изобретателя Джерома Лемельсона, который выделил денежные средства для главного приза в 500 тысяч долларов и отдал их в распоряжение Массачусетского технологического института.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Лемельсона, Нобелевская премия, лауреат)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_Nobel_Prize;
+	concept_laureate
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Среди награжденных премией Лемельсона присутствует один лауреат Нобелевской премии.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Lemelson_MIT_Prize -> rrel_example: [Премия Лемельсона присуждается выдающимся личностям, чей новаторский дух и изобретательность на протяжении всей своей карьеры улучшали общество и вдохновляли других.](* <- lang_ru;; *);;
+
+concept_Lemelson_MIT_Prize<=nrel_inclusion:concept_award;;
+

@@ -1,0 +1,45 @@
+
+concept_Crawford_Prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Крафорда]
+      (*<-lang_ru;;*);
+       [Crawford Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия Крафорда)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_Swedish_Royal_Academy_of_Sciences;
+       concept_economist;
+	concept_industrialist
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия Крафорда — одна из шести международных премий, вручаемых Шведской королевской академией наук, учрежденная шведским экономистом и промышленником Крафорд, Хольгер и его супругой Анной-Гретой в 1980 году.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премией Крафорда, лауреат, номинация, математика, астрономия, наука о Земле, биологическая наука, полиартрит)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_laureate;
+	concept_nomination;
+	concept_Mathematics;
+	concept_Astronomy;
+	concept_Earth_science;
+	concept_biological_science;
+	concept_polyarthritis
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Премией Крафорда награждаются лауреаты в одной из четырёх номинаций: математика и астрономия, науки о Земле, биологические науки и исследования по лечению полиартрита.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Crawford_Prize -> rrel_example: [Премия Крафорда по полиартриту выдаётся лишь тогда, когда, по мнению специального комитета, был достигнут существенный прогресс в данной сфере.](* <- lang_ru;; *);;
+
+concept_Crawford_Prize<=nrel_inclusion:concept_award;;
+

@@ -1,0 +1,42 @@
+concept_wooden_hall => nrel_main_idtf:
+[Деревянный зал](* <- lang_ru;; *);
+[Wooden hall] (* <- lang_en;; *);;
+
+
+concept_wooden_hall => nrel_count_people : [40];;
+
+concept_wooden_hall => nrel_square : [105];;
+
+concept_wooden_hall => nrel_address : [г. Минск, пер. Войсковый, 4, Dipservice Hall];;
+
+concept_wooden_hall => nrel_phone : [+375-33-333-84-03];;
+
+concept_wooden_hall => nrel_site : [http://www.dipservicehall.by];;
+
+concept_wooden_hall => nrel_pay_per_hour : [30];;
+
+concept_wooden_hall=> nrel_equipment : concept_table;;
+concept_wooden_hall=> nrel_equipment : concept_chair;;
+concept_wooden_hall=> nrel_equipment : concept_sound_system;;
+concept_wooden_hall=> nrel_equipment : concept_wifi;;
+concept_wooden_hall => nrel_equipment : concept_marker_board;;
+
+concept_wooden_hall=> nrel_type_event : concept_business_meeting;;
+concept_wooden_hall=> nrel_type_event : concept_presentation;;
+concept_wooden_hall=> nrel_type_event : concept_press_conference;;
+concept_wooden_hall=> nrel_type_event : concept_seminar;;
+
+concept_wooden_hall=> nrel_type_event : concept_banquet;;
+concept_wooden_hall=> nrel_type_event : concept_business_meeting;;
+concept_wooden_hall=> nrel_type_event : concept_presentation;;
+concept_wooden_hall=> nrel_type_event : concept_press_conference;;
+
+concept_wooden_hall=> nrel_service : concept_catering;;
+concept_wooden_hall=> nrel_service : concept_furniture_arrangement;;
+concept_wooden_hall=> nrel_service : concept_photography;;
+concept_wooden_hall => nrel_service : concept_musician;;
+
+
+concept_wooden_hall=> nrel_territory : concept_parking;;
+
+concept_wooden_hall=> nrel_description_area : [Деревянный зал имеет два выхода, благодаря этому его можно использовать независимо от других помещений и проводимых в них мероприятий. В оформлении Деревянного зала используется преимущественно натуральное дерево. В центре зала стоит круглый стол из массива дерева, рассчитанный на размещение 16 человек. В зале комфортно могут размещаться до 40 человек. Зал предназначен для проведения переговоров, официальных встреч, конференций.];;

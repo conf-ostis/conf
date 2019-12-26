@@ -1,0 +1,62 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Ivan_Edward_Sutherland<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Turing_Award;;
+<-concept_Kyoto_Award;;
+<-concept_IEEE_John_von_Neumann_Medal;;
+<-concept_Computer_Pioneer_Award;;
+*);;
+
+Ivan_Edward_Sutherland => nrel_main_idtf:[Ivan Edward Sutherland] (* <- lang_en;;*);;
+
+Ivan_Edward_Sutherland => nrel_main_idtf:[Айвен Эдвард Сазерленд] (* <- lang_ru;;*);;
+
+
+Ivan_Edward_Sutherland <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Айвен Эдвард Сазерленд)](*<-lang_ru;;*); [Pic. (Ivan Edward Sutherland)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Ivan_Edward_Sutherland.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+
+Ivan_Edward_Sutherland => nrel_date_of_birth:
+            concept_date_16_05_1938
+            (*
+                => nrel_main_idtf:
+                [16 мая 1938](* <- lang_ru;;*);;
+            *);;
+
+Ivan_Edward_Sutherland=> nrel_place_of_birth:
+            concept_Hastings;;
+
+concept_Hastings<-concept_city;;
+
+definition ->...
+(*
+->rrel_key_sc_element: Ivan_Edward_Sutherland;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Айвен Эдвард Сазерленд  -  американский учёный в области информатики.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Айвен Эдвард Сазерленд)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_scientist;
+	concept_Informatics
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Ivan_Edward_Sutherland;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Айвен Эдвард Сазерленд получил награду "Пионер компьютерной техники" в 1985 году, Премию Тьюринга в 1988 году, Медаль Джона фон Неймана в 1998 году и Премию Киото в 2012.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Айвен Эдвард Сазерленд)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Turing_Award;
+	concept_Kyoto_Award;
+	concept_IEEE_John_von_Neumann_Medal;
+	concept_Computer_Pioneer_Award
+};;
+*);;
+
+Ivan_Edward_Sutherland<=nrel_inclusion:concept_laureate;;
+Ivan_Edward_Sutherland-> rrel_example:[Айвен Эдвард Сазерленд был вице-президентом Sun Microsystems. ] (*<-lang_ru;;*);;
+
+Ivan_Edward_Sutherland<=nrel_inclusion:concept_person;;

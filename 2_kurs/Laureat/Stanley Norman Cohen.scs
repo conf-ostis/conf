@@ -1,0 +1,65 @@
+sc_node_norole_relation->nrel_place_of_birth;;
+sc_node_norole_relation->nrel_graduate;;
+sc_node_norole_relation->nrel_employee;;
+Stanley_Norman_Cohen<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Wolf_Prize;;
+<-concept_US_National_Science_Medal;;
+<-concept_Lemelson_MIT_Prize;;
+<-concept_The_Shaw_Prize;;
+*);;
+
+Stanley_Norman_Cohen => nrel_main_idtf:[Stanley Norman Cohen] (* <- lang_en;;*);;
+
+Stanley_Norman_Cohen => nrel_main_idtf:[Стэнли Норман Коэн] (* <- lang_ru;;*);;
+
+Stanley_Norman_Cohen <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Стэнли Норман Коэн)](*<-lang_ru;;*); [Pic. (Stanley Norman Cohen)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Stanley_Norman_Cohen.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+Stanley_Norman_Cohen=> nrel_place_of_birth:
+            concept_New_Jersey;;
+
+concept_New_Jersey<-concept_city;;
+
+
+Stanley_Norman_Cohen => nrel_graduate: ...
+(*
+<-concept_University_of_Pennsylvania;;
+<-concept_Rutgers_University;;
+*);;
+
+Stanley_Norman_Cohen => nrel_employee: ...
+(*
+<-concept_Leland_Stanford_Junior_University;;
+*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: Stanley_Norman_Cohen;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Стэнли Норман Коэн  - американский генетик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Стэнли Норман Коэн)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_geneticist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Stanley_Norman_Cohen;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Стэнли Норман Коэн получил Премию Вольфа в 1981 году, Национальную научную медаль США в 1988 году, Премию Лемельсона в 1996 году, Премию Шао в 2004 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Стэнли Норман Коэн)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Wolf_Prize;
+	concept_US_National_Science_Medal;
+	concept_Lemelson_MIT_Prize;
+	concept_The_Shaw_Prize
+};;
+*);;
+
+Stanley_Norman_Cohen<=nrel_inclusion:concept_laureate;;
+Stanley_Norman_Cohen-> rrel_example:[Исследования Коэна в 1972 году, в сочетании с исследованиями Пола Берга и Герберта Бойера, привели к разработке методов для объединения генов и генной трансплантации.] (*<-lang_ru;;*);;
+Stanley_Norman_Cohen<=nrel_inclusion:concept_person;;
+

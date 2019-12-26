@@ -1,0 +1,71 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_date_of_death;;
+sc_node_norole_relation->nrel_place_of_birth;;
+sc_node_norole_relation->nrel_place_of_death;;
+Hideki_Yukawa<-sc_node_not_relation;
+<=nrel_reward: ...
+(* 
+<-concept_Nobel_Prize;;
+<-concept_Big_gold_medal_named_after_M.V._Lomonosov;;
+*);;
+
+Hideki_Yukawa => nrel_main_idtf:[Hideki Yukawa] (* <- lang_en;;*);;
+
+Hideki_Yukawa => nrel_main_idtf:[Хидэки Юкава] (* <- lang_ru;;*);;
+
+Hideki_Yukawa <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Хидэки Юкава)](*<-lang_ru;;*); [Pic. (Hideki Yukawa)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Hideki_Yukawa.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+Hideki_Yukawa => nrel_date_of_birth:
+            concept_date_23_01_1907
+            (*
+                => nrel_main_idtf:
+                [23 января 1907](* <- lang_ru;;*);;
+            *);;
+
+Hideki_Yukawa => nrel_date_of_death:
+            concept_date_08_09_1981
+            (*
+                => nrel_main_idtf:
+                [8 сентября 1981](* <- lang_ru;;*);;
+            *);;
+
+
+
+Hideki_Yukawa=> nrel_place_of_birth:
+            concept_Tokyo;;
+
+ concept_Tokyo<-concept_city;;
+
+Hideki_Yukawa => nrel_place_of_death:
+            concept_Kyoto;;
+
+ concept_Kyoto<-concept_city;;	
+
+definition ->...
+(*
+->rrel_key_sc_element: Hideki_Yukawa;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Хидэки Юкава  - японский физик-теоретик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Хидэки Юкава)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_theoretical_physicist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Hideki_Yukawa;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Хидэки Юкава получил Нобелевскую премию по физике в 1949 году, Большую золотую медаль имени М.В.Ломоносова от Академии Наук СССР в 1964 году.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Хидэки Юкава)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Nobel_Prize;
+	concept_Big_gold_medal_named_after_M.V._Lomonosov
+	
+};;
+*);;
+
+Hideki_Yukawa<=nrel_inclusion:concept_laureate;;
+Hideki_Yukawa-> rrel_example:[Хидэки Юкава - первый японец, получивший Нобелевскую премию.] (*<-lang_ru;;*);;
+Hideki_Yukawa<=nrel_inclusion:concept_person;;
+

@@ -1,0 +1,39 @@
+concept_programmer<-sc_node_not_relation;;
+
+concept_programmer => nrel_main_idtf:[Programmer] (* <- lang_en;;*);;
+
+concept_programmer => nrel_main_idtf:[Программист] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_programmer;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Программист — человек, занимающийся непосредственной разработкой программного обеспечения для различного рода вычислительно-операционных систем. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Программист)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_development;
+	concept_software;
+	concept_sort;
+	concept_computer_operating_system
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_programmer;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Профессия программиста высоко востребована, но и уровень конкуренции высок.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Программист)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_profession;
+	concept_level_of_competition
+};;
+*);;
+
+concept_programmer<=nrel_inclusion:concept_person;;
+concept_programmer -> rrel_example:[ На одну должность могут претендовать несколько десятков человек. Успех программиста зависит от навыков, знаний и умения их интерпретировать.] (*<-lang_ru;;*);;
+
+sc_node_norole_relation->nrel_ancestor;;
+concept_person_Joseph_Marie_Jacquard<-sc_node_not_relation;;
+concept_laureatet<=nrel_ancestor:concept_person_Joseph_Marie_Jacquard;;
+

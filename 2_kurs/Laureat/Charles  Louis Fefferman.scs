@@ -1,0 +1,58 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_place_of_birth;;
+Charles_Louis_Fefferman<-sc_node_not_relation;
+<=nrel_reward: ...
+(* 
+<-concept_Fields_Medal;;
+<-concept_Wolf_Prize;;
+<-concept_Alan_T._Waterman_Award;;
+*);;
+
+Charles_Louis_Fefferman => nrel_main_idtf:[Charles Louis Fefferman] (* <- lang_en;;*);;
+
+Charles_Louis_Fefferman => nrel_main_idtf:[Чарльз Луис Фефферман] (* <- lang_ru;;*);;
+
+Charles_Louis_Fefferman <-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Чарльз Луис Фефферман)](*<-lang_ru;;*); [Pic. (Charles Louis Fefferman)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Charles_Louis_Fefferman.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+Charles_Louis_Fefferman => nrel_date_of_birth:
+            concept_date_18_04_1949
+            (*
+                => nrel_main_idtf:
+                [18 апреля 1949](* <- lang_ru;;*);;
+            *);;
+
+
+Charles_Louis_Fefferman => nrel_place_of_birth:
+            concept_Silver_Spring;;
+
+concept_Silver_Spring<-concept_city;;
+
+
+definition ->...
+(*
+->rrel_key_sc_element:  Charles_Louis_Fefferman;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Чарльз Луис Фефферман - американский математик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Чарльз Луис Фефферман)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Charles_Louis_Fefferman;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Чарльз Луис Фефферман получил Филдсовскую Премию в 1978 году, Премию Алана Уотермана в 1976 и Премию Вольфа в 2017.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Чарльз Луис Фефферман)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Fields_Medal;
+	concept_Wolf_Prize;
+	concept_Alan_T._Waterman_Award
+};;
+*);;
+
+Charles_Louis_Fefferman<=nrel_inclusion:concept_laureate;;
+Charles_Louis_Fefferman-> rrel_example:[В 1979 году Чарльз Луис Фефферман был избран в Национальную академию наук США.] (*<-lang_ru;;*);;
+Charles_Louis_Fefferman<=nrel_inclusion:concept_person;;
+

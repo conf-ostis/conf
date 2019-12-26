@@ -1,0 +1,14 @@
+Lukashevich_M_M=> nrel_main_idtf:
+[Лукашевич М.М.]
+(*
+<- lang_ru;;
+*);
+[Lukashevich_M_M]
+(*
+<- lang_en;;
+*);;
+
+Lukashevich_M_M => nrel_email: [luka_m_m@smm.com](*<-lang_en;;*);;
+Lukashevich_M_M <- concept_candidate_sciences;;
+Lukashevich_M_M <- nrel_participant_of_conference_OSTIS2019;;
+Lukashevich_M_M <- person;;

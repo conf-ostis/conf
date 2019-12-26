@@ -1,0 +1,5 @@
+ sc_node_norole_relation -> nrel_service;; 
+ 
+ nrel_service => nrel_main_idtf:[услуга*] (* <-lang_ru;; *);;
+ 
+ nrel_service => nrel_main_idtf:[service*] (* <-lang_en;; *);;

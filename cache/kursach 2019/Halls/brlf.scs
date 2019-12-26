@@ -1,0 +1,20 @@
+concept_brlf => nrel_main_idtf:
+ [Белорусский республиканский литературный фонд](* <- lang_ru;; *);
+ [Belarusian Republican Literary Fund] (* <- lang_en;; *);;
+ 
+ 
+ concept_brlf => nrel_count_people : [320];;
+ 
+ concept_brlf => nrel_square : [341];;
+ 
+ concept_brlf => nrel_address : [ул. Фрунзе, 5 (ст.метро "Площадь Победы")];;
+ 
+ concept_brlf => nrel_phone : [ 375 (17) 335-24-19];;
+ 
+ concept_brlf => nrel_mail_area : [belvezha@tut.by];;
+ 
+ concept_brlf => nrel_equipment : concept_stationary_microphone;;
+ concept_brlf => nrel_equipment : concept_chair;;
+
+ concept_brlf => nrel_description_area : [Зрительный зал расположен рядом с парком им.Горького, в этом же здании ресторан "Старый Тифлис".];;
+

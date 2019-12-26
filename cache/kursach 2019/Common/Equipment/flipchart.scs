@@ -1,0 +1,19 @@
+concept_flipchart => nrel_main_idtf:
+ [флип-чарт](* <- lang_ru;; *);
+ [flipchart] (* <- lang_en;; *);;
+ 
+ concept_flipchart <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(флип-чарт)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Флип-чарт —  магнитно-микшерный пульт с креплением для листа или блока бумаги, переворачиваемой по принципу блокнота.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+//Add a comment to this line
+ 	*);;
+

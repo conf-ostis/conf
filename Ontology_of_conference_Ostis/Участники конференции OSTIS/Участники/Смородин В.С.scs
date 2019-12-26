@@ -1,0 +1,15 @@
+Smorodin_V_S=> nrel_main_idtf:
+[Смородин В.С.]
+(*
+<- lang_ru;;
+*);
+[Smorodin_V_S]
+(*
+<- lang_en;;
+*);;
+
+Smorodin_V_S => nrel_email: [smorodin_vs@mail.ru](*<-lang_en;;*);;
+Smorodin_V_S <- person;;
+Smorodin_V_S <- concept_candidate_sciences;;
+Smorodin_V_S <- nrel_participant_of_conference_OSTIS2019;;
+

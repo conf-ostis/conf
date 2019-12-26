@@ -1,0 +1,18 @@
+
+
+Paluh_B_V=> nrel_main_idtf:
+[Палюх Б.В.]
+(*
+<- lang_ru;;
+*);
+[Paluh_B_V]
+(*
+<- lang_en;;
+*);;
+
+Paluh_B_V => nrel_email: [pal23.b.v@gmail.com](*<-lang_en;;*);;
+Paluh_B_V<- person;;
+Paluh_B_V <- concept_professor;;
+
+Paluh_B_V <- nrel_participant_of_conference_OSTIS2019;;
+

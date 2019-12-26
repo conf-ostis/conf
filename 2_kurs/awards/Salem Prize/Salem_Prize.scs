@@ -1,0 +1,44 @@
+
+concept_Salem_Prize<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия Салема]
+      (*<-lang_ru;;*);
+       [Salem Prize]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия Салема)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_Mathematics;
+       concept_widow;
+	concept_mathematician;
+	concept_banker;
+	concept_result;
+	concept_Fourier_series;
+	concept_theory
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия Салема — математическая премия, основана вдовой греческого и французского математика и банкира Рафаэля Салема, присуждаемая ежегодно молодому математику, получившему выдающиеся результаты в сфере научных интересов Рафаэля Салема, в первую очередь в теории рядов Фурье.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия Салема, Жан Бургейн, медаль Филдса)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_Fields_Medal;
+	concept_Jean_Bourgain
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Премия считается весьма престижной, семерым из награждённых (Жан Бургейн и другие) впоследствии удалось получить медаль Филдса.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Salem_Prize -> rrel_example: [Размер премии Салема по состоянию на 1991 год составляет 5 тысяч французских франков.](* <- lang_ru;; *);;
+
+concept_Salem_Prize<=nrel_inclusion:concept_award;;
+

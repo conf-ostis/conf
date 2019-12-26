@@ -1,0 +1,40 @@
+concept_recipient<-sc_node_not_relation;;
+
+concept_recipient => nrel_main_idtf:[Recipient] (* <- lang_en;;*);;
+
+concept_recipient => nrel_main_idtf:[Получатель] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_recipient;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Получатель - человек, получающий адресованные ему ценности, грузы.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Получатель)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_addressed_values;
+	concept_addressed_cargo
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_recipient;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Получатель происходит от глагола получать.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Получатель)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_verb
+};;
+*);;
+
+sc_node_norole_relation->nrel_synonym;;
+sc_node_not_relation->concept_destination;;
+concept_recipient<=nrel_synonym:concept_destination;;
+
+sc_node_norole_relation->nrel_antonym;;
+sc_node_not_relation->concept_sender;;
+concept_recipient<=nrel_antonym:concept_sender;;
+
+concept_recipient<=nrel_inclusion:concept_person;;
+concept_recipient -> rrel_example:[ Для создания письма достаточно просто щёлкнуть кнопкой мыши на электронном адресе получателя.] (*<-lang_ru;;*);;
+

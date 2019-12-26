@@ -1,0 +1,9 @@
+///sc_node_not_relation-> Doklad_9_OSTISX2019;;
+Doklad_9_OSTISX2019=>nrel_main_idtf:[Доклад 9 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_9_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_9_OSTISX2019 => nrel_name_of_doclad: [ГРАФ СЕМАНТИЧЕСКОГО КЛАССИФИКАТОРА ТАПАЗ-2](* <- lang_ru;;*);;
+
+Doklad_9_OSTISX2019 => nrel_authors: Gordey_A_N;;
+Doklad_9_OSTISX2019 => nrel_authors: Udovichenko_A_M;;

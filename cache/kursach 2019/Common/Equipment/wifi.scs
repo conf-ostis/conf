@@ -1,0 +1,18 @@
+concept_wifi => nrel_main_idtf:
+ [вайфай](* <- lang_ru;; *);
+ [wifi] (* <- lang_en;; *);;
+ 
+ concept_wifi <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(вайфай)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Вайфай — один из форматов передачи цифровых данных по радиоканалам.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

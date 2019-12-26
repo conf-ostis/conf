@@ -1,0 +1,9 @@
+///sc_node_not_relation-> Doklad_6_OSTISX2019;;
+Doklad_6_OSTISX2019=>nrel_main_idtf:[Доклад 6 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_6_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_6_OSTISX2019 => nrel_name_of_doclad: [ВЫБОР АНАЛОГИЧНЫХ МЕТОДОВ ЛЕЧЕНИЯ ПЕЧЕНОЧНОЙ НЕДОСТАТОЧНОСТИ ПРИ ИСПОЛЬЗОВАНИИ ТЕОРЕТИКО-МНОЖЕСТВЕННЫХ МОДЕЛЕЙ](* <- lang_ru;;*);;
+
+Doklad_6_OSTISX2019 => nrel_authors: Blagosklonov_N_A;;
+Doklad_6_OSTISX2019 => nrel_authors: Kobrinskiy_B_A;;

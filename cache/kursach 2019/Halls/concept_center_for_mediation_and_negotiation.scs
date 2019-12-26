@@ -1,0 +1,31 @@
+concept_center_for_mediation_and_negotiation => nrel_main_idtf:
+[Центр медиации и переговоров](* <- lang_ru;; *);
+[Center for mediation and negotiation] (* <- lang_en;; *);;
+
+
+concept_center_for_mediation_and_negotiation => nrel_count_people : [22];;
+
+concept_center_for_mediation_and_negotiation => nrel_square : [36];;
+
+concept_center_for_mediation_and_negotiation => nrel_address : [Минск, ул.Могилевская, 2/2, этаж3, пом2.];;
+
+concept_center_for_mediation_and_negotiation => nrel_phone : [+375 (17) 216 25 65, +375 (25) 967 35 95];;
+
+concept_center_for_mediation_and_negotiation => nrel_site : [www.mediators.pro];;
+
+
+concept_center_for_mediation_and_negotiation => nrel_equipment : concept_table;;
+concept_center_for_mediation_and_negotiation => nrel_equipment : concept_marker_board;;
+concept_center_for_mediation_and_negotiation => nrel_equipment : concept_chair;;
+concept_center_for_mediation_and_negotiation => nrel_equipment : concept_wifi;;
+
+
+concept_center_for_mediation_and_negotiation => nrel_type_event : concept_business_meeting;;
+concept_center_for_mediation_and_negotiation => nrel_type_event : concept_presentation;;
+concept_center_for_mediation_and_negotiation => nrel_type_event : concept_seminar;;
+
+
+concept_center_for_mediation_and_negotiation => nrel_service : concept_furniture_arrangement;;
+
+
+concept_center_for_mediation_and_negotiation => nrel_description_area : [От метро "Институт культуры" 7 минут ходьбы. Гибкий режим работы и ценообразование. Оборудование, посуда и техника для кофе-пауз входит в стоимость.];;

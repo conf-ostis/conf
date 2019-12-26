@@ -1,0 +1,47 @@
+concept_Computational_Chemistry	<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Вычислительная химия]
+	(*<-lang_ru;;*);
+	[Computational Chemistry]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Вычислительная химия)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+concept_Chemistry;
+concept_mathematical_method;
+concept_molecular_property;
+concept_molecule;
+concept_synthesis;
+nrel_search;
+concept_data_base;
+concept_combinatorial_library
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Вычислительная химия — раздел химии, в котором математические методы используются для расчёта молекулярных свойств, моделирования поведения молекул, планирования синтеза, поиска в базах данных и обработки комбинаторных библиотек.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Вычислительная химия, результат*, теоретическая химия, компьютерная программа, вычисление*,структура, молекулярная система)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+nrel_result;
+concept_theoretical_chemistry;
+concept_computer_program;
+nrel_calculation;
+concept_structure;
+concept_molecular_system
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Вычислительная химия использует результаты классической и квантовой теоретической химии, реализованные в виде эффективных компьютерных программ, для вычисления свойств и определения структуры молекулярных систем.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_Computational_Chemistry	-> rrel_example: [Вычислительная химия фактически представляет собой новый способ проведения научных исследований в химии — компьютерный эксперимент и компьютерное моделирование.] (*<-lang_ru;;*);;
+concept_Computational_Chemistry	<=nrel_inclusion:concept_Chemistry;;
+

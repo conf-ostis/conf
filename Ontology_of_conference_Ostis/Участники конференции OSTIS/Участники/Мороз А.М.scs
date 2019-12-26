@@ -1,0 +1,15 @@
+
+Moroz_A_M=> nrel_main_idtf:
+[Мороз А.М.]
+(*
+<- lang_ru;;
+*);
+[Moroz_A_M]
+(*
+<- lang_en;;
+*);;
+
+Moroz_A_M => nrel_email: [hmor.a@bk.ru](*<-lang_en;;*);;
+Moroz_A_M <- concept_graduate;;
+Moroz_A_M <- person;;
+Moroz_A_M <- nrel_participant_of_conference_OSTIS2019;;

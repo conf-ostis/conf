@@ -1,0 +1,18 @@
+concept_wireless_microphone => nrel_main_idtf:
+ [беспроводной микрофон](* <- lang_ru;; *);
+ [wireless microphone] (* <- lang_en;; *);;
+ 
+ concept_tv <- rrel_key_sc_element: 
+         ..
+ 	(*
+ 	=> nrel_main_idtf: [Опр.(беспроводной микрофон)]  (* <- lang_ru;; *);;
+ 	<- sc_explanation;; 
+ 	<= nrel_sc_text_translation: 
+ 		...
+ 		(*
+ 		-> rrel_example: 
+ 			[Беспроводной микрофон — электроакустический прибор, преобразующий акустические колебания в электрический сигнал.]
+ 			(* <- lang_ru;; *);;
+ 		*);; 
+ 	*);;
+

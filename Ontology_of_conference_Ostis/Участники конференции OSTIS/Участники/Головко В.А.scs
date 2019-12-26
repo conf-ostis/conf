@@ -1,0 +1,29 @@
+Golovko_V_A=> nrel_main_idtf:
+	[Головко В.А.]
+	(*
+	<- lang_ru;;
+	*);
+	[Golovko V.A.]
+	(*
+	<- lang_en;;
+	*);;
+
+Golovko_V_A => nrel_email: [gva@bstu.by](*<-lang_en;;*);;
+
+//Golovko_V_A <= nrel_authors:  ...(* -> Doklad_69_OSTISX2014;Doklad_75_OSTISX2014;Doklad_4.02_OSTISX2011;; *);;
+
+
+
+Golovko_V_A <- concept_participant_of_conference_OSTIS2014;;
+Golovko_V_A <- concept_participant_of_conference_OSTIS2011;;
+Golovko_V_A <- concept_participant_of_conference_OSTIS2015;;
+
+
+Golovko_V_A => nrel_email: [v.golovko@gmail.com](*<-lang_en;;*);;
+
+Golovko_V_A <- concept_candidate_sciences;;
+Golovko_V_A <- nrel_participant_of_conference_OSTIS2019;;
+Golovko_V_A <- person ;;
+
+
+Golovko_V_A <- zaveduusij;;

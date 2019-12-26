@@ -1,0 +1,14 @@
+Lyashenko_A_V=> nrel_main_idtf:
+[Ляшенко А.В.]
+(*
+<- lang_ru;;
+*);
+[Lyashenko_A_V]
+(*
+<- lang_en;;
+*);;
+
+Lyashenko_A_V => nrel_email: [avlyas09@bk.ru](*<-lang_en;;*);;
+Lyashenko_A_V <-  concept_graduate;;
+Lyashenko_A_V <- nrel_participant_of_conference_OSTIS2019;;
+Lyashenko_A_V <-  person;;

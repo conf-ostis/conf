@@ -1,0 +1,8 @@
+///sc_node_not_relation-> Doklad_15_OSTISX2019;;
+Doklad_15_OSTISX2019=>nrel_main_idtf:[Доклад 15 OSTIS-2019](*<- lang_ru;;*);;
+
+Doklad_15_OSTISX2019 <- doklad_OSTISX2019;;
+
+Doklad_15_OSTISX2019 => nrel_name_of_doclad: [КОГНИТИВНАЯ КАРТА КАК РЕПРЕЗЕНТАЦИЯ СТРУКТУР ЗНАНИЙ](* <- lang_ru;;*);;
+
+Doklad_15_OSTISX2019 => nrel_authors: Zbrishchak_S_G;; 

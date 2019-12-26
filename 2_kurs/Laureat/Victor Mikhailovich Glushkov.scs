@@ -1,0 +1,75 @@
+sc_node_norole_relation->nrel_date_of_birth;;
+sc_node_norole_relation->nrel_date_of_death;;
+sc_node_norole_relation->nrel_place_of_birth;;
+sc_node_norole_relation->nrel_place_of_death;;
+Victor_Mikhailovich_Glushkov<-sc_node_not_relation;
+
+<=nrel_reward: ...
+(* 
+<-concept_Prize_named_after_S.A._Lebedeva;;
+<-concept_Prize_named_after_A.N._Krylova;;
+<-concept_Computer_Pioneer_Award;;
+*);;
+
+Victor_Mikhailovich_Glushkov => nrel_main_idtf:[Victor Mikhailovich Glushkov] (* <- lang_en;;*);;
+
+Victor_Mikhailovich_Glushkov => nrel_main_idtf:[Виктор Михайлович Глушков] (* <- lang_ru;;*);;
+
+Victor_Mikhailovich_Glushkov<-rrel_key_sc_element:... (* <-illustration;; =>nrel_main_idtf: [Рис. (Виктор Михайлович Глушков)](*<-lang_ru;;*); [Pic. (Victor Mikhailovich Glushkov)](*<-lang_en;;*);; <=nrel_sc_text_translation:... (* ->rrel_example: "file://images/Victor_Mikhailovich_Glushkov.jpg"(*=>nrel_format:format_jpg;;*);; *);; *);;
+
+Victor_Mikhailovich_Glushkov => nrel_date_of_birth:
+            concept_date_24_08_1923
+            (*
+                => nrel_main_idtf:
+                [24 августа 1923](* <- lang_ru;;*);;
+            *);;
+
+Victor_Mikhailovich_Glushkov => nrel_date_of_death:
+            concept_date_30_01_1982
+            (*
+                => nrel_main_idtf:
+                [30 января 1982](* <- lang_ru;;*);;
+            *);;
+
+
+
+Victor_Mikhailovich_Glushkov=> nrel_place_of_birth:
+            concept_Rostov_on_Don;;
+
+ concept_Rostov_on_Don<-concept_city;;
+
+Victor_Mikhailovich_Glushkov => nrel_place_of_death:
+            concept_Moscow;;
+
+ concept_Moscow<-concept_city;;	
+
+definition ->...
+(*
+->rrel_key_sc_element: Victor_Mikhailovich_Glushkov;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Виктор Михайлович Глушков  - советский математик, кибернетик.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Виктор Михайлович Глушков)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_cybernetic;
+	concept_mathematician
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: Victor_Mikhailovich_Glushkov;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Виктор Михайлович Глушков получил Премию имени С.А.Лебедева в 1979 году, Премия имени А.Н.Крылова в 1980, премию "Пионер компьюетрной техники" в 1997.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виктор Михайлович Глушков)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Prize_named_after_S.A._Lebedeva;
+	concept_Prize_named_after_A.N._Krylova;
+	concept_Computer_Pioneer_Award
+	
+};;
+*);;
+
+Victor_Mikhailovich_Glushkov<=nrel_inclusion:concept_laureate;;
+Victor_Mikhailovich_Glushkov-> rrel_example:[С 1975 года Глушков — почётный иностранный член Кибернетического общества Польши.] (*<-lang_ru;;*);;
+
+Victor_Mikhailovich_Glushkov<=nrel_inclusion:concept_person;;

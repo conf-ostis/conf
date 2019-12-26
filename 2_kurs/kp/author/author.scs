@@ -1,0 +1,32 @@
+concept_author<-sc_node_not_relation;;
+
+concept_author => nrel_main_idtf:[Аuthor] (* <- lang_en;;*);;
+
+concept_author => nrel_main_idtf:[Автор] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_author;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Автор - создатель произведения литературы.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Автор)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_creator;
+	concept_piece;
+	concept_literature
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_author;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Каждый автор обладает своим неповторимым авторским стилем.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Автор)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_unique_style
+};;
+*);;
+
+concept_author<=nrel_inclusion:concept_person;;
+concept_author -> rrel_example:[Особенности стиля автора пpoявляютcя в зaглaвии, эпигpaфe, нaчaлe и кoнцoвкe ocнoвнoгo тeкcтa, в пocвящeнияx, aвтopcкиx пpимeчaнияx, пpeдиcлoвияx, пocлecлoвияx.] (*<-lang_ru;;*);;

@@ -1,0 +1,47 @@
+concept_Mathematics<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Математика]
+	(*<-lang_ru;;*);
+	[mathematics]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Математика)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_science;
+	concept_object;
+	concept_property;
+	concept_axiom;
+	concept_mathematical_theory
+
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Математика - наука об отношениях между объектами, о которых ничего не известно, кроме описывающих их некоторых свойств, — именно тех, которые в качестве аксиом положены в основание той или иной математической теории.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Математика, естественная наука, содержание, результат)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+	concept_natural_science;
+	concept_content;
+	concept_result
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Математика не относится к естественным наукам, но широко используется в них как для точной формулировки их содержания, так и для получения новых результатов.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_Mathematics-> rrel_example: [ Математика как учебная дисциплина подразделяется на элементарную математику, изучаемую в средней школе, и высшую математику, изучаемую на математических специальностях вузов.] (*<-lang_ru;;*);;
+concept_Mathematics <=nrel_inclusion:concept_science_discipline;;
+concept_Mathematics <= nrel_subdividing: ...
+(*
+	<-concept_Applied_Mathematics;;
+	<-concept_Discrete_Math;;
+	<-concept_Computational_Mathematics;;
+*);;

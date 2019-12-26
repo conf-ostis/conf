@@ -1,0 +1,35 @@
+concept_vladimir_hearth => nrel_main_idtf:
+ [Кафе «Владимирский очаг»](* <- lang_ru;; *);
+ [Cafe "Vladimir hearth"] (* <- lang_en;; *);;
+ 
+ 
+ concept_vladimir_hearth => nrel_count_people : [60];;
+ 
+ concept_vladimir_hearth => nrel_address : [ул. Некрасова, 11];;
+ 
+ concept_vladimir_hearth => nrel_phone : [ 375 29 602-51-51];;
+ concept_vladimir_hearth => nrel_phone : [ 375 29 651-92-31];;
+ concept_vladimir_hearth => nrel_phone : [ 375 17 292-92-31];;
+ 
+ concept_vladimir_hearth => nrel_site : [https://vladimirskiy-ochag.relax.by/];;
+ 
+ concept_vladimir_hearth => nrel_medium_payment : [30];;
+ 
+ concept_vladimir_hearth => nrel_equipment : concept_sound_system;;
+ concept_vladimir_hearth => nrel_equipment : concept_lighting_equipment;;
+ concept_vladimir_hearth => nrel_equipment : concept_tv;;
+ concept_vladimir_hearth => nrel_equipment : concept_multimedia_projector;;
+ 
+ concept_vladimir_hearth => nrel_type_event : concept_banquet;;
+ concept_vladimir_hearth => nrel_type_event : concept_marriage;;
+ concept_vladimir_hearth => nrel_type_event : concept_birthday;;
+ 
+ concept_vladimir_hearth => nrel_service : concept_leading_services;;
+ concept_vladimir_hearth => nrel_service : concept_musician;;
+ concept_vladimir_hearth => nrel_service : concept_fireworks;;
+ 
+ concept_vladimir_hearth => nrel_territory : concept_parking;;
+ concept_vladimir_hearth => nrel_territory : concept_dance_floor;;
+ 
+ concept_vladimir_hearth => nrel_description_area : [Кафе «Владимирский очаг» приглашает в гости ценителей мясных блюд. Здесь примут всех с традиционным кавказским гостеприимством, каждый посетитель найдет в меню что-то особенное.];;
+

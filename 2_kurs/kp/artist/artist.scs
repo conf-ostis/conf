@@ -1,0 +1,40 @@
+concept_artist<-sc_node_not_relation;;
+
+concept_artist => nrel_main_idtf:[Artist] (* <- lang_en;;*);;
+
+concept_artist => nrel_main_idtf:[Художник] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_artist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Художник — человек, занимающийся изобразительным искусством.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Художник)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_art
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_artist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В Древнем Египте художники украшали гробницы и каменные дома, а ремесло художника было тесно связано с изготовлением красок. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Художник)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_Ancient_Egypt;
+	concept_tombs;
+	concept_stone_houses;
+	concept_craft;
+	concept_manufacturing;
+	concept_paints
+};;
+*);;
+
+concept_artist<=nrel_inclusion:concept_person;;
+concept_artist -> rrel_example:[В каменном веке художники создавали изображения или рисунки на камнях.] (*<-lang_ru;;*);;
+
+sc_node_norole_relation->nrel_origin_of_the_term;;
+concept_artist <= nrel_origin_of_the_term: [Славянское слово «художник» образовано от утраченного ныне общеславянского слова «hǫdogъ», которое является древним заимствованием из готского языка или другого древнегерманского диалекта, а в германских языках восходит к обозначению руки. ](*<- text;;*);;
+
+

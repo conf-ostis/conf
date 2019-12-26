@@ -1,0 +1,50 @@
+
+concept_Prize_named_after_A.N._Krylova<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Премия имени А. Н. Крылова]
+      (*<-lang_ru;;*);
+       [Prize named after A.N. Krylova]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Премия имени А. Н. Крылова)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_award;
+       concept_Russian_Academy_of_Sciences;
+       concept_treatise;
+concept_invention;
+concept_computer_engineering;
+concept_Mechanics;
+concept_Mathematical_Physics
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Премия имени А. Н. Крылова —  награда, присуждаемая Российской академией наук за отдельные лучшие научные работы, открытия, изобретения, а также за серии научных работ по использованию вычислительной техники в решении задач механики и математической физики.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Премия имени А. Н. Крылова , медицина, завещание)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_ship;
+	concept_author;
+	concept_Mathematics;
+	concept_Astronomy;
+	concept_Mechanics;
+	concept_treatise;
+	concept_magnetic_compass;
+	concept_gyro_compass;
+	concept_artillery
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Премия названа в честь Алексея Николаевича Крылова — основоположника теории корабля, автора множества работ по теории магнитных и гироскопических компасов, по артиллерии, механике, математике и астрономии.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_Prize_named_after_A.N._Krylova -> rrel_example: [В 2007 году трио ученых из России получили премию имени А. Н. Крылова за серию работ «Гистерезис перехода между регулярным и маховским отражением стационарных ударных волн».](* <- lang_ru;; *);;
+
+concept_Prize_named_after_A.N._Krylova<=nrel_inclusion:concept_award;;
+

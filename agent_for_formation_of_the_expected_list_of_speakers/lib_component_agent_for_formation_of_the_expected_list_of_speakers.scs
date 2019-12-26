@@ -1,0 +1,18 @@
+lib_component_agent_for_formation_of_the_expected_list_of_speakers
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент для формирования предполагаемого списка докладчиков]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent for formation of the expected list of speakers]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_for_formation_of_the_expected_list_of_speakers; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_formation_of_the_expected_list_of_speakers;;
+
+

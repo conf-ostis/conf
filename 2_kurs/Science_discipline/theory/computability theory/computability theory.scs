@@ -1,0 +1,42 @@
+concept_computability_theory<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Теория вычислимости]
+	(*<-lang_ru;;*);
+	[computability theory]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Теория вычислимости)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+nrel_section;
+concept_Mathematics;
+concept_mathematical_logic;
+concept_theory_of_algorithms;
+concept_Informatics;
+concept_computability;
+concept_incalculability
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Теория вычислимости -  это раздел современной математики, лежащий на стыке математической логики, теории алгоритмов и информатики, возникшей в результате изучения понятий вычислимости и невычислимости.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Теория вычислимости,  )] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+concept_Alan_Turing;
+concept_an_abstract_computing_machine;
+concept_fundamental_theorem;
+concept_halting_problem
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Теория вычислимости берёт своё начало от работы Алана Тьюринга, в которой он ввел понятие абстрактной вычислительной машины и доказал фундаментальную теорему о неразрешимости задачи о её остановке.](*<-lang_ru;;*);;
+      *);;
+*);;
+concept_computability_theory<=nrel_inclusion:concept_theory;;
+concept_computability_theory->concept_computability;;

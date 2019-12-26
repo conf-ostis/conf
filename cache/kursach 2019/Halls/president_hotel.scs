@@ -1,0 +1,31 @@
+ concept_president_hotel => nrel_main_idtf:
+ [Республиканское унитарное предприятие «Президент-Отель»](* <- lang_ru;; *);
+ [Republican unitary enterprise "President Hotel"] (* <- lang_en;; *);;
+ 
+ 
+ concept_president_hotel => nrel_count_people : [300];;
+ 
+ concept_president_hotel => nrel_square : [719];;
+ 
+ concept_president_hotel => nrel_address : [ул.Кирова, 18];;
+ 
+ concept_president_hotel => nrel_phone : [ 375 (17) 229-71-01];;
+ concept_president_hotel => nrel_phone : [ 375 (17) 229-71-02];;
+ concept_president_hotel => nrel_phone : [ 375 (17) 229-71-03];;
+ concept_president_hotel => nrel_phone : [ 375 (17) 229-71-04];;
+ concept_president_hotel => nrel_phone : [ 375 (29) 197-36-69 ];;
+ 
+ concept_president_hotel => nrel_site : [http://president-hotel.by/];;
+ 
+ concept_president_hotel => nrel_mail_area : [event@president-hotel.by];;
+ 
+ concept_president_hotel => nrel_pay_per_hour : [393];;
+ 
+ concept_president_hotel => nrel_equipment : concept_wifi;;
+ 
+ concept_president_hotel => nrel_service : concept_catering;;
+ 
+ concept_president_hotel => nrel_territory : concept_parking;;
+ 
+ concept_president_hotel => nrel_description_area_area : [Вместительное открытое пространство для проведения мероприятий различного профиля. Гибкие возможности сотрудничества и дополнительный сервис помогут создать идеальную атмосферу для любого события.];;
+

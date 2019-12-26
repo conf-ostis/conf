@@ -1,0 +1,47 @@
+concept_Physics<-sc_node_not_relation;
+=>nrel_main_idtf:
+	[Физика]
+	(*<-lang_ru;;*);
+	[Physics]
+	(*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Физика)] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_science;
+	concept_law_of_nature;
+	concept_matter;
+	concept_structure;
+	concept_movement
+};;
+<= nrel_sc_text_translation: ... (*
+	-> rrel_example:
+	[Физика - наука о простейших и вместе с тем наиболее общих законах природы, о материи, её структуре и движении.] (*<-lang_ru;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element: ... (*
+	<-explanation;;
+	=> nrel_main_idtf:
+	[Утверждение(Физика, исследование, факт, наблюдение, эксперимент)] (*<-lang_ru;;*);;
+=> nrel_using_constants: {
+	concept_research;
+	concept_fact;
+	concept_observation;
+	concept_experiment
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В основе физических исследований лежит установление фактов путём наблюдения и эксперимента.](*<-lang_ru;;*);;
+      *);;
+*);;
+
+concept_Physics-> rrel_example: [Законы физики лежат в основе всего естествознания.] (*<-lang_ru;;*);;
+concept_Physics <=nrel_inclusion:concept_science_discipline;;
+concept_Physics <= nrel_subdividing: ...
+(*
+	<-concept_Mathematical_Physics;;
+	<-concept_Computational_Physics;;
+	<-concept_Mechanics;;
+*);;

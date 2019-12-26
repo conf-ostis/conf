@@ -1,0 +1,50 @@
+concept_laureate<-sc_node_not_relation;;
+
+concept_laureate => nrel_main_idtf:[Laureate] (* <- lang_en;;*);;
+
+concept_laureate => nrel_main_idtf:[Лауреат] (* <- lang_ru;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:  concept_laureate;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Лауреат — человек, которому присуждена государственная или международная премия за выдающиеся заслуги в производстве, технике, науке и других.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Лауреат)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{ 
+	concept_state_award;
+	concept_international_award;
+	concept_outstanding_services;
+	concept_production;
+	concept_technics;
+	concept_the_science
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_laureate;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Лауреатов награждают лавровым венком.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Лауреат)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+	concept_laurel_wreath
+};;
+*);;
+
+concept_laureate<=nrel_inclusion:concept_person;;
+
+concept_laureate -> rrel_example:[Лауреатов может быть несколько, если конкурс предполагает такое распределение наград. Как правило, это лауреат первой степени, второй степени, третьей степени.] (*<-lang_ru;;*);;
+
+sc_node_norole_relation->nrel_synonym;;
+sc_node_not_relation->concept_graduate;;
+sc_node_not_relation->concept_winner;;
+sc_node_not_relation->concept_champion;;
+concept_laureate<=nrel_synonym:concept_graduate;;
+concept_laureate<=nrel_synonym:concept_winner;;
+concept_laureate<=nrel_synonym:concept_champion;;
+
+sc_node_norole_relation->nrel_association;;
+sc_node_not_relation->concept_Nobel_Prize;;
+sc_node_not_relation->concept_reward;;
+concept_laureate<=nrel_association:concept_Nobel_Prize;;
+concept_laureate<=nrel_association:concept_reward;;

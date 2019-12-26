@@ -1,0 +1,16 @@
+graph -> G3;;
+G3 -> rrel_arcs: ..arcs;;
+G3 -> rrel_nodes: ..nodes;;
+
+..nodes -> A4;;
+..nodes -> B4;;
+..nodes -> D4;;
+..nodes -> C4;;
+
+..arcs -> (A4 => B4);;
+..arcs -> (B4 => C4);;
+..arcs -> (C4 => D4);;
+
+7=>(A4 => B4);;
+9=>(B4 => C4);;
+7=>(C4 => D4);;
